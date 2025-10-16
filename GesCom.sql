@@ -1,10 +1,14 @@
--- Création de la base
+------------------------------------------------------------
+-- CREATION BASE DE DONNEES
+------------------------------------------------------------
 CREATE DATABASE Gestion_Commerciale;
 GO
 USE Gestion_Commerciale;
 GO
 
--- Table : Users
+------------------------------------------------------------
+-- TABLE : Users
+------------------------------------------------------------
 CREATE TABLE [Users] (
     [id] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
     [username] VARCHAR(50) NOT NULL UNIQUE,
@@ -12,7 +16,9 @@ CREATE TABLE [Users] (
 );
 GO
 
--- Table : Clients
+------------------------------------------------------------
+-- TABLE : Clients
+------------------------------------------------------------
 CREATE TABLE [Clients] (
     [code_cli] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
     [nom_cli] VARCHAR(50) NOT NULL,
@@ -30,24 +36,30 @@ CREATE TABLE [Clients] (
 );
 GO
 
--- Table : Categorie
+------------------------------------------------------------
+-- TABLE : Categorie
+------------------------------------------------------------
 CREATE TABLE [Categorie] (
     [code_categ] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
     [nom_categ] VARCHAR(50) NOT NULL UNIQUE
 );
 GO
 
--- Table : Statut
+------------------------------------------------------------
+-- TABLE : Statut
+------------------------------------------------------------
 CREATE TABLE [Statut] (
     [code_sta] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
     [nom_sta] VARCHAR(50) NOT NULL UNIQUE
 );
 GO
 
--- Table : Produits
+------------------------------------------------------------
+-- TABLE : Produits
+------------------------------------------------------------
 CREATE TABLE [Produits] (
     [code_prod] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
-    [libelle_prod] VARCHAR(50) NOT NULL,
+    [libelle_prod] VARCHAR(100) NOT NULL,
     [prixHT_prod] DECIMAL(10,2) NOT NULL CONSTRAINT df_prixHT_prod DEFAULT 0.00,
     [code_categ] INT NOT NULL,
     CONSTRAINT fk_produits_categorie FOREIGN KEY ([code_categ])
@@ -55,7 +67,9 @@ CREATE TABLE [Produits] (
 );
 GO
 
--- Table : Devis
+------------------------------------------------------------
+-- TABLE : Devis
+------------------------------------------------------------
 CREATE TABLE [Devis] (
     [code_dev] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
     [date_dev] DATE NOT NULL,
@@ -72,7 +86,9 @@ CREATE TABLE [Devis] (
 );
 GO
 
--- Table : Contenir
+------------------------------------------------------------
+-- TABLE : Contenir
+------------------------------------------------------------
 CREATE TABLE [Contenir] (
     [code_dev] INT NOT NULL,
     [code_prod] INT NOT NULL,
@@ -89,26 +105,29 @@ CREATE TABLE [Contenir] (
 );
 GO
 
--- Insertion données initiales
+------------------------------------------------------------
+-- INSERTIONS INITIALES
+------------------------------------------------------------
 
 -- Users
 INSERT INTO [Users] ([username], [password]) VALUES
 ('Utilisateur1', '$2y$10$jP2Y9o.rGCuy4Qr4/1Ax/u6t67ixs2hyCttH24HaszTkLnKX4RTCK'),
 ('Utilisateur2', '$2y$10$o5Se2kDG8YwnNPkg241p.eDo9fbOOv4bG.BCySsuyVVhuXyledHc2');
+GO
 
--- Catégories
+-- Categories
 INSERT INTO [Categorie] ([nom_categ]) VALUES
-('Réseau'),
+('Reseau'),
 ('Consommables'),
 ('PC'),
-('Pièces detachées');
+('Pieces detachees');
 GO
 
 -- Statuts
 INSERT INTO [Statut] ([nom_sta]) VALUES
 ('En attente'),
-('Refusé'),
-('Accepté');
+('Refuse'),
+('Accepte');
 GO
 
 -- Clients
@@ -117,78 +136,92 @@ INSERT INTO [Clients]
  [numRueLivr_cli], [rueLivr_cli], [villeLivr_cli], [codePostLivr_cli],
  [numTel_cli], [numFax_cli], [mail_cli])
 VALUES
-('TechnoWorld', 25, 'Boulevard des Nations', 'Marseille', 13008, 25, 'Boulevard des Nations', 'Marseille', 13008, '0611223344', '0411223345', 'contact@technoworld.fr'),
-('Alpha Informatique', 42, 'Rue du Commerce', 'Bordeaux', 33000, 42, 'Rue du Commerce', 'Bordeaux', 33000, '0677889900', '0556778899', 'support@alphainfo.fr'),
-('Design Office', 5, 'Rue Voltaire', 'Toulouse', 31000, 7, 'Rue Voltaire', 'Toulouse', 31000, '0622334455', '0533445566', 'info@design-office.fr'),
-('Bâtitech', 18, 'Avenue Victor Hugo', 'Nice', 06000, 18, 'Avenue Victor Hugo', 'Nice', 06000, '0699887766', '0499887766', 'contact@batitech.fr');
+('Dupont SA', 12, 'Rue de la Paix', 'Paris', 75002, 12, 'Rue de la Paix', 'Paris', 75002, '0678969034', '0678969034', 'contact@dupont-sa.fr'),
+('Martin et Fils', 8, 'Avenue des Tilleuls', 'Lyon', 69003, 10, 'Avenue des Tilleuls', 'Lyon', 69003, '0734557899', '0734557899', 'info@martin-fils.fr'),
+('TechnoWorld', 25, 'Boulevard des Sciences', 'Toulouse', 31000, 25, 'Boulevard des Sciences', 'Toulouse', 31000, '0612345678', '0612345678', 'contact@technoworld.fr'),
+('Alpha Informatique', 45, 'Rue Voltaire', 'Marseille', 13006, 45, 'Rue Voltaire', 'Marseille', 13006, '0623456789', '0623456789', 'info@alphainfo.fr'),
+('Design Office', 3, 'Rue des Artisans', 'Nantes', 44000, 3, 'Rue des Artisans', 'Nantes', 44000, '0634567890', '0634567890', 'contact@designoffice.fr'),
+('Batitech', 18, 'Rue du Batiment', 'Lille', 59000, 18, 'Rue du Batiment', 'Lille', 59000, '0645678901', '0645678901', 'contact@batitech.fr');
 GO
-
 
 -- Produits
 INSERT INTO [Produits] ([libelle_prod], [prixHT_prod], [code_categ])
 VALUES
-('Routeur Cisco 2800', 450.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='Réseau')),
-('Switch HP 24 ports', 220.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='Réseau')),
-('Imprimante LaserJet Pro', 189.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='Consommables')),
-('Clé USB 64 Go', 19.90, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='Consommables')),
-('Unité Centrale Intel i5', 550.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='PC')),
-('Écran 27" Full HD', 199.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='PC')),
-('Carte Mère ASUS B450', 129.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='Pièces detachées')),
-('Disque SSD 1 To', 89.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='Pièces detachées'));
+('Ordinateur Portable 15 pouces', 799.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='PC')),
+('Chaise de Bureau Ergonomique', 119.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='Pieces detachees')),
+('Routeur Cisco 2800', 350.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='Reseau')),
+('Switch HP 24 ports', 420.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='Reseau')),
+('Unite Centrale Intel i5', 600.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='PC')),
+('Ecran 27 pouces Full HD', 230.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='PC')),
+('Imprimante LaserJet Pro', 280.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='Consommables')),
+('Disque SSD 1 To', 150.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='Pieces detachees')),
+('Carte Mere ASUS B450', 120.00, (SELECT [code_categ] FROM [Categorie] WHERE [nom_categ]='Pieces detachees'));
 GO
-
 
 -- Devis
 INSERT INTO [Devis] ([date_dev], [tauxTVA_dev], [tauxRemiseGlobal_dev], [MontantHTHorsRemise_dev], [code_cli], [code_sta])
 VALUES
--- Devis pour TechnoWorld
-('2025-10-01', 20.00, 0.00, 889.00,
- (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='TechnoWorld'),
- (SELECT [code_sta] FROM [Statut] WHERE [nom_sta]='En attente')),
-
--- Devis pour Alpha Informatique
-('2025-09-20', 20.00, 5.00, 1578.00,
- (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Alpha Informatique'),
- (SELECT [code_sta] FROM [Statut] WHERE [nom_sta]='Accepté')),
-
--- Devis pour Design Office
-('2025-08-15', 20.00, 10.00, 2350.00,
- (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Design Office'),
- (SELECT [code_sta] FROM [Statut] WHERE [nom_sta]='Refusé')),
-
--- Devis pour Bâtitech
-('2025-07-01', 20.00, 0.00, 1298.00,
- (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Bâtitech'),
- (SELECT [code_sta] FROM [Statut] WHERE [nom_sta]='En attente'));
+(CAST(GETDATE() AS DATE), 20.00, 5.00, 799.00, (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Dupont SA'), (SELECT [code_sta] FROM [Statut] WHERE [nom_sta]='En attente')),
+(CAST(GETDATE() AS DATE), 20.00, 0.00, 1570.00, (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='TechnoWorld'), (SELECT [code_sta] FROM [Statut] WHERE [nom_sta]='En attente')),
+(CAST(GETDATE() AS DATE), 20.00, 10.00, 1660.00, (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Alpha Informatique'), (SELECT [code_sta] FROM [Statut] WHERE [nom_sta]='En attente')),
+(CAST(GETDATE() AS DATE), 20.00, 5.00, 1990.00, (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Design Office'), (SELECT [code_sta] FROM [Statut] WHERE [nom_sta]='Accepte')),
+(CAST(GETDATE() AS DATE), 20.00, 0.00, 810.00, (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Batitech'), (SELECT [code_sta] FROM [Statut] WHERE [nom_sta]='Refuse'));
 GO
 
-
--- Contenir : liaisons Devis / Produits
+-- Contenir (liaisons Devis / Produits)
 INSERT INTO [Contenir] ([code_dev], [code_prod], [quantiteProduit], [remiseProduit])
-VALUES
--- Devis TechnoWorld : 1 routeur + 1 switch
-((SELECT [code_dev] FROM [Devis] WHERE [code_cli] = (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='TechnoWorld')),
- (SELECT [code_prod] FROM [Produits] WHERE [libelle_prod]='Routeur Cisco 2800'), 1, 0.00),
-((SELECT [code_dev] FROM [Devis] WHERE [code_cli] = (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='TechnoWorld')),
- (SELECT [code_prod] FROM [Produits] WHERE [libelle_prod]='Switch HP 24 ports'), 2, 0.00),
+SELECT D.code_dev, P.code_prod, 1, 0.00
+FROM Devis D
+JOIN Clients C ON D.code_cli = C.code_cli
+JOIN Produits P ON P.libelle_prod = 'Routeur Cisco 2800'
+WHERE C.nom_cli = 'TechnoWorld';
 
--- Devis Alpha Informatique : 2 UC + 2 écrans
-((SELECT [code_dev] FROM [Devis] WHERE [code_cli] = (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Alpha Informatique')),
- (SELECT [code_prod] FROM [Produits] WHERE [libelle_prod]='Unité Centrale Intel i5'), 2, 5.00),
-((SELECT [code_dev] FROM [Devis] WHERE [code_cli] = (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Alpha Informatique')),
- (SELECT [code_prod] FROM [Produits] WHERE [libelle_prod]='Écran 27" Full HD'), 2, 5.00),
+INSERT INTO [Contenir]
+SELECT D.code_dev, P.code_prod, 2, 0.00
+FROM Devis D
+JOIN Clients C ON D.code_cli = C.code_cli
+JOIN Produits P ON P.libelle_prod = 'Switch HP 24 ports'
+WHERE C.nom_cli = 'TechnoWorld';
 
--- Devis Design Office : 10 chaises + 2 imprimantes
-((SELECT [code_dev] FROM [Devis] WHERE [code_cli] = (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Design Office')),
- (SELECT [code_prod] FROM [Produits] WHERE [libelle_prod]='Chaise de Bureau Ergonomique'), 10, 10.00),
-((SELECT [code_dev] FROM [Devis] WHERE [code_cli] = (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Design Office')),
- (SELECT [code_prod] FROM [Produits] WHERE [libelle_prod]='Imprimante LaserJet Pro'), 2, 0.00),
+INSERT INTO [Contenir]
+SELECT D.code_dev, P.code_prod, 2, 5.00
+FROM Devis D
+JOIN Clients C ON D.code_cli = C.code_cli
+JOIN Produits P ON P.libelle_prod = 'Unite Centrale Intel i5'
+WHERE C.nom_cli = 'Alpha Informatique';
 
--- Devis Bâtitech : 3 SSD + 3 cartes mères
-((SELECT [code_dev] FROM [Devis] WHERE [code_cli] = (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Bâtitech')),
- (SELECT [code_prod] FROM [Produits] WHERE [libelle_prod]='Disque SSD 1 To'), 3, 0.00),
-((SELECT [code_dev] FROM [Devis] WHERE [code_cli] = (SELECT [code_cli] FROM [Clients] WHERE [nom_cli]='Bâtitech')),
- (SELECT [code_prod] FROM [Produits] WHERE [libelle_prod]='Carte Mère ASUS B450'), 3, 5.00);
+INSERT INTO [Contenir]
+SELECT D.code_dev, P.code_prod, 2, 5.00
+FROM Devis D
+JOIN Clients C ON D.code_cli = C.code_cli
+JOIN Produits P ON P.libelle_prod = 'Ecran 27 pouces Full HD'
+WHERE C.nom_cli = 'Alpha Informatique';
+
+INSERT INTO [Contenir]
+SELECT D.code_dev, P.code_prod, 10, 10.00
+FROM Devis D
+JOIN Clients C ON D.code_cli = C.code_cli
+JOIN Produits P ON P.libelle_prod = 'Chaise de Bureau Ergonomique'
+WHERE C.nom_cli = 'Design Office';
+
+INSERT INTO [Contenir]
+SELECT D.code_dev, P.code_prod, 2, 0.00
+FROM Devis D
+JOIN Clients C ON D.code_cli = C.code_cli
+JOIN Produits P ON P.libelle_prod = 'Imprimante LaserJet Pro'
+WHERE C.nom_cli = 'Design Office';
+
+INSERT INTO [Contenir]
+SELECT D.code_dev, P.code_prod, 3, 0.00
+FROM Devis D
+JOIN Clients C ON D.code_cli = C.code_cli
+JOIN Produits P ON P.libelle_prod = 'Disque SSD 1 To'
+WHERE C.nom_cli = 'Batitech';
+
+INSERT INTO [Contenir]
+SELECT D.code_dev, P.code_prod, 3, 5.00
+FROM Devis D
+JOIN Clients C ON D.code_cli = C.code_cli
+JOIN Produits P ON P.libelle_prod = 'Carte Mere ASUS B450'
+WHERE C.nom_cli = 'Batitech';
 GO
-
-
