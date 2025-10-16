@@ -103,3 +103,39 @@ CREATE TABLE `Contenir` (
   CONSTRAINT `ck_contenir_remise`
     CHECK (`remiseProduit` >= 0)
 );
+
+
+
+
+
+INSERT INTO `Categorie` (`nom_categ`) VALUES
+  ('Informatique'),
+  ('Mobilier');
+
+INSERT INTO `Statut` (`nom_sta`) VALUES
+  ('Brouillon'),
+  ('Validé');
+
+INSERT INTO `Clients`
+  (`nom_cli`, `numRueFact_cli`, `rueFact_cli`, `villeFact_cli`, `codePostFact_cli`,
+   `numRueLivr_cli`, `rueLivr_cli`, `villeLivr_cli`, `codePostLivr_cli`,
+   `numTel_cli`, `numFax_cli`, `mail_cli`)
+VALUES
+  ('Dupont SA', 12, 'Rue de la Paix', 'Paris', 75002, 12, 'Rue de la Paix', 'Paris', 75002, NULL, NULL, 'contact@dupont-sa.fr'),
+  ('Martin & Fils', 8, 'Avenue des Tilleuls', 'Lyon', 69003, 10, 'Avenue des Tilleuls', 'Lyon', 69003, NULL, NULL, 'info@martin-fils.fr');
+
+INSERT INTO `Produits` (`libelle_prod`, `prixHT_prod`, `code_categ`) VALUES
+  ('Ordinateur Portable 15"', 799.00, (SELECT `code_categ` FROM `Categorie` WHERE `nom_categ`='Informatique')),
+  ('Chaise de Bureau Ergonomique', 119.00, (SELECT `code_categ` FROM `Categorie` WHERE `nom_categ`='Mobilier'));
+
+INSERT INTO `Devis`
+  (`date_dev`, `tauxTVA_dev`, `tauxRemiseGlobal_dev`, `MontantHTHorsRemise_dev`, `code_cli`, `code_sta`)
+VALUES
+  (CURRENT_DATE, 20.00, 5.00, 799.00,
+   (SELECT `code_cli` FROM `Clients` WHERE `nom_cli`='Dupont SA'),
+   (SELECT `code_sta` FROM `Statut` WHERE `nom_sta`='Brouillon'));
+
+INSERT INTO `Contenir` (`code_dev`, `code_prod`, `quantiteProduit`, `remiseProduit`) VALUES
+  ((SELECT `code_dev` FROM `Devis` ORDER BY `code_dev` DESC LIMIT 1),
+   (SELECT `code_prod` FROM `Produits` WHERE `libelle_prod`='Ordinateur Portable 15"'),
+   1, 0.00);
