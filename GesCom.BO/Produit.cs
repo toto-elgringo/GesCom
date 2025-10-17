@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GesCom.BO
 {
-    public class Class1
+    internal class Produit
     {
     }
 }
