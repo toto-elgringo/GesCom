@@ -1,0 +1,6 @@
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\bin\Debug\GesCom.DAL.dll
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\bin\Debug\GesCom.DAL.pdb
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.csproj.AssemblyReference.cache
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.dll
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.pdb

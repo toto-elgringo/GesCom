@@ -1,0 +1,12 @@
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\bin\Debug\GesCom.GUI.exe.config
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\bin\Debug\GesCom.GUI.exe
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\bin\Debug\GesCom.GUI.pdb
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\bin\Debug\GesCom.DAL.dll
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\bin\Debug\GesCom.DAL.pdb
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.AssemblyReference.cache
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.Properties.Resources.resources
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.GenerateResource.cache
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.Up2Date
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.exe
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.pdb
