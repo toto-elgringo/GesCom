@@ -1,34 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\",
+  "WorkspaceRootPath": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bo\\devis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\devis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GesCom.GUI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\GesCom.GUI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GesCom.GUI\\GesCom.GUI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:gescom.gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BLL\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GesCom.BLL\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GesCom.DAL\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.DAL\\ConnexionDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GesCom.DAL\\ConnexionDB.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,91 +22,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Devis.cs",
-              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Devis.cs",
-              "RelativeDocumentMoniker": "GesCom.BO\\Devis.cs",
-              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Devis.cs",
-              "RelativeToolTip": "GesCom.BO\\Devis.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ConnexionDB.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.DAL\\ConnexionDB.cs",
+              "RelativeDocumentMoniker": "GesCom.DAL\\ConnexionDB.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.DAL\\ConnexionDB.cs",
+              "RelativeToolTip": "GesCom.DAL\\ConnexionDB.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T14:48:40.178Z",
+              "WhenOpened": "2025-11-05T10:00:39.784Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Client.cs",
-              "RelativeDocumentMoniker": "GesCom.BO\\Client.cs",
-              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Client.cs",
-              "RelativeToolTip": "GesCom.BO\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T14:48:28.548Z"
+              "Title": "GesCom.GUI.csproj",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\GesCom.GUI.csproj",
+              "RelativeDocumentMoniker": "GesCom.GUI\\GesCom.GUI.csproj",
+              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\GesCom.GUI.csproj",
+              "RelativeToolTip": "GesCom.GUI\\GesCom.GUI.csproj",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAgwF4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-05T10:25:13.884Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Produit.cs",
-              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Produit.cs",
-              "RelativeDocumentMoniker": "GesCom.BO\\Produit.cs",
-              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Produit.cs",
-              "RelativeToolTip": "GesCom.BO\\Produit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\Program.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\Program.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\Program.cs",
+              "RelativeToolTip": "GesCom.GUI\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwBEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T14:48:07.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\Form1.cs",
-              "RelativeDocumentMoniker": "GesCom.GUI\\Form1.cs",
-              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\Form1.cs [Design]",
-              "RelativeToolTip": "GesCom.GUI\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T14:43:30.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BLL\\Class1.cs",
-              "RelativeDocumentMoniker": "GesCom.BLL\\Class1.cs",
-              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BLL\\Class1.cs",
-              "RelativeToolTip": "GesCom.BLL\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T14:28:44.308Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\Class1.cs",
-              "RelativeDocumentMoniker": "GesCom.DAL\\Class1.cs",
-              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\Class1.cs",
-              "RelativeToolTip": "GesCom.DAL\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T14:27:48.292Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\User.cs",
-              "RelativeDocumentMoniker": "GesCom.BO\\User.cs",
-              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\User.cs",
-              "RelativeToolTip": "GesCom.BO\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T14:27:07.178Z"
+              "WhenOpened": "2025-11-05T10:19:13.533Z",
+              "EditorCaption": ""
             }
           ]
         }
