@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bo\\devis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\devis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bo\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bo\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|solutionrelative:gescom.bll\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,6 +43,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Devis.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Devis.cs",
+              "RelativeDocumentMoniker": "GesCom.BO\\Devis.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Devis.cs",
+              "RelativeToolTip": "GesCom.BO\\Devis.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T14:48:40.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Client.cs",
+              "RelativeDocumentMoniker": "GesCom.BO\\Client.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Client.cs",
+              "RelativeToolTip": "GesCom.BO\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T14:48:28.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Produit.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Produit.cs",
+              "RelativeDocumentMoniker": "GesCom.BO\\Produit.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Produit.cs",
+              "RelativeToolTip": "GesCom.BO\\Produit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T14:48:07.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\Form1.cs",
               "RelativeDocumentMoniker": "GesCom.GUI\\Form1.cs",
@@ -42,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BLL\\Class1.cs",
               "RelativeDocumentMoniker": "GesCom.BLL\\Class1.cs",
@@ -50,12 +101,11 @@
               "RelativeToolTip": "GesCom.BLL\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T14:28:44.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T14:28:44.308Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\Class1.cs",
               "RelativeDocumentMoniker": "GesCom.DAL\\Class1.cs",
@@ -68,14 +118,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Class1.cs",
-              "RelativeDocumentMoniker": "GesCom.BO\\Class1.cs",
-              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Class1.cs",
-              "RelativeToolTip": "GesCom.BO\\Class1.cs",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\User.cs",
+              "RelativeDocumentMoniker": "GesCom.BO\\User.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\User.cs",
+              "RelativeToolTip": "GesCom.BO\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T14:27:07.178Z"
+              "WhenOpened": "2025-10-17T14:27:07.178Z",
+              "EditorCaption": ""
             }
           ]
         }
