@@ -19,19 +19,19 @@ namespace GesCom.BO
             this.password = password;
         }
 
-        public int id
+        public int Id
         {
             get { return this.id; }
             set { this.id = value; }
         }
 
-        public string login
+        public string Login
         {
             get { return this.login; }
             set { this.login = value; }
         }
 
-        public string password
+        public string Password
         {
             get { return this.password; }
             set { this.password = value; }
