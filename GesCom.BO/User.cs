@@ -8,5 +8,33 @@ namespace GesCom.BO
 {
     public class User
     {
+        private int id;
+        private string login;
+        private string password;
+
+        public User(int id, string login, string password)
+        {
+            this.id = id;
+            this.login = login;
+            this.password = password;
+        }
+
+        public int Id
+        {
+            get { return this.id; }
+            set { this.id = value; }
+        }
+
+        public string Login
+        {
+            get { return this.login; }
+            set { this.login = value; }
+        }
+
+        public string Password
+        {
+            get { return this.password; }
+            set { this.password = value; }
+        }
     }
 }
