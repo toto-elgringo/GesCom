@@ -20,7 +20,7 @@ namespace GesCom.DAL
             if(unUserDal == null)
             {
                 unUserDal = new UserDAL();
-            }
+            } 
 
             return unUserDal
         }
@@ -30,7 +30,7 @@ namespace GesCom.DAL
             List<Users> users = new List<Users>();
             string query = "SELECT * FROM USERS";
 
-            using (SqlConnection connexion = ConnexionDB.GetConnexionDB().GetSqlConnexion())
+            using (SqlConnection connexion = ConnexionDB.GetConnexion().GetSqlConnexion())
             {
                 SqlCommand cmd = new SqlCommand(query, connexion);
                 SqlDataReader reader = cmd.ExecuteReader();

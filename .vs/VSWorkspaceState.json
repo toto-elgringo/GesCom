@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GesCom.BO",
+    "\\GesCom.DAL",
+    "\\GesCom.DAL\\Properties",
+    "\\GesCom.GUI"
   ],
-  "SelectedNode": "\\GesCom.sln",
+  "SelectedNode": "\\GesCom.DAL\\UserDAL.cs",
   "PreviewInSolutionExplorer": false
 }
