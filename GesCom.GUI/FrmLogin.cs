@@ -6,14 +6,14 @@ using GesCom.BLL;
 
 namespace GesCom.GUI
 {
-    public partial class FormConnexion : Form
+    public partial class FrmLogin : Form
     {
         private string loginPlaceholder = "Entrez votre login";
         private string passwordPlaceholder = "Entrez votre mot de passe";
         private bool isPasswordPlaceholder = true;
         private bool isLoginPlaceholder = true;
 
-        public FormConnexion()
+        public FrmLogin()
         {
             InitializeComponent();
             InitializePlaceholders();

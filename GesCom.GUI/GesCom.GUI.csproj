@@ -130,6 +130,13 @@
       <Project>{4fed83e7-4a4a-45cb-9f7e-68fbbc5cd65e}</Project>
       <Name>GesCom.BO</Name>
     </ProjectReference>
+    <ProjectReference Include="..\GesCom.DAL\GesCom.DAL.csproj">
+      <Project>{c6b61507-c7e5-4b89-824f-f3c2841fcc37}</Project>
+      <Name>GesCom.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace GesCom.GUI
 {
-    partial class FormConnexion
+    partial class FrmLogin
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -42,12 +42,13 @@
             // 
             // panelHeader
             // 
-            this.panelHeader.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelHeader.BackColor = System.Drawing.Color.Blue;
             this.panelHeader.Controls.Add(this.lblTitre);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.ForeColor = System.Drawing.Color.White;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(454, 70);
+            this.panelHeader.Size = new System.Drawing.Size(457, 70);
             this.panelHeader.TabIndex = 0;
             // 
             // lblTitre
@@ -55,7 +56,7 @@
             this.lblTitre.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblTitre.AutoSize = true;
             this.lblTitre.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitre.Location = new System.Drawing.Point(25, 20);
+            this.lblTitre.Location = new System.Drawing.Point(124, 18);
             this.lblTitre.Name = "lblTitre";
             this.lblTitre.Size = new System.Drawing.Size(210, 30);
             this.lblTitre.TabIndex = 0;
@@ -113,9 +114,6 @@
             this.txtLogin.Size = new System.Drawing.Size(380, 30);
             this.txtLogin.TabIndex = 4;
             this.txtLogin.Text = "Entrez votre login";
-            this.txtLogin.Enter += new System.EventHandler(this.txtLogin_Enter);
-            this.txtLogin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLogin_KeyPress);
-            this.txtLogin.Leave += new System.EventHandler(this.txtLogin_Leave);
             // 
             // panel1
             // 
@@ -131,12 +129,12 @@
             // 
             // btnConnexion
             // 
-            this.btnConnexion.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnConnexion.BackColor = System.Drawing.Color.Blue;
             this.btnConnexion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnConnexion.FlatAppearance.BorderSize = 0;
             this.btnConnexion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConnexion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConnexion.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btnConnexion.ForeColor = System.Drawing.Color.White;
             this.btnConnexion.Location = new System.Drawing.Point(36, 266);
             this.btnConnexion.Name = "btnConnexion";
             this.btnConnexion.Size = new System.Drawing.Size(378, 44);
@@ -144,19 +142,18 @@
             this.btnConnexion.Text = "→   Se connecter";
             this.btnConnexion.UseVisualStyleBackColor = false;
             // 
-            // FormConnexion
+            // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 441);
+            this.ClientSize = new System.Drawing.Size(457, 441);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "FormConnexion";
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Connexion GesCom";
-            this.Load += new System.EventHandler(this.FormConnexion_Load);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             this.panel1.ResumeLayout(false);

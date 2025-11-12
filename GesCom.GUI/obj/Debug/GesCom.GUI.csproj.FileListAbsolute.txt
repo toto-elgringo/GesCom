@@ -18,3 +18,4 @@ C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCo
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.exe
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.pdb
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.FormConnexion.resources
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.FrmLogin.resources
