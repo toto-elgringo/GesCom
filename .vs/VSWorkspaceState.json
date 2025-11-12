@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GesCom.BO",
+    "\\GesCom.DAL",
+    "\\GesCom.GUI"
   ],
-  "SelectedNode": "\\GesCom.sln",
+  "SelectedNode": "\\GesCom.BO\\Produit.cs",
   "PreviewInSolutionExplorer": false
 }
