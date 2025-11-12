@@ -22,25 +22,25 @@ namespace GesCom.DAL
                 unUserDal = new UserDAL();
             }
 
-            return unUserDal
+            return unUserDal;
         }
 
-        public List<Users> GetListUsers()
+        public List<User> GetListUsers()
         {
-            List<Users> users = new List<Users>();
+            List<User> users = new List<User>();
             string query = "SELECT * FROM USERS";
 
-            using (SqlConnection connexion = ConnexionDB.GetConnexionDB().GetSqlConnexion())
+            using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
                 SqlCommand cmd = new SqlCommand(query, connexion);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
                     User user = new User(
-                        reader.GetInt32(),
-                        reader.GetString(),
-                        reader.GetString()
-                        );
+                        reader.GetInt32(reader.GetOrdinal("id")),
+                        reader.GetString(reader.GetOrdinal("username")),
+                        reader.GetString(reader.GetOrdinal("password")
+                        ));
                     users.Add(user);
                 }
                 reader.Close();

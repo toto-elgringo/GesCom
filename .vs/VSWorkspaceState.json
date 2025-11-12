@@ -3,8 +3,15 @@
     "",
     "\\GesCom.BO",
     "\\GesCom.DAL",
+<<<<<<< HEAD
     "\\GesCom.GUI"
   ],
   "SelectedNode": "\\GesCom.BO\\Produit.cs",
+=======
+    "\\GesCom.DAL\\Properties",
+    "\\GesCom.GUI"
+  ],
+  "SelectedNode": "\\GesCom.DAL\\UserDAL.cs",
+>>>>>>> a916f8cb853a8334859103adcf3bf1f6f5b9bf96
   "PreviewInSolutionExplorer": false
 }
