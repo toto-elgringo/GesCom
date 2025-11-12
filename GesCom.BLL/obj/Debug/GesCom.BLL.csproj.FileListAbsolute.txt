@@ -1,7 +1,21 @@
-<<<<<<< HEAD
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.AssemblyReference.cache
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.CoreCompileInputs.cache
-=======
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.AssemblyReference.cache
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.CoreCompileInputs.cache
->>>>>>> 70ae328517b5a70bdc7287d24c5f7d4cebe616f1
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\GesCom.BLL.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\GesCom.BLL.pdb
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\GesCom.BO.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\GesCom.DAL.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\System.Buffers.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\System.Memory.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\GesCom.BO.pdb
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\GesCom.DAL.pdb
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\System.Buffers.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\System.Memory.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.Up2Date
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.pdb

@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GesCom.BO
 {
@@ -19,14 +15,14 @@ namespace GesCom.BO
 
         public int Code
         {
-            get { return this.code; }
-            set { this.code = value; }
+            get { return code; }
+            set { code = value; }
         }
 
-        public string nom
+        public string Nom
         {
-            get { return this.nom; }
-            set { this.nom = value; }
+            get { return nom; }
+            set { nom = value; }
         }
     }
 }

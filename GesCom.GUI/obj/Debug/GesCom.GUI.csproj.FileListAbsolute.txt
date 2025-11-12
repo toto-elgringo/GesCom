@@ -1,18 +1,28 @@
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\bin\Debug\GesCom.GUI.exe.config
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\bin\Debug\GesCom.GUI.exe
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\bin\Debug\GesCom.GUI.pdb
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\bin\Debug\GesCom.DAL.dll
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\bin\Debug\GesCom.DAL.pdb
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.AssemblyReference.cache
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.Properties.Resources.resources
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.GenerateResource.cache
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.CoreCompileInputs.cache
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.Up2Date
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.exe
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.pdb
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.AssemblyReference.cache
-C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.exe.config
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.FrmLogin.resources
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.Properties.Resources.resources
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.GenerateResource.cache
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.CoreCompileInputs.cache
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\GesCom.GUI.exe.config
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\GesCom.GUI.exe
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\GesCom.GUI.pdb
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\GesCom.BLL.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\GesCom.BO.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\GesCom.DAL.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\System.Buffers.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\System.Memory.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\GesCom.BLL.pdb
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\GesCom.BO.pdb
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\GesCom.DAL.pdb
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\System.Buffers.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\System.Memory.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.Up2Date
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.exe
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.pdb
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.exe.config

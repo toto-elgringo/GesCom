@@ -1,8 +1,19 @@
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\bin\Debug\GesCom.DAL.dll
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\bin\Debug\GesCom.DAL.pdb
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.csproj.AssemblyReference.cache
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.csproj.CoreCompileInputs.cache
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.dll
-C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.pdb
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.csproj.AssemblyReference.cache
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\GesCom.DAL.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\GesCom.DAL.pdb
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\GesCom.BO.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\System.Buffers.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\System.Memory.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\GesCom.BO.pdb
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\System.Buffers.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\System.Memory.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.csproj.Up2Date
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.dll
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.pdb
