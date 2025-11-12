@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BO\obj\Debug\GesCom.BO.csproj.AssemblyReference.cache
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BO\obj\Debug\GesCom.BO.csproj.CoreCompileInputs.cache
+=======
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BO\obj\Debug\GesCom.BO.csproj.AssemblyReference.cache
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BO\obj\Debug\GesCom.BO.csproj.CoreCompileInputs.cache
+>>>>>>> 70ae328517b5a70bdc7287d24c5f7d4cebe616f1
