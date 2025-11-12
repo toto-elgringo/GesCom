@@ -10,18 +10,26 @@ using BCrypt.Net;
 
 namespace GesCom.BLL
 {
-    internal class UserBLL
+    public class UserBLL
     {
         private static UserBLL unUserBLL;
         private List<User> listUsers = new List<User>();
 
-        public static void SetchaineConnexion(ConnectionStringSettings chset)
+        public static UserBLL GetUserBLL()
+        {
+            if (unUserBLL == null)
+            {
+                unUserBLL = new UserBLL();
+            }
+            return unUserBLL;
+        }
+
+        public static void SetChaineConnexion(ConnectionStringSettings chset)
         {
             string chaine = chset.ConnectionString;
             ConnexionBD.GetConnexionBD().SetchaineConnexion(chaine);
         }
 
-        // Récupère dans une liste des utilisateurs
         public List<User> GetListeUtilisateurs()
         {
             listUsers = UserDAL.GetUnUserDAL().GetListUsers();
