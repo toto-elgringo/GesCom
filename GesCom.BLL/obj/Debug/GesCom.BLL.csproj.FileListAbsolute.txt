@@ -1,0 +1,2 @@
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.AssemblyReference.cache
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.CoreCompileInputs.cache
