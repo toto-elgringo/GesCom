@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data.SqlClient;
 using GesCom.BO;
 
@@ -24,26 +21,29 @@ namespace GesCom.DAL
         public List<Produit> GetListProduits()
         {
             List<Produit> produits = new List<Produit>();
-            string query = "SELECT P.Code, P.Libelle, P.PrixVenteHT, C.Code as CatCode, C.Libelle as CatLibelle " +
-                          "FROM PRODUITS P " +
-                          "INNER JOIN CATEGORIES C ON P.CodeCategorie = C.Code";
+            string query = "SELECT P.code_prod, P.libelle_prod, P.prixHT_prod, " +
+                          "C.code_categ, C.nom_categ " +
+                          "FROM Produits P " +
+                          "INNER JOIN Categorie C ON P.code_categ = C.code_categ " +
+                          "ORDER BY P.libelle_prod";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
                 SqlCommand cmd = new SqlCommand(query, connexion);
                 SqlDataReader reader = cmd.ExecuteReader();
+
                 while (reader.Read())
                 {
                     Categorie categorie = new Categorie(
-                        reader.GetInt32(reader.GetOrdinal("CatCode")),
-                        reader.GetString(reader.GetOrdinal("CatLibelle"))
+                        reader.GetInt32(reader.GetOrdinal("code_categ")),
+                        reader.GetString(reader.GetOrdinal("nom_categ"))
                     );
 
                     Produit produit = new Produit(
-                        reader.GetInt32(reader.GetOrdinal("Code")),
-                        reader.GetString(reader.GetOrdinal("Libelle")),
+                        reader.GetInt32(reader.GetOrdinal("code_prod")),
+                        reader.GetString(reader.GetOrdinal("libelle_prod")),
                         categorie,
-                        (float)reader.GetDecimal(reader.GetOrdinal("PrixVenteHT"))
+                        (float)reader.GetDecimal(reader.GetOrdinal("prixHT_prod"))
                     );
                     produits.Add(produit);
                 }
@@ -56,10 +56,11 @@ namespace GesCom.DAL
         public Produit GetProduitByCode(int code)
         {
             Produit produit = null;
-            string query = "SELECT P.Code, P.Libelle, P.PrixVenteHT, C.Code as CatCode, C.Libelle as CatLibelle " +
-                          "FROM PRODUITS P " +
-                          "INNER JOIN CATEGORIES C ON P.CodeCategorie = C.Code " +
-                          "WHERE P.Code = @Code";
+            string query = "SELECT P.code_prod, P.libelle_prod, P.prixHT_prod, " +
+                          "C.code_categ, C.nom_categ " +
+                          "FROM Produits P " +
+                          "INNER JOIN Categorie C ON P.code_categ = C.code_categ " +
+                          "WHERE P.code_prod = @Code";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
@@ -70,15 +71,15 @@ namespace GesCom.DAL
                 if (reader.Read())
                 {
                     Categorie categorie = new Categorie(
-                        reader.GetInt32(reader.GetOrdinal("CatCode")),
-                        reader.GetString(reader.GetOrdinal("CatLibelle"))
+                        reader.GetInt32(reader.GetOrdinal("code_categ")),
+                        reader.GetString(reader.GetOrdinal("nom_categ"))
                     );
 
                     produit = new Produit(
-                        reader.GetInt32(reader.GetOrdinal("Code")),
-                        reader.GetString(reader.GetOrdinal("Libelle")),
+                        reader.GetInt32(reader.GetOrdinal("code_prod")),
+                        reader.GetString(reader.GetOrdinal("libelle_prod")),
                         categorie,
-                        (float)reader.GetDecimal(reader.GetOrdinal("PrixVenteHT"))
+                        (float)reader.GetDecimal(reader.GetOrdinal("prixHT_prod"))
                     );
                 }
                 reader.Close();
@@ -89,7 +90,7 @@ namespace GesCom.DAL
 
         public bool IsProduitInDevis(int codeProduit)
         {
-            string query = "SELECT COUNT(*) FROM LIGNESDEVIS WHERE CodeProduit = @CodeProduit";
+            string query = "SELECT COUNT(*) FROM Contenir WHERE code_prod = @CodeProduit";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
@@ -102,23 +103,24 @@ namespace GesCom.DAL
 
         public void AddProduit(Produit produit)
         {
-            string query = "INSERT INTO PRODUITS (Libelle, CodeCategorie, PrixVenteHT) " +
-                          "VALUES (@Libelle, @CodeCategorie, @PrixVenteHT)";
+            string query = "INSERT INTO Produits (libelle_prod, code_categ, prixHT_prod) " +
+                          "VALUES (@Libelle, @CodeCategorie, @PrixHT)";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
                 SqlCommand cmd = new SqlCommand(query, connexion);
                 cmd.Parameters.AddWithValue("@Libelle", produit.Libelle);
                 cmd.Parameters.AddWithValue("@CodeCategorie", produit.Categorie.Code);
-                cmd.Parameters.AddWithValue("@PrixVenteHT", produit.PrixVenteHT);
+                cmd.Parameters.AddWithValue("@PrixHT", produit.PrixVenteHT);
                 cmd.ExecuteNonQuery();
             }
         }
 
         public void UpdateProduit(Produit produit)
         {
-            string query = "UPDATE PRODUITS SET Libelle = @Libelle, CodeCategorie = @CodeCategorie, " +
-                          "PrixVenteHT = @PrixVenteHT WHERE Code = @Code";
+            string query = "UPDATE Produits SET libelle_prod = @Libelle, " +
+                          "code_categ = @CodeCategorie, prixHT_prod = @PrixHT " +
+                          "WHERE code_prod = @Code";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
@@ -126,14 +128,14 @@ namespace GesCom.DAL
                 cmd.Parameters.AddWithValue("@Code", produit.Code);
                 cmd.Parameters.AddWithValue("@Libelle", produit.Libelle);
                 cmd.Parameters.AddWithValue("@CodeCategorie", produit.Categorie.Code);
-                cmd.Parameters.AddWithValue("@PrixVenteHT", produit.PrixVenteHT);
+                cmd.Parameters.AddWithValue("@PrixHT", produit.PrixVenteHT);
                 cmd.ExecuteNonQuery();
             }
         }
 
         public void DeleteProduit(int code)
         {
-            string query = "DELETE FROM PRODUITS WHERE Code = @Code";
+            string query = "DELETE FROM Produits WHERE code_prod = @Code";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {

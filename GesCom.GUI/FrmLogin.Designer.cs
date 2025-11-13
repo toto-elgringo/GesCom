@@ -1,4 +1,6 @@
-﻿namespace GesCom.GUI
+﻿using System.Windows.Forms;
+
+namespace GesCom.GUI
 {
     partial class FrmLogin
     {
@@ -111,7 +113,7 @@
             this.txtLogin.MaxLength = 50;
             this.txtLogin.Multiline = true;
             this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(380, 30);
+            this.txtLogin.Size = new System.Drawing.Size(380, 40);
             this.txtLogin.TabIndex = 4;
             this.txtLogin.Text = "Entrez votre login";
             this.txtLogin.Enter += new System.EventHandler(this.txtLogin_Enter);
@@ -169,6 +171,7 @@
 
         #endregion
 
+
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Label lblTitre;
         private System.Windows.Forms.Label lblPassword;
@@ -177,6 +180,7 @@
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnConnexion;
+
     }
 }
 

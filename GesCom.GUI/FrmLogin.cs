@@ -21,14 +21,14 @@ namespace GesCom.GUI
 
         private void InitializePlaceholders()
         {
-            // Configuration initiale du placeholder pour le login
             txtLogin.Text = loginPlaceholder;
             txtLogin.ForeColor = Color.FromArgb(100, 100, 100);
+            txtLogin.TextAlign = HorizontalAlignment.Center;
             isLoginPlaceholder = true;
 
-            // Configuration initiale du placeholder pour le mot de passe
             txtPassword.Text = passwordPlaceholder;
             txtPassword.ForeColor = Color.FromArgb(100, 100, 100);
+            txtPassword.TextAlign = HorizontalAlignment.Center;
             txtPassword.UseSystemPasswordChar = false;
             isPasswordPlaceholder = true;
         }
@@ -112,13 +112,9 @@ namespace GesCom.GUI
 
                 if (isAuthenticated)
                 {
-                    MessageBox.Show("Connexion réussie ! Bienvenue dans GESCOM.", "Succès",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    // TODO: Ouvrir le formulaire principal
-                    // FormPrincipal formPrincipal = new FormPrincipal();
-                    // formPrincipal.Show();
-                    // this.Hide();
+                    FormPrincipal formPrincipal = new FormPrincipal();
+                    formPrincipal.Show();
+                    this.Hide();
                 }
                 else
                 {

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GesCom.GUI
 {
-    public partial class MenuPrincipal : Form
+    public partial class UserControlDevis : UserControl
     {
-        public MenuPrincipal()
+        public UserControlDevis()
         {
             InitializeComponent();
         }
