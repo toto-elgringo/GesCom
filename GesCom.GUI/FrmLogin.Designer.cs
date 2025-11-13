@@ -114,6 +114,9 @@
             this.txtLogin.Size = new System.Drawing.Size(380, 30);
             this.txtLogin.TabIndex = 4;
             this.txtLogin.Text = "Entrez votre login";
+            this.txtLogin.Enter += new System.EventHandler(this.txtLogin_Enter);
+            this.txtLogin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLogin_KeyPress);
+            this.txtLogin.Leave += new System.EventHandler(this.txtLogin_Leave);
             // 
             // panel1
             // 
@@ -141,6 +144,7 @@
             this.btnConnexion.TabIndex = 5;
             this.btnConnexion.Text = "→   Se connecter";
             this.btnConnexion.UseVisualStyleBackColor = false;
+            this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
             // 
             // FrmLogin
             // 
@@ -154,6 +158,7 @@
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Connexion GesCom";
+            this.Load += new System.EventHandler(this.FormConnexion_Load);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
             this.panel1.ResumeLayout(false);

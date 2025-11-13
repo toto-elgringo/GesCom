@@ -35,12 +35,22 @@ namespace GesCom.GUI
 
         private void txtLogin_Enter(object sender, EventArgs e)
         {
-
+            if (isLoginPlaceholder)
+            {
+                txtLogin.Text = "";
+                txtLogin.ForeColor = Color.FromArgb(33, 33, 33);
+                isLoginPlaceholder = false;
+            }
         }
 
         private void txtLogin_Leave(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrWhiteSpace(txtLogin.Text))
+            {
+                txtLogin.Text = loginPlaceholder;
+                txtLogin.ForeColor = Color.FromArgb(100, 100, 100);
+                isLoginPlaceholder = true;
+            }
         }
 
         private void txtPassword_Enter(object sender, EventArgs e)
@@ -86,7 +96,6 @@ namespace GesCom.GUI
 
             try
             {
-                // Récupération de la chaîne de connexion depuis App.config
                 ConnectionStringSettings chset = ConfigurationManager.ConnectionStrings["GestionCommerciale"];
 
                 if (chset == null)
@@ -96,16 +105,13 @@ namespace GesCom.GUI
                     return;
                 }
 
-                // Configuration de la chaîne de connexion
                 UserBLL.SetChaineConnexion(chset);
 
-                // Vérification des identifiants
                 UserBLL userBLL = UserBLL.GetUserBLL();
                 bool isAuthenticated = userBLL.CheckConnexion(txtLogin.Text.Trim(), txtPassword.Text);
 
                 if (isAuthenticated)
                 {
-                    // Connexion réussie
                     MessageBox.Show("Connexion réussie ! Bienvenue dans GESCOM.", "Succès",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -116,11 +122,9 @@ namespace GesCom.GUI
                 }
                 else
                 {
-                    // Identifiants incorrects
                     MessageBox.Show("Identifiant ou mot de passe incorrect.", "Échec de connexion",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                    // Réinitialiser le champ mot de passe
                     txtPassword.UseSystemPasswordChar = false;
                     txtPassword.Text = passwordPlaceholder;
                     txtPassword.ForeColor = Color.FromArgb(100, 100, 100);
@@ -137,7 +141,6 @@ namespace GesCom.GUI
 
         private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Permettre la connexion avec la touche Entrée
             if (e.KeyChar == (char)Keys.Enter)
             {
                 btnConnexion_Click(sender, e);
