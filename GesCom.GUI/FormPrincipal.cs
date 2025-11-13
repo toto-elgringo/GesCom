@@ -20,12 +20,11 @@ namespace GesCom.GUI
         {
             InitializeComponent();
             InitializeUserControls();
-            AfficherProduits(); // Afficher par défaut l'onglet Produits
+            AfficherProduits(); 
         }
 
         private void InitializeUserControls()
         {
-            // Initialiser le UserControl Produits
             ucProduits = new UserControlProduits();
             {
                 Dock = DockStyle.Fill;
@@ -39,57 +38,34 @@ namespace GesCom.GUI
 
         private void btnClients_Click(object sender, EventArgs e)
         {
-            // TODO: Implémenter plus tard
+            // A FAIRE POUR LE 20/11
             MessageBox.Show("Module Clients - À venir", "Information",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnDevis_Click(object sender, EventArgs e)
         {
-            // TODO: Implémenter plus tard
+            // A FAIRE POUR LE 27/11
             MessageBox.Show("Module Devis - À venir", "Information",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnSynthese_Click(object sender, EventArgs e)
         {
-            // TODO: Implémenter plus tard
+            // A FAIRE POUR LE 3/12
             MessageBox.Show("Module Synthèse clients - À venir", "Information",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void AfficherProduits()
-        {
-            // Réinitialiser les couleurs des boutons
-            ResetButtonColors();
-
-            // Mettre en évidence le bouton actif
-            btnProduits.BackColor = Color.White;
-            btnProduits.ForeColor = Color.FromArgb(24, 119, 242);
-
-            // Afficher le UserControl
+        { 
             panelContent.Controls.Clear();
             panelContent.Controls.Add(ucProduits);
         }
 
-        private void ResetButtonColors()
-        {
-            Color defaultBack = Color.FromArgb(240, 240, 240);
-            Color defaultFore = Color.FromArgb(60, 60, 60);
-
-            btnProduits.BackColor = defaultBack;
-            btnProduits.ForeColor = defaultFore;
-            btnClients.BackColor = defaultBack;
-            btnClients.ForeColor = defaultFore;
-            btnDevis.BackColor = defaultBack;
-            btnDevis.ForeColor = defaultFore;
-            btnSynthese.BackColor = defaultBack;
-            btnSynthese.ForeColor = defaultFore;
-        }
-
         private void FormPrincipal_Load(object sender, EventArgs e)
         {
-            // Configuration initiale
+            
         }
 
         private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)

@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.panelRight = new System.Windows.Forms.Panel();
             this.panelDetail = new System.Windows.Forms.Panel();
+            this.btnAnnuler = new System.Windows.Forms.Button();
+            this.btnAjouter = new System.Windows.Forms.Button();
             this.cmbCategorie = new System.Windows.Forms.ComboBox();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.btnSupprimer = new System.Windows.Forms.Button();
@@ -46,16 +48,17 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.lblZeroProduit = new System.Windows.Forms.Label();
+            this.dgvProduits = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblGestionProduits = new System.Windows.Forms.Label();
-            this.dgvProduits = new System.Windows.Forms.DataGridView();
             this.panelRight.SuspendLayout();
             this.panelDetail.SuspendLayout();
             this.panelButtons.SuspendLayout();
             this.panelRightHeader.SuspendLayout();
             this.panelLeft.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduits)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelRight
@@ -70,6 +73,8 @@
             // 
             // panelDetail
             // 
+            this.panelDetail.Controls.Add(this.btnAnnuler);
+            this.panelDetail.Controls.Add(this.btnAjouter);
             this.panelDetail.Controls.Add(this.cmbCategorie);
             this.panelDetail.Controls.Add(this.panelButtons);
             this.panelDetail.Controls.Add(this.txtPrix);
@@ -82,6 +87,37 @@
             this.panelDetail.Name = "panelDetail";
             this.panelDetail.Size = new System.Drawing.Size(380, 490);
             this.panelDetail.TabIndex = 1;
+            // 
+            // btnAnnuler
+            // 
+            this.btnAnnuler.BackColor = System.Drawing.Color.Red;
+            this.btnAnnuler.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAnnuler.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAnnuler.ForeColor = System.Drawing.Color.White;
+            this.btnAnnuler.Location = new System.Drawing.Point(195, 27);
+            this.btnAnnuler.Name = "btnAnnuler";
+            this.btnAnnuler.Size = new System.Drawing.Size(150, 45);
+            this.btnAnnuler.TabIndex = 10;
+            this.btnAnnuler.Text = "❌ Annuler";
+            this.btnAnnuler.UseVisualStyleBackColor = false;
+            this.btnAnnuler.Visible = false;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
+            // 
+            // btnAjouter
+            // 
+            this.btnAjouter.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnAjouter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAjouter.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAjouter.ForeColor = System.Drawing.Color.White;
+            this.btnAjouter.Location = new System.Drawing.Point(25, 27);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(150, 45);
+            this.btnAjouter.TabIndex = 9;
+            this.btnAjouter.Text = "✅ Ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = false;
+            this.btnAjouter.Visible = false;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // cmbCategorie
             // 
@@ -143,7 +179,6 @@
             this.txtPrix.Size = new System.Drawing.Size(320, 41);
             this.txtPrix.TabIndex = 6;
             this.txtPrix.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPrix_KeyDown);
-            this.txtPrix.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrix_KeyPress);
             // 
             // txtLibelle
             // 
@@ -156,7 +191,6 @@
             this.txtLibelle.Size = new System.Drawing.Size(320, 41);
             this.txtLibelle.TabIndex = 5;
             this.txtLibelle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLibelle_KeyPress);
-            this.txtLibelle.Leave += new System.EventHandler(this.txtLibelle_Leave);
             // 
             // lblPrix
             // 
@@ -238,6 +272,7 @@
             // 
             // panelLeft
             // 
+            this.panelLeft.Controls.Add(this.lblZeroProduit);
             this.panelLeft.Controls.Add(this.dgvProduits);
             this.panelLeft.Controls.Add(this.panel1);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -245,6 +280,33 @@
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Size = new System.Drawing.Size(760, 550);
             this.panelLeft.TabIndex = 2;
+            // 
+            // lblZeroProduit
+            // 
+            this.lblZeroProduit.AutoSize = true;
+            this.lblZeroProduit.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblZeroProduit.Location = new System.Drawing.Point(50, 147);
+            this.lblZeroProduit.Name = "lblZeroProduit";
+            this.lblZeroProduit.Size = new System.Drawing.Size(310, 25);
+            this.lblZeroProduit.TabIndex = 2;
+            this.lblZeroProduit.Text = "Aucun produit n\'a été renseigné !";
+            // 
+            // dgvProduits
+            // 
+            this.dgvProduits.AllowUserToAddRows = false;
+            this.dgvProduits.AllowUserToDeleteRows = false;
+            this.dgvProduits.AllowUserToOrderColumns = true;
+            this.dgvProduits.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProduits.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvProduits.Location = new System.Drawing.Point(0, 60);
+            this.dgvProduits.MultiSelect = false;
+            this.dgvProduits.Name = "dgvProduits";
+            this.dgvProduits.ReadOnly = true;
+            this.dgvProduits.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProduits.Size = new System.Drawing.Size(760, 490);
+            this.dgvProduits.TabIndex = 1;
+            this.dgvProduits.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvProduits.SelectionChanged += new System.EventHandler(this.dgvProduits_SelectionChanged);
             // 
             // panel1
             // 
@@ -268,23 +330,6 @@
             this.lblGestionProduits.TabIndex = 0;
             this.lblGestionProduits.Text = "Gestion des produits";
             // 
-            // dgvProduits
-            // 
-            this.dgvProduits.AllowUserToAddRows = false;
-            this.dgvProduits.AllowUserToDeleteRows = false;
-            this.dgvProduits.AllowUserToOrderColumns = true;
-            this.dgvProduits.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProduits.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvProduits.Location = new System.Drawing.Point(0, 60);
-            this.dgvProduits.MultiSelect = false;
-            this.dgvProduits.Name = "dgvProduits";
-            this.dgvProduits.ReadOnly = true;
-            this.dgvProduits.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProduits.Size = new System.Drawing.Size(760, 490);
-            this.dgvProduits.TabIndex = 1;
-            this.dgvProduits.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dgvProduits.SelectionChanged += new System.EventHandler(this.dgvProduits_SelectionChanged);
-            // 
             // UserControlProduits
             // 
             this.Controls.Add(this.panelLeft);
@@ -299,9 +344,10 @@
             this.panelRightHeader.ResumeLayout(false);
             this.panelRightHeader.PerformLayout();
             this.panelLeft.ResumeLayout(false);
+            this.panelLeft.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduits)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProduits)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -328,5 +374,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvProduits;
         private System.Windows.Forms.Label lblGestionProduits;
+        private System.Windows.Forms.Label lblZeroProduit;
+        private System.Windows.Forms.Button btnAnnuler;
+        private System.Windows.Forms.Button btnAjouter;
     }
 }

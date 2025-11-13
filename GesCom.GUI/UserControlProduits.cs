@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -58,11 +59,9 @@ namespace GesCom.GUI
                 dgvProduits.DataSource = null;
                 dgvProduits.DataSource = listeProduits;
 
-                // Configuration des colonnes
                 if (dgvProduits.Columns.Count > 0)
                 {
-                    dgvProduits.Columns["Code"].HeaderText = "Code";
-                    dgvProduits.Columns["Code"].Width = 80;
+                    lblZeroProduit.Visible = false;
 
                     dgvProduits.Columns["Libelle"].HeaderText = "Libellé";
                     dgvProduits.Columns["Libelle"].Width = 250;
@@ -74,7 +73,11 @@ namespace GesCom.GUI
                     dgvProduits.Columns["PrixVenteHT"].Width = 120;
                     dgvProduits.Columns["PrixVenteHT"].DefaultCellStyle.Format = "N2";
                 }
-
+                else
+                {
+                    dgvProduits.Visible = false;
+                    lblZeroProduit.Visible = true;
+                }
             }
             catch (Exception ex)
             {
@@ -98,11 +101,13 @@ namespace GesCom.GUI
 
             btnModifier.Enabled = false;
             btnSupprimer.Enabled = false;
+            btnNouveau.Enabled = true;
+            btnAnnuler.Visible = false;
         }
 
         private void dgvProduits_SelectionChanged(object sender, EventArgs e)
         {
-            if (dgvProduits.SelectedRows.Count > 0 && !modeCreation)
+            if (dgvProduits.SelectedRows.Count > 0)
             {
                 produitSelectionne = (Produit)dgvProduits.SelectedRows[0].DataBoundItem;
                 AfficherDetailProduit();
@@ -111,8 +116,6 @@ namespace GesCom.GUI
 
         private void AfficherDetailProduit()
         {
-            if (produitSelectionne != null)
-            {
                 txtLibelle.Text = produitSelectionne.Libelle;
                 txtPrix.Text = produitSelectionne.PrixVenteHT.ToString("F2");
                 cmbCategorie.SelectedValue = produitSelectionne.Categorie.Code;
@@ -123,13 +126,12 @@ namespace GesCom.GUI
 
                 btnModifier.Enabled = true;
                 btnSupprimer.Enabled = true;
-            }
         }
 
         private void btnNouveau_Click(object sender, EventArgs e)
         {
             modeCreation = true;
-            produitSelectionne = null;
+            produitSelectionne = null; 
 
             dgvProduits.ClearSelection();
 
@@ -145,7 +147,31 @@ namespace GesCom.GUI
             btnSupprimer.Enabled = false;
             btnNouveau.Enabled = false;
 
-            txtLibelle.Focus();
+            btnAjouter.Visible = true;
+            btnAnnuler.Visible = true;
+            btnNouveau.Visible = false;
+        }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            EnregistrerNouveauProduit();
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            modeCreation = false;
+            btnAjouter.Visible = false;
+            btnAnnuler.Visible = false;
+            btnNouveau.Visible = true;
+            btnModifier.Text = "✏️ Modifier";
+
+            InitialiserEtatDetail();
+
+            if (dgvProduits.SelectedRows.Count > 0)
+            {
+                produitSelectionne = (Produit)dgvProduits.SelectedRows[0].DataBoundItem;
+                AfficherDetailProduit();
+            }
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
@@ -157,20 +183,23 @@ namespace GesCom.GUI
                 return;
             }
 
-            if (!txtLibelle.Enabled) // Mode consultation
+            btnNouveau.Visible = false;
+            btnAnnuler.Visible = true;
+
+            if (!txtLibelle.Enabled) 
             {
-                // Activer le mode édition
                 txtLibelle.Enabled = true;
                 txtPrix.Enabled = true;
                 cmbCategorie.Enabled = true;
-                btnModifier.Text = "💾 Enregistrer";
+                btnModifier.Text = "💾 Enregistrer les modifications";
                 btnSupprimer.Enabled = false;
                 btnNouveau.Enabled = false;
                 txtLibelle.Focus();
             }
-            else // Mode édition - Enregistrer
+            else 
             {
                 EnregistrerModificationProduit();
+                btnModifier.Text = "✏️ Modifier";
             }
         }
 
@@ -194,7 +223,6 @@ namespace GesCom.GUI
 
                 ChargerProduits();
 
-                // Réafficher le produit modifié
                 foreach (DataGridViewRow row in dgvProduits.Rows)
                 {
                     if (((Produit)row.DataBoundItem).Code == produitSelectionne.Code)
@@ -253,38 +281,6 @@ namespace GesCom.GUI
             }
         }
 
-        private void txtLibelle_Leave(object sender, EventArgs e)
-        {
-            if (string.IsNullOrWhiteSpace(txtLibelle.Text) && (txtLibelle.Enabled))
-            {
-                MessageBox.Show("Le libellé ne peut pas être vide.", "Erreur de saisie",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtLibelle.Focus();
-            }
-        }
-
-        private void txtPrix_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            // Autoriser uniquement les chiffres, la virgule, le point et les touches de contrôle
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-                e.KeyChar != ',' && e.KeyChar != '.')
-            {
-                e.Handled = true;
-            }
-
-            // Remplacer le point par une virgule
-            if (e.KeyChar == '.')
-            {
-                e.KeyChar = ',';
-            }
-
-            // Autoriser une seule virgule
-            if (e.KeyChar == ',' && txtPrix.Text.Contains(","))
-            {
-                e.Handled = true;
-            }
-        }
-
         private void txtLibelle_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter && modeCreation)
@@ -323,7 +319,7 @@ namespace GesCom.GUI
                 Categorie categorieSelectionnee = (Categorie)cmbCategorie.SelectedItem;
 
                 Produit nouveauProduit = new Produit(
-                    0, // Le code sera généré par la base de données
+                    0,
                     txtLibelle.Text.Trim(),
                     categorieSelectionnee,
                     float.Parse(txtPrix.Text)
@@ -347,27 +343,13 @@ namespace GesCom.GUI
 
         private bool ValiderChamps()
         {
+
             if (string.IsNullOrWhiteSpace(txtLibelle.Text))
             {
                 MessageBox.Show("Veuillez saisir un libellé.", "Erreur de saisie",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtLibelle.Focus();
-                return false;
-            }
 
-            if (txtLibelle.Text.Trim().Length > 100)
-            {
-                MessageBox.Show("Le libellé ne peut pas dépasser 100 caractères.", "Erreur de saisie",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtLibelle.Focus();
-                return false;
-            }
-
-            if (cmbCategorie.SelectedIndex == -1)
-            {
-                MessageBox.Show("Veuillez sélectionner une catégorie.", "Erreur de saisie",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                cmbCategorie.Focus();
                 return false;
             }
 
@@ -376,8 +358,30 @@ namespace GesCom.GUI
                 MessageBox.Show("Veuillez saisir un prix de vente.", "Erreur de saisie",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtPrix.Focus();
+
                 return false;
             }
+
+            bool categorieTrue = false;
+
+            foreach (Produit p in ProduitBLL.GetUnProduitBLL().GetListeProduits())
+            {
+                if (p.Categorie.Nom == cmbCategorie.Text)
+                {
+                    categorieTrue = true;
+                }
+            }
+
+            if (!categorieTrue)
+            {
+                MessageBox.Show("Veuillez choisir une catégorie existante",
+                                "Erreur de saisie",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Warning);
+                cmbCategorie.Focus();
+                return false;
+            }
+
 
             float prix;
             if (!float.TryParse(txtPrix.Text, out prix))
@@ -385,6 +389,7 @@ namespace GesCom.GUI
                 MessageBox.Show("Le prix de vente doit être un nombre valide.", "Erreur de saisie",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtPrix.Focus();
+
                 return false;
             }
 
@@ -393,6 +398,7 @@ namespace GesCom.GUI
                 MessageBox.Show("Le prix de vente doit être supérieur à 0.", "Erreur de saisie",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtPrix.Focus();
+
                 return false;
             }
 

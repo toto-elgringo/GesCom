@@ -24,5 +24,10 @@ namespace GesCom.BO
             get { return nom; }
             set { nom = value; }
         }
+
+        public override string ToString()
+        {
+            return nom;
+        }
     }
 }
