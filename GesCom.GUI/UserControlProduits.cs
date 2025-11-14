@@ -191,9 +191,10 @@ namespace GesCom.GUI
                 txtLibelle.Enabled = true;
                 txtPrix.Enabled = true;
                 cmbCategorie.Enabled = true;
-                btnModifier.Text = "💾 Enregistrer les modifications";
+                btnModifier.Text = "💾 Enregistrer";
                 btnSupprimer.Enabled = false;
                 btnNouveau.Enabled = false;
+                btnAjouter.Visible = false;
                 txtLibelle.Focus();
             }
             else 
@@ -272,6 +273,7 @@ namespace GesCom.GUI
 
                     ChargerProduits();
                     InitialiserEtatDetail();
+                    btnNouveau.Visible = true;
                 }
                 catch (Exception ex)
                 {
@@ -346,20 +348,22 @@ namespace GesCom.GUI
 
             if (string.IsNullOrWhiteSpace(txtLibelle.Text))
             {
-                MessageBox.Show("Veuillez saisir un libellé.", "Erreur de saisie",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtLibelle.Focus();
-
+                errorProvider1.SetError(txtLibelle, "Le champ du libellé du produit est requis");
                 return false;
+            }
+            else
+            {
+                errorProvider1.SetError(txtLibelle, "");
             }
 
             if (string.IsNullOrWhiteSpace(txtPrix.Text))
             {
-                MessageBox.Show("Veuillez saisir un prix de vente.", "Erreur de saisie",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtPrix.Focus();
-
+                errorProvider1.SetError(txtPrix, "Le champ de prix du produit est requis");
                 return false;
+            }
+            else
+            {
+                errorProvider1.SetError(txtPrix, "");
             }
 
             bool categorieTrue = false;
@@ -374,33 +378,36 @@ namespace GesCom.GUI
 
             if (!categorieTrue)
             {
-                MessageBox.Show("Veuillez choisir une catégorie existante",
-                                "Erreur de saisie",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
-                cmbCategorie.Focus();
+                errorProvider1.SetError(cmbCategorie, "Veuillez choisir une catégorie existante");
                 return false;
+            }
+            else
+            {
+                errorProvider1.SetError(cmbCategorie, "");
             }
 
 
             float prix;
             if (!float.TryParse(txtPrix.Text, out prix))
             {
-                MessageBox.Show("Le prix de vente doit être un nombre valide.", "Erreur de saisie",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtPrix.Focus();
-
+                errorProvider1.SetError(txtPrix, "Le prix est incorrect");
                 return false;
+            }
+            else
+            {
+                errorProvider1.SetError(txtPrix, "");
             }
 
             if (prix <= 0)
             {
-                MessageBox.Show("Le prix de vente doit être supérieur à 0.", "Erreur de saisie",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtPrix.Focus();
-
+                errorProvider1.SetError(txtPrix, "Le prix du produit doit être positif");
                 return false;
             }
+            else
+            {
+                errorProvider1.SetError(txtPrix, "");
+            }
+
 
             return true;
         }

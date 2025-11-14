@@ -74,62 +74,66 @@ namespace GesCom.GUI
 
         private void btnConnexion_Click(object sender, EventArgs e)
         {
-            // Validation des champs
+            
             if (isLoginPlaceholder || string.IsNullOrWhiteSpace(txtLogin.Text))
             {
-                MessageBox.Show("Veuillez saisir votre identifiant.", "Erreur de saisie",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtLogin.Focus();
+                errorProvider1.SetError(txtLogin, "Le champ de login est requis.");
                 return;
+            }
+            else
+            {
+                errorProvider1.SetError(txtLogin, "");
             }
 
             if (isPasswordPlaceholder || string.IsNullOrWhiteSpace(txtPassword.Text))
             {
-                MessageBox.Show("Veuillez saisir votre mot de passe.", "Erreur de saisie",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtPassword.Focus();
+                errorProvider1.SetError(txtPassword, "Le champ du mot de passe est requis.");
                 return;
             }
-
-            try
+            else
             {
-                ConnectionStringSettings chset = ConfigurationManager.ConnectionStrings["GestionCommerciale"];
-
-                if (chset == null)
-                {
-                    MessageBox.Show("Erreur de configuration de la base de données.", "Erreur",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                UserBLL.SetChaineConnexion(chset);
-
-                UserBLL userBLL = UserBLL.GetUserBLL();
-                bool isAuthenticated = userBLL.CheckConnexion(txtLogin.Text.Trim(), txtPassword.Text);
-
-                if (isAuthenticated)
-                {
-                    FormPrincipal formPrincipal = new FormPrincipal();
-                    formPrincipal.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Identifiant ou mot de passe incorrect.", "Échec de connexion",
-                        MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                    txtPassword.UseSystemPasswordChar = false;
-                    txtPassword.Text = passwordPlaceholder;
-                    txtPassword.ForeColor = Color.FromArgb(100, 100, 100);
-                    isPasswordPlaceholder = true;
-                    txtLogin.Focus();
-                }
+                errorProvider1.SetError(txtPassword, "");
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Erreur lors de la connexion : {ex.Message}", "Erreur",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
+                try
+                {
+                    ConnectionStringSettings chset = ConfigurationManager.ConnectionStrings["GestionCommerciale"];
+
+                    if (chset == null)
+                    {
+                        MessageBox.Show("Erreur de configuration de la base de données.", "Erreur",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    UserBLL.SetChaineConnexion(chset);
+
+                    UserBLL userBLL = UserBLL.GetUserBLL();
+                    bool isAuthenticated = userBLL.CheckConnexion(txtLogin.Text.Trim(), txtPassword.Text);
+
+                    if (isAuthenticated)
+                    {
+                        FormPrincipal formPrincipal = new FormPrincipal();
+                        formPrincipal.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Identifiant ou mot de passe incorrect.", "Échec de connexion",
+                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        txtPassword.UseSystemPasswordChar = false;
+                        txtPassword.Text = passwordPlaceholder;
+                        txtPassword.ForeColor = Color.FromArgb(100, 100, 100);
+                        isPasswordPlaceholder = true;
+                        txtLogin.Focus();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Erreur lors de la connexion : {ex.Message}", "Erreur",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
         }
 
         private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
