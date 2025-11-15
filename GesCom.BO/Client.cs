@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GesCom.BO
 {
-    internal class Client
+    public class Client
     {
     }
 }
