@@ -18,6 +18,8 @@ namespace GesCom.DAL
             return unProduitDAL;
         }
 
+        // récupération de tous les produits de la table produit dans la bdd
+
         public List<Produit> GetListProduits()
         {
             List<Produit> produits = new List<Produit>();
@@ -52,6 +54,8 @@ namespace GesCom.DAL
 
             return produits;
         }
+
+        // récupération d'un produit grâce a son code dans la bdd
 
         public Produit GetProduitByCode(int code)
         {
@@ -88,6 +92,8 @@ namespace GesCom.DAL
             return produit;
         }
 
+        // vérification de l'existance du produit dans un devis existant pour éviter qu'il soit supprimé ( A FAIRE SPRINT 3 )
+
         public bool IsProduitInDevis(int codeProduit)
         {
             string query = "SELECT COUNT(*) FROM Contenir WHERE code_prod = @CodeProduit";
@@ -100,6 +106,8 @@ namespace GesCom.DAL
                 return count > 0;
             }
         }
+
+        // Ajout du produit passé en paramètre dans la bdd
 
         public void AddProduit(Produit produit)
         {
@@ -115,6 +123,8 @@ namespace GesCom.DAL
                 cmd.ExecuteNonQuery();
             }
         }
+
+        // Modification du produit passé en paramètre dans la bdd
 
         public void UpdateProduit(Produit produit)
         {
@@ -132,6 +142,8 @@ namespace GesCom.DAL
                 cmd.ExecuteNonQuery();
             }
         }
+
+
 
         public void DeleteProduit(int code)
         {
