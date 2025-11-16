@@ -40,7 +40,6 @@ namespace GesCom.BO
             this.mail = mail;
         }
 
-        // Getters et Setters
         public int Code
         {
             get { return code; }
@@ -118,27 +117,5 @@ namespace GesCom.BO
             get { return mail; }
             set { mail = value; }
         }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        }
-
-
     }
 }
