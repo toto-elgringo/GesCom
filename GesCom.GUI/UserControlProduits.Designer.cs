@@ -52,6 +52,7 @@
             this.dgvProduits = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblGestionProduits = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelRight.SuspendLayout();
             this.panelDetail.SuspendLayout();
             this.panelButtons.SuspendLayout();
@@ -59,6 +60,7 @@
             this.panelLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduits)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelRight
@@ -330,6 +332,10 @@
             this.lblGestionProduits.TabIndex = 0;
             this.lblGestionProduits.Text = "Gestion des produits";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // UserControlProduits
             // 
             this.Controls.Add(this.panelLeft);
@@ -348,6 +354,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduits)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -377,5 +384,6 @@
         private System.Windows.Forms.Label lblZeroProduit;
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.Button btnAjouter;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

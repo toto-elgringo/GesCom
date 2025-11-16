@@ -36,6 +36,8 @@ namespace GesCom.GUI
             AfficherProduits();
         }
 
+        // fonction pour accéder aux différentes gestions depuis le formulaire principal 
+
         private void btnClients_Click(object sender, EventArgs e)
         {
             // A FAIRE POUR LE 20/11
@@ -57,6 +59,8 @@ namespace GesCom.GUI
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        // Affichage du userControlProduits 
+
         private void AfficherProduits()
         { 
             panelContent.Controls.Clear();
@@ -67,6 +71,8 @@ namespace GesCom.GUI
         {
             
         }
+
+        //fonction pour confirmer que l'utilisateur est sur de vouloir quitter le projet 
 
         private void FormPrincipal_FormClosing(object sender, FormClosingEventArgs e)
         {
