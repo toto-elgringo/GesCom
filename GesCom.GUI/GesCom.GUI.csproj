@@ -110,6 +110,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControlClients.resx">
+      <DependentUpon>UserControlClients.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlProduits.resx">
       <DependentUpon>UserControlProduits.cs</DependentUpon>
     </EmbeddedResource>
