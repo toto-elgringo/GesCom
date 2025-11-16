@@ -28,10 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            this.userControlDevis1 = new GesCom.GUI.UserControlDevis();
+            this.SuspendLayout();
+            // 
+            // userControlDevis1
+            // 
+            this.userControlDevis1.Location = new System.Drawing.Point(98, 79);
+            this.userControlDevis1.Name = "userControlDevis1";
+            this.userControlDevis1.Size = new System.Drawing.Size(203, 150);
+            this.userControlDevis1.TabIndex = 0;
+            // 
+            // UserControlClients
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.userControlDevis1);
+            this.Name = "UserControlClients";
+            this.Size = new System.Drawing.Size(760, 490);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private UserControlDevis userControlDevis1;
     }
 }

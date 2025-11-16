@@ -4,32 +4,12 @@
   "Documents": [
     {
 <<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\xampp\\htdocs\\php\\4 - github\\gescom\\gescom.bo\\devis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\devis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\gescom.gui\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\gescom.gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\gescom.gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\gescom.gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\xampp\\htdocs\\php\\4 - github\\gescom\\gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
 =======
       "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.dal\\produitdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\produitdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -75,12 +55,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
 <<<<<<< HEAD
-=======
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmLogin.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\FrmLogin.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FrmLogin.cs",
+              "RelativeToolTip": "GesCom.GUI\\FrmLogin.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAwwHAAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-14T11:48:38.499Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+=======
+>>>>>>> ed85194adbabd5d0d8c77696eceac280f471c632
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
+              "DocumentIndex": 1,
+              "Title": "FormPrincipal.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\FormPrincipal.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FormPrincipal.cs",
+              "RelativeToolTip": "GesCom.GUI\\FormPrincipal.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAswCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T13:47:07.115Z",
+=======
               "DocumentIndex": 8,
               "Title": "FrmLogin.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FrmLogin.cs",
@@ -120,108 +138,14 @@
               "EditorCaption": ""
             },
             {
->>>>>>> ed85194adbabd5d0d8c77696eceac280f471c632
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
-<<<<<<< HEAD
-              "Title": "Devis.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.BO\\Devis.cs",
-              "RelativeDocumentMoniker": "GesCom.BO\\Devis.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.BO\\Devis.cs",
-              "RelativeToolTip": "GesCom.BO\\Devis.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T12:39:28.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FormPrincipal.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FormPrincipal.cs",
-              "RelativeDocumentMoniker": "GesCom.GUI\\FormPrincipal.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FormPrincipal.cs",
-              "RelativeToolTip": "GesCom.GUI\\FormPrincipal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T12:39:05.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormPrincipal.cs [Design]",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FormPrincipal.cs",
-              "RelativeDocumentMoniker": "GesCom.GUI\\FormPrincipal.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FormPrincipal.cs [Design]",
-              "RelativeToolTip": "GesCom.GUI\\FormPrincipal.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T12:39:01.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmLogin.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FrmLogin.cs",
-              "RelativeDocumentMoniker": "GesCom.GUI\\FrmLogin.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FrmLogin.cs",
-              "RelativeToolTip": "GesCom.GUI\\FrmLogin.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAcwI8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:48:38.499Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmLogin.Designer.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FrmLogin.Designer.cs",
-              "RelativeDocumentMoniker": "GesCom.GUI\\FrmLogin.Designer.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FrmLogin.Designer.cs",
-              "RelativeToolTip": "GesCom.GUI\\FrmLogin.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:48:25.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\Program.cs",
-              "RelativeDocumentMoniker": "GesCom.GUI\\Program.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\Program.cs",
-              "RelativeToolTip": "GesCom.GUI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:48:09.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmLogin.cs [Design]",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FrmLogin.cs",
-              "RelativeDocumentMoniker": "GesCom.GUI\\FrmLogin.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.GUI\\FrmLogin.cs [Design]",
-              "RelativeToolTip": "GesCom.GUI\\FrmLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T11:47:47.064Z"
-=======
               "Title": "ProduitDAL.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\ProduitDAL.cs",
               "RelativeDocumentMoniker": "GesCom.DAL\\ProduitDAL.cs",
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\ProduitDAL.cs",
               "RelativeToolTip": "GesCom.DAL\\ProduitDAL.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAIAwwJoAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAwwJoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T13:38:52.049Z",
               "EditorCaption": ""
@@ -234,7 +158,7 @@
               "RelativeDocumentMoniker": "GesCom.GUI\\UserControlProduits.cs",
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlProduits.cs",
               "RelativeToolTip": "GesCom.GUI\\UserControlProduits.cs",
-              "ViewState": "AgIAAEkBAAAAAAAAAAAMwGkBAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAMUBAAAAAAAAAAAnwOkBAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-14T13:32:24.083Z",
               "EditorCaption": ""
@@ -287,8 +211,8 @@
               "ViewState": "AgIAADEAAAAAAAAAAAAcwEoAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-13T08:04:05.272Z",
-              "EditorCaption": ""
 >>>>>>> ed85194adbabd5d0d8c77696eceac280f471c632
+              "EditorCaption": ""
             }
           ]
         }
