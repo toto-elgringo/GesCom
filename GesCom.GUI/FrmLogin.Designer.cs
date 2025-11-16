@@ -116,6 +116,7 @@ namespace GesCom.GUI
             this.txtLogin.Size = new System.Drawing.Size(380, 40);
             this.txtLogin.TabIndex = 4;
             this.txtLogin.Text = "Entrez votre login";
+            this.txtLogin.TextChanged += new System.EventHandler(this.txtLogin_TextChanged);
             this.txtLogin.Enter += new System.EventHandler(this.txtLogin_Enter);
             this.txtLogin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLogin_KeyPress);
             this.txtLogin.Leave += new System.EventHandler(this.txtLogin_Leave);

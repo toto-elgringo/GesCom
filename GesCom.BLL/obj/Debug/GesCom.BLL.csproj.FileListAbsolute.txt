@@ -19,3 +19,24 @@ C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\bin\Debug\Syste
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.Up2Date
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.dll
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.pdb
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\GesCom.BLL.dll
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\GesCom.BLL.pdb
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\BCrypt.Net-Next.dll
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\GesCom.BO.dll
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\GesCom.DAL.dll
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\System.Buffers.dll
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\System.Memory.dll
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\System.Numerics.Vectors.dll
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\GesCom.BO.pdb
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\GesCom.DAL.pdb
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\BCrypt.Net-Next.xml
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\System.Buffers.xml
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\System.Memory.xml
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\System.Numerics.Vectors.xml
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.AssemblyReference.cache
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.CoreCompileInputs.cache
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.Up2Date
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.dll
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.pdb

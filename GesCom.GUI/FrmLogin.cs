@@ -23,12 +23,9 @@ namespace GesCom.GUI
         {
             txtLogin.Text = loginPlaceholder;
             txtLogin.ForeColor = Color.FromArgb(100, 100, 100);
-            txtLogin.TextAlign = HorizontalAlignment.Center;
             isLoginPlaceholder = true;
 
             txtPassword.Text = passwordPlaceholder;
-            txtPassword.ForeColor = Color.FromArgb(100, 100, 100);
-            txtPassword.TextAlign = HorizontalAlignment.Center;
             txtPassword.UseSystemPasswordChar = false;
             isPasswordPlaceholder = true;
         }
@@ -155,6 +152,11 @@ namespace GesCom.GUI
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtLogin_TextChanged(object sender, EventArgs e)
         {
 
         }

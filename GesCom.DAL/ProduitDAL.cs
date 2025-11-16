@@ -25,7 +25,7 @@ namespace GesCom.DAL
                           "C.code_categ, C.nom_categ " +
                           "FROM Produits P " +
                           "INNER JOIN Categorie C ON P.code_categ = C.code_categ " +
-                          "ORDER BY P.libelle_prod";
+                          "ORDER BY C.code_categ";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
