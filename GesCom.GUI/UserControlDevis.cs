@@ -16,5 +16,10 @@ namespace GesCom.GUI
         {
             InitializeComponent();
         }
+
+        private void lblGestionProduits_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
