@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace GesCom.BO
 {
-    namespace GesCom.BO
-    {
-        public class Devis
+    public class Devis
         {
             private int code;
             private DateTime date;
