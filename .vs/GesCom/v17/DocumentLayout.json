@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|c:\\xampp\\htdocs\\php\\4 - github\\gescom\\gescom.dal\\produitdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\produitdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\gescom.bll\\clientbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|solutionrelative:gescom.bll\\clientbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\gescom.bll\\produitbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|solutionrelative:gescom.bll\\produitbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\gescom.dal\\clientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|c:\\xampp\\htdocs\\php\\4 - github\\gescom\\gescom.dal\\clientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\clientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|c:\\xampp\\htdocs\\php\\4 - github\\gescom\\gescom.bll\\clientbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|solutionrelative:gescom.bll\\clientbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\xampp\\htdocs\\php\\4 - github\\gescom\\gescom.bo\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,7 +21,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 232,
+          "DockedWidth": 215,
           "SelectedChildIndex": 4,
           "Children": [
             {
@@ -56,85 +44,36 @@
               "RelativeDocumentMoniker": "GesCom.BLL\\ClientBLL.cs",
               "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.BLL\\ClientBLL.cs",
               "RelativeToolTip": "GesCom.BLL\\ClientBLL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAA1wAEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T19:20:28.736Z",
+              "WhenOpened": "2025-11-18T16:07:02.339Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProduitDAL.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.DAL\\ProduitDAL.cs",
-              "RelativeDocumentMoniker": "GesCom.DAL\\ProduitDAL.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.DAL\\ProduitDAL.cs",
-              "RelativeToolTip": "GesCom.DAL\\ProduitDAL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T08:43:45.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProduitBLL.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.BLL\\ProduitBLL.cs",
-              "RelativeDocumentMoniker": "GesCom.BLL\\ProduitBLL.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.BLL\\ProduitBLL.cs",
-              "RelativeToolTip": "GesCom.BLL\\ProduitBLL.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T19:20:30.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.BO\\Client.cs",
-              "RelativeDocumentMoniker": "GesCom.BO\\Client.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.BO\\Client.cs",
-              "RelativeToolTip": "GesCom.BO\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T20:51:25.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Produit.cs",
-              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.BO\\Produit.cs",
-              "RelativeDocumentMoniker": "GesCom.BO\\Produit.cs",
-              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.BO\\Produit.cs",
-              "RelativeToolTip": "GesCom.BO\\Produit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T08:43:56.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ClientDAL.cs",
               "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.DAL\\ClientDAL.cs",
               "RelativeDocumentMoniker": "GesCom.DAL\\ClientDAL.cs",
               "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.DAL\\ClientDAL.cs",
               "RelativeToolTip": "GesCom.DAL\\ClientDAL.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAcwMwAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAALEAAAAAAAAAAAAowMQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T19:46:46.266Z",
+              "WhenOpened": "2025-11-18T16:07:00.914Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 72,
-          "SelectedChildIndex": -1,
-          "Children": [
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.BO\\Client.cs",
+              "RelativeDocumentMoniker": "GesCom.BO\\Client.cs",
+              "ToolTip": "C:\\xampp\\htdocs\\php\\4 - GitHub\\GesCom\\GesCom.BO\\Client.cs",
+              "RelativeToolTip": "GesCom.BO\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T20:51:25.335Z",
+              "EditorCaption": ""
             }
           ]
         }
