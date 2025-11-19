@@ -40,9 +40,8 @@ namespace GesCom.GUI
 
         private void btnClients_Click(object sender, EventArgs e)
         {
-            // A FAIRE POUR LE 20/11
-            MessageBox.Show("Module Clients - À venir", "Information",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            AfficherClients();
         }
 
         private void btnDevis_Click(object sender, EventArgs e)
@@ -65,6 +64,12 @@ namespace GesCom.GUI
         { 
             panelContent.Controls.Clear();
             panelContent.Controls.Add(ucProduits);
+        }
+
+        private void AfficherClients()
+        {
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(ucClients);
         }
 
         private void FormPrincipal_Load(object sender, EventArgs e)

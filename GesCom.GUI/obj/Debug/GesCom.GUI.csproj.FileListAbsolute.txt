@@ -57,3 +57,4 @@ C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.Cor
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.csproj.Up2Date
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.exe
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.pdb
+C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.UserControlClients.resources
