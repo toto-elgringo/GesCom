@@ -59,8 +59,10 @@
   <ItemGroup>
     <Compile Include="Categorie.cs" />
     <Compile Include="Client.cs" />
+    <Compile Include="ContenirDevis.cs" />
     <Compile Include="Devis.cs" />
     <Compile Include="Produit.cs" />
+    <Compile Include="Statut.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
