@@ -26,28 +26,29 @@ namespace GesCom.DAL
         public List<Client> GetListClients()
         {
             List<Client> clients = new List<Client>();
-            string query = "SELECT * FROM CLIENTS";
+            string query = "SELECT * FROM Clients";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
                 SqlCommand cmd = new SqlCommand(query, connexion);
                 SqlDataReader reader = cmd.ExecuteReader();
+
                 while (reader.Read())
                 {
                     Client client = new Client(
-                        reader.GetInt32(reader.GetOrdinal("code")),
-                        reader.GetString(reader.GetOrdinal("nom")),
-                        reader.GetInt32(reader.GetOrdinal("numRueFact")),
-                        reader.GetString(reader.GetOrdinal("rueFact")),
-                        reader.GetString(reader.GetOrdinal("villeFact")),
-                        reader.GetInt32(reader.GetOrdinal("codePostFact")),
-                        reader.GetInt32(reader.GetOrdinal("numRueLivr")),
-                        reader.GetString(reader.GetOrdinal("rueLivr")),
-                        reader.GetString(reader.GetOrdinal("villeLivr")),
-                        reader.GetInt32(reader.GetOrdinal("codePostLivr")),
-                        reader.GetInt32(reader.GetOrdinal("numTel")),
-                        reader.GetInt32(reader.GetOrdinal("numFax")),
-                        reader.GetString(reader.GetOrdinal("mail"))
+                        reader.GetInt32(reader.GetOrdinal("code_cli")),
+                        reader.GetString(reader.GetOrdinal("nom_cli")),
+                        reader.GetInt32(reader.GetOrdinal("numRueFact_cli")),
+                        reader.GetString(reader.GetOrdinal("rueFact_cli")),
+                        reader.GetString(reader.GetOrdinal("villeFact_cli")),
+                        reader.GetInt32(reader.GetOrdinal("codePostFact_cli")),
+                        reader.GetInt32(reader.GetOrdinal("numRueLivr_cli")),
+                        reader.GetString(reader.GetOrdinal("rueLivr_cli")),
+                        reader.GetString(reader.GetOrdinal("villeLivr_cli")),
+                        reader.GetInt32(reader.GetOrdinal("codePostLivr_cli")),
+                        reader.GetString(reader.GetOrdinal("numTel_cli")),
+                        reader.GetString(reader.GetOrdinal("numFax_cli")),
+                        reader.GetString(reader.GetOrdinal("mail_cli"))
                     );
                     clients.Add(client);
                 }
@@ -61,7 +62,7 @@ namespace GesCom.DAL
         public Client GetClientByCode(int codeClient)
         {
             Client client = null;
-            string query = "SELECT * FROM CLIENTS WHERE code = @code";
+            string query = "SELECT * FROM CLIENTS WHERE code_cli = @code";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
@@ -72,19 +73,19 @@ namespace GesCom.DAL
                 if (reader.Read())
                 {
                     client = new Client(
-                        reader.GetInt32(reader.GetOrdinal("code")),
-                        reader.GetString(reader.GetOrdinal("nom")),
-                        reader.GetInt32(reader.GetOrdinal("numRueFact")),
-                        reader.GetString(reader.GetOrdinal("rueFact")),
-                        reader.GetString(reader.GetOrdinal("villeFact")),
-                        reader.GetInt32(reader.GetOrdinal("codePostFact")),
-                        reader.GetInt32(reader.GetOrdinal("numRueLivr")),
-                        reader.GetString(reader.GetOrdinal("rueLivr")),
-                        reader.GetString(reader.GetOrdinal("villeLivr")),
-                        reader.GetInt32(reader.GetOrdinal("codePostLivr")),
-                        reader.GetInt32(reader.GetOrdinal("numTel")),
-                        reader.GetInt32(reader.GetOrdinal("numFax")),
-                        reader.GetString(reader.GetOrdinal("mail"))
+                        reader.GetInt32(reader.GetOrdinal("code_cli")),
+                        reader.GetString(reader.GetOrdinal("nom_cli")),
+                        reader.GetInt32(reader.GetOrdinal("numRueFact_cli")),
+                        reader.GetString(reader.GetOrdinal("rueFact_cli")),
+                        reader.GetString(reader.GetOrdinal("villeFact_cli")),
+                        reader.GetInt32(reader.GetOrdinal("codePostFact_cli")),
+                        reader.GetInt32(reader.GetOrdinal("numRueLivr_cli")),
+                        reader.GetString(reader.GetOrdinal("rueLivr_cli")),
+                        reader.GetString(reader.GetOrdinal("villeLivr_cli")),
+                        reader.GetInt32(reader.GetOrdinal("codePostLivr_cli")),
+                        reader.GetString(reader.GetOrdinal("numTel_cli")),
+                        reader.GetString(reader.GetOrdinal("numFax_cli")),
+                        reader.GetString(reader.GetOrdinal("mail_cli"))
                     );
                 }
                 reader.Close();
@@ -97,9 +98,9 @@ namespace GesCom.DAL
         public bool AddClient(Client client)
         {
             bool result = false;
-            string query = @"INSERT INTO CLIENTS (code, nom, numRueFact, rueFact, villeFact, codePostFact,
-                            numRueLivr, rueLivr, villeLivr, codePostLivr, numTel, numFax, mail)
-                            VALUES (@code, @nom, @numRueFact, @rueFact, @villeFact, @codePostFact,
+            string query = @"INSERT INTO CLIENTS (nom_cli, numRueFact_cli, rueFact_cli, villeFact_cli, codePostFact_cli,
+                            numRueLivr_cli, rueLivr_cli, villeLivr_cli, codePostLivr_cli, numTel_cli, numFax_cli, mail_cli)
+                            VALUES (@nom, @numRueFact, @rueFact, @villeFact, @codePostFact,
                             @numRueLivr, @rueLivr, @villeLivr, @codePostLivr, @numTel, @numFax, @mail)";
 
             try
@@ -107,7 +108,6 @@ namespace GesCom.DAL
                 using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
                 {
                     SqlCommand cmd = new SqlCommand(query, connexion);
-                    cmd.Parameters.AddWithValue("@code", client.Code);
                     cmd.Parameters.AddWithValue("@nom", client.Nom);
                     cmd.Parameters.AddWithValue("@numRueFact", client.NumRueFact);
                     cmd.Parameters.AddWithValue("@rueFact", client.RueFact);
@@ -138,11 +138,11 @@ namespace GesCom.DAL
         public bool UpdateClient(Client client)
         {
             bool result = false;
-            string query = @"UPDATE CLIENTS SET nom = @nom, numRueFact = @numRueFact, rueFact = @rueFact,
-                            villeFact = @villeFact, codePostFact = @codePostFact, numRueLivr = @numRueLivr,
-                            rueLivr = @rueLivr, villeLivr = @villeLivr, codePostLivr = @codePostLivr,
-                            numTel = @numTel, numFax = @numFax, mail = @mail
-                            WHERE code = @code";
+            string query = @"UPDATE CLIENTS SET nom_cli = @nom, numRueFact_cli = @numRueFact, rueFact_cli = @rueFact,
+                            villeFact_cli = @villeFact, codePostFact_cli = @codePostFact, numRueLivr_cli = @numRueLivr,
+                            rueLivr_cli = @rueLivr, villeLivr_cli = @villeLivr, codePostLivr_cli = @codePostLivr,
+                            numTel_cli = @numTel, numFax_cli = @numFax, mail_cli = @mail
+                            WHERE code_cli = @code";
 
             try
             {
@@ -184,19 +184,7 @@ namespace GesCom.DAL
             {
                 using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
                 {
-                    // vérifier si le client est lié à un devis
-                    string checkQuery = "SELECT COUNT(*) FROM DEVIS WHERE code_client = @codeClient";
-                    SqlCommand checkCmd = new SqlCommand(checkQuery, connexion);
-                    checkCmd.Parameters.AddWithValue("@codeClient", codeClient);
-                    int devisCount = (int)checkCmd.ExecuteScalar();
-
-                    if (devisCount > 0)
-                    {
-                        throw new Exception("Impossible de supprimer le client : il est lié à un ou plusieurs devis.");
-                    }
-
-                    // si pas de devis lié, procéder à la suppression
-                    string deleteQuery = "DELETE FROM CLIENTS WHERE code = @code";
+                    string deleteQuery = "DELETE FROM CLIENTS WHERE code_cli = @code";
                     SqlCommand deleteCmd = new SqlCommand(deleteQuery, connexion);
                     deleteCmd.Parameters.AddWithValue("@code", codeClient);
 
@@ -210,6 +198,19 @@ namespace GesCom.DAL
             }
 
             return result;
+        }
+
+        public bool IsCLientInDevis(int codeClient)
+        {
+            string query = "SELECT COUNT(*) FROM Devis WHERE code_cli = @CodeClient";
+
+            using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
+            {
+                SqlCommand cmd = new SqlCommand(query, connexion);
+                cmd.Parameters.AddWithValue("@CodeClient", codeClient);
+                int count = (int)cmd.ExecuteScalar();
+                return count > 0;
+            }
         }
     }
 }

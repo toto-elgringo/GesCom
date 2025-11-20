@@ -55,5 +55,10 @@ namespace GesCom.BLL
         {
             ClientDAL.GetUnClientDAL().DeleteClient(code);
         }
+
+        public bool isClientInDevis(int code)
+        {
+            return ClientDAL.GetUnClientDAL().IsCLientInDevis(code);
+        }
     }
 }

@@ -29,6 +29,11 @@ namespace GesCom.GUI
             {
                 Dock = DockStyle.Fill;
             };
+
+            ucClients = new UserControlClients();
+            {
+                Dock = DockStyle.Fill;
+            };
         }
 
         private void btnProduits_Click(object sender, EventArgs e)

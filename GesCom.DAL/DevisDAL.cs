@@ -51,8 +51,8 @@ namespace GesCom.DAL
                         reader.GetString(reader.GetOrdinal("rueLivr")),
                         reader.GetString(reader.GetOrdinal("villeLivr")),
                         reader.GetInt32(reader.GetOrdinal("codePostLivr")),
-                        reader.GetInt32(reader.GetOrdinal("numTel")),
-                        reader.GetInt32(reader.GetOrdinal("numFax")),
+                        reader.GetString(reader.GetOrdinal("numTel")),
+                        reader.GetString(reader.GetOrdinal("numFax")),
                         reader.GetString(reader.GetOrdinal("mail"))
                     );
 
@@ -111,8 +111,8 @@ namespace GesCom.DAL
                         reader.GetString(reader.GetOrdinal("rueLivr")),
                         reader.GetString(reader.GetOrdinal("villeLivr")),
                         reader.GetInt32(reader.GetOrdinal("codePostLivr")),
-                        reader.GetInt32(reader.GetOrdinal("numTel")),
-                        reader.GetInt32(reader.GetOrdinal("numFax")),
+                        reader.GetString(reader.GetOrdinal("numTel")),
+                        reader.GetString(reader.GetOrdinal("numFax")),
                         reader.GetString(reader.GetOrdinal("mail"))
                     );
 

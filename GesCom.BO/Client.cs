@@ -18,12 +18,12 @@ namespace GesCom.BO
         private string rueLivr;
         private string villeLivr;
         private int codePostLivr;
-        private int numTel;
-        private int numFax;
+        private string numTel;
+        private string numFax;
         private string mail;
 
         public Client(int code, string nom, int numRueFact, string rueFact, string villeFact, int codePostFact, int numRueLivr,
-                        string rueLivr, string villeLivr, int codePostLivr, int numTel, int numFax, string mail) {
+                        string rueLivr, string villeLivr, int codePostLivr, string numTel, string numFax, string mail) {
 
             this.code = code;
             this.nom = nom;
@@ -100,13 +100,13 @@ namespace GesCom.BO
             set { codePostLivr = value; }
         }
 
-        public int NumTel
+        public string NumTel
         {
             get { return numTel; }
             set { numTel = value; }
         }
 
-        public int NumFax
+        public string NumFax
         {
             get { return numFax; }
             set { numFax = value; }

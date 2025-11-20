@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.userControlDevis1 = new GesCom.GUI.UserControlDevis();
             this.panelRight = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnAjouter = new System.Windows.Forms.Button();
@@ -71,6 +70,7 @@
             this.lblGestionClients = new System.Windows.Forms.Label();
             this.dgvClients = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.userControlDevis1 = new GesCom.GUI.UserControlDevis();
             this.panelRight.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelRightHeader.SuspendLayout();
@@ -78,13 +78,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvClients)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // userControlDevis1
-            // 
-            this.userControlDevis1.Location = new System.Drawing.Point(98, 79);
-            this.userControlDevis1.Name = "userControlDevis1";
-            this.userControlDevis1.Size = new System.Drawing.Size(203, 150);
-            this.userControlDevis1.TabIndex = 0;
             // 
             // panelRight
             // 
@@ -147,6 +140,8 @@
             this.btnAjouter.TabIndex = 28;
             this.btnAjouter.Text = "Ajouter ";
             this.btnAjouter.UseVisualStyleBackColor = false;
+            this.btnAjouter.Visible = false;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // btnAnnuler
             // 
@@ -161,6 +156,8 @@
             this.btnAnnuler.TabIndex = 27;
             this.btnAnnuler.Text = "Annuler ";
             this.btnAnnuler.UseVisualStyleBackColor = false;
+            this.btnAnnuler.Visible = false;
+            this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // btnSupprimer
             // 
@@ -175,6 +172,7 @@
             this.btnSupprimer.TabIndex = 26;
             this.btnSupprimer.Text = "🗑️ Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = false;
+            this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // btnModifier
             // 
@@ -188,6 +186,7 @@
             this.btnModifier.TabIndex = 0;
             this.btnModifier.Text = "✏️ Modifier";
             this.btnModifier.UseVisualStyleBackColor = false;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // lblEmail
             // 
@@ -202,6 +201,7 @@
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmail.Enabled = false;
             this.txtEmail.Location = new System.Drawing.Point(24, 699);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
@@ -210,6 +210,7 @@
             // 
             // txtFax
             // 
+            this.txtFax.Enabled = false;
             this.txtFax.Location = new System.Drawing.Point(204, 614);
             this.txtFax.Multiline = true;
             this.txtFax.Name = "txtFax";
@@ -218,6 +219,7 @@
             // 
             // txtTelephone
             // 
+            this.txtTelephone.Enabled = false;
             this.txtTelephone.Location = new System.Drawing.Point(24, 614);
             this.txtTelephone.Multiline = true;
             this.txtTelephone.Name = "txtTelephone";
@@ -246,6 +248,7 @@
             // 
             // txtCpLivr
             // 
+            this.txtCpLivr.Enabled = false;
             this.txtCpLivr.Location = new System.Drawing.Point(204, 514);
             this.txtCpLivr.Multiline = true;
             this.txtCpLivr.Name = "txtCpLivr";
@@ -255,6 +258,7 @@
             // 
             // txtCpFact
             // 
+            this.txtCpFact.Enabled = false;
             this.txtCpFact.Location = new System.Drawing.Point(24, 514);
             this.txtCpFact.Multiline = true;
             this.txtCpFact.Name = "txtCpFact";
@@ -283,6 +287,7 @@
             // 
             // txtVilleLivr
             // 
+            this.txtVilleLivr.Enabled = false;
             this.txtVilleLivr.Location = new System.Drawing.Point(204, 414);
             this.txtVilleLivr.Multiline = true;
             this.txtVilleLivr.Name = "txtVilleLivr";
@@ -291,6 +296,7 @@
             // 
             // txtVilleFact
             // 
+            this.txtVilleFact.Enabled = false;
             this.txtVilleFact.Location = new System.Drawing.Point(24, 414);
             this.txtVilleFact.Multiline = true;
             this.txtVilleFact.Name = "txtVilleFact";
@@ -319,6 +325,7 @@
             // 
             // txtRueFact
             // 
+            this.txtRueFact.Enabled = false;
             this.txtRueFact.Location = new System.Drawing.Point(24, 314);
             this.txtRueFact.Multiline = true;
             this.txtRueFact.Name = "txtRueFact";
@@ -327,6 +334,7 @@
             // 
             // txtRueLivr
             // 
+            this.txtRueLivr.Enabled = false;
             this.txtRueLivr.Location = new System.Drawing.Point(204, 314);
             this.txtRueLivr.Multiline = true;
             this.txtRueLivr.Name = "txtRueLivr";
@@ -365,6 +373,7 @@
             // 
             // txtNumRueLivr
             // 
+            this.txtNumRueLivr.Enabled = false;
             this.txtNumRueLivr.Location = new System.Drawing.Point(204, 214);
             this.txtNumRueLivr.Multiline = true;
             this.txtNumRueLivr.Name = "txtNumRueLivr";
@@ -373,6 +382,7 @@
             // 
             // txtNumRueFact
             // 
+            this.txtNumRueFact.Enabled = false;
             this.txtNumRueFact.Location = new System.Drawing.Point(24, 214);
             this.txtNumRueFact.Multiline = true;
             this.txtNumRueFact.Name = "txtNumRueFact";
@@ -402,6 +412,7 @@
             // txtName
             // 
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtName.Enabled = false;
             this.txtName.Location = new System.Drawing.Point(24, 114);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
@@ -430,6 +441,7 @@
             this.btnNouveau.TabIndex = 0;
             this.btnNouveau.Text = "+ Nouveau";
             this.btnNouveau.UseVisualStyleBackColor = false;
+            this.btnNouveau.Click += new System.EventHandler(this.btnNouveau_Click);
             // 
             // panelRightHeader
             // 
@@ -490,16 +502,27 @@
             // 
             // dgvClients
             // 
+            this.dgvClients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvClients.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClients.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvClients.Location = new System.Drawing.Point(0, 70);
             this.dgvClients.Name = "dgvClients";
+            this.dgvClients.ReadOnly = true;
+            this.dgvClients.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvClients.Size = new System.Drawing.Size(720, 900);
             this.dgvClients.TabIndex = 4;
+            this.dgvClients.SelectionChanged += new System.EventHandler(this.dgvClients_SelectionChanged);
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // userControlDevis1
+            // 
+            this.userControlDevis1.Location = new System.Drawing.Point(98, 79);
+            this.userControlDevis1.Name = "userControlDevis1";
+            this.userControlDevis1.Size = new System.Drawing.Size(203, 150);
+            this.userControlDevis1.TabIndex = 0;
             // 
             // UserControlClients
             // 
@@ -511,6 +534,7 @@
             this.Controls.Add(this.userControlDevis1);
             this.Name = "UserControlClients";
             this.Size = new System.Drawing.Size(1100, 970);
+            this.Load += new System.EventHandler(this.UserControlClients_Load);
             this.panelRight.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

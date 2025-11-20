@@ -29,6 +29,12 @@ namespace GesCom.GUI
             ChargerClients();
         }
 
+        private void UserControlClients_Load(object sender, EventArgs e)
+        {
+            ChargerClients();
+            InitialiserEtatDetail();
+        }
+
         private void ChargerClients()
         {
             listeClients = ClientBLL.GetUnClientBLL().GetListClients();
@@ -38,35 +44,31 @@ namespace GesCom.GUI
             {
                 if (dgvClients.Columns.Count > 0)
                 {
-                    dgvClients.Columns["nom"].HeaderText = "Nom";
-                    dgvClients.Columns["nom"].Width = 200;
+                    dgvClients.Columns["Nom"].HeaderText = "Nom";
+                    
 
-                    dgvClients.Columns["numRueFact"].HeaderText = "Num Rue Fact";
-                    dgvClients.Columns["numRueFact"].Width = 150;
+                    dgvClients.Columns["NumRueFact"].HeaderText = "Num Rue Fact";
 
-                    dgvClients.Columns["villeFact"].HeaderText = "Ville Fact";
-                    dgvClients.Columns["villeFact"].Width = 150;
+                    dgvClients.Columns["RueFact"].HeaderText = "Rue Fact";
+                  
+                    dgvClients.Columns["VilleFact"].HeaderText = "Ville Fact";
+                  
+                    dgvClients.Columns["CodePostFact"].HeaderText = "CP Fact";
 
-                    dgvClients.Columns["cpFact"].HeaderText = "CP Fact";
-                    dgvClients.Columns["cpFact"].Width = 80;
+                    dgvClients.Columns["NumRueLivr"].HeaderText = "Num Rue Livr";
 
-                    dgvClients.Columns["numRueLivr"].HeaderText = "Num Rue Livr";
-                    dgvClients.Columns["numRueLivr"].Width = 150;
+                    dgvClients.Columns["RueLivr"].HeaderText = "Rue Livr";
 
-                    dgvClients.Columns["villeLivr"].HeaderText = "Ville Livr";
-                    dgvClients.Columns["villeLivr"].Width = 150;
+                    dgvClients.Columns["VilleLivr"].HeaderText = "Ville Livr";
 
-                    dgvClients.Columns["cpLivr"].HeaderText = "CP Livr";
-                    dgvClients.Columns["cpLivr"].Width = 80;
+                    dgvClients.Columns["CodePostLivr"].HeaderText = "CP Livr";
 
-                    dgvClients.Columns["telephone"].HeaderText = "Téléphone";
-                    dgvClients.Columns["telephone"].Width = 120;
+                    dgvClients.Columns["NumTel"].HeaderText = "Téléphone";
 
-                    dgvClients.Columns["numFax"].HeaderText = "Fax";
-                    dgvClients.Columns["numFax"].Width = 120;
+                    dgvClients.Columns["NumFax"].HeaderText = "Fax";
 
-                    dgvClients.Columns["mail"].HeaderText = "Email";
-                    dgvClients.Columns["mail"].Width = 200;
+                    dgvClients.Columns["Mail"].HeaderText = "Email";
+
                 }
             }
           
@@ -117,16 +119,16 @@ namespace GesCom.GUI
         private void AfficherDetailClient()
         {
             txtName.Text = clientSelectionne.Nom;
-            txtNumRueFact.Text = clientSelectionne.NumRueFact.ToString("F2");
+            txtNumRueFact.Text = clientSelectionne.NumRueFact.ToString();
             txtRueFact.Text = clientSelectionne.RueFact;
             txtVilleFact.Text = clientSelectionne.VilleFact;
-            txtCpFact.Text = clientSelectionne.CodePostFact.ToString("F2");
-            txtNumRueLivr.Text = clientSelectionne.NumRueLivr.ToString("F2");
+            txtCpFact.Text = clientSelectionne.CodePostFact.ToString();
+            txtNumRueLivr.Text = clientSelectionne.NumRueLivr.ToString();
             txtRueLivr.Text = clientSelectionne.RueLivr;
-            txtVilleLivr.Text = clientSelectionne.VilleFact;
-            txtCpLivr.Text = clientSelectionne.CodePostLivr.ToString("F2");
-            txtTelephone.Text = clientSelectionne.NumTel.ToString("F2");
-            txtFax.Text = clientSelectionne.NumFax.ToString("F2");
+            txtVilleLivr.Text = clientSelectionne.VilleLivr;
+            txtCpLivr.Text = clientSelectionne.CodePostLivr.ToString();
+            txtTelephone.Text = clientSelectionne.NumTel;
+            txtFax.Text = clientSelectionne.NumFax;
             txtEmail.Text = clientSelectionne.Mail;
 
             txtName.Enabled = false;
@@ -143,7 +145,14 @@ namespace GesCom.GUI
             txtEmail.Enabled = false;
 
             btnModifier.Enabled = true;
+            btnModifier.Visible = true;
             btnSupprimer.Enabled = true;
+            btnSupprimer.Visible = true;
+            btnNouveau.Enabled = true;
+            btnNouveau.Visible = true;
+
+            btnAjouter.Visible = false;
+            btnAnnuler.Visible = false;
         }
 
         private void dgvClients_SelectionChanged(object sender, EventArgs e)
@@ -272,8 +281,8 @@ namespace GesCom.GUI
                 clientSelectionne.RueLivr = txtRueLivr.Text.Trim();
                 clientSelectionne.VilleLivr = txtVilleLivr.Text.Trim();
                 clientSelectionne.CodePostLivr = int.Parse(txtCpLivr.Text);
-                clientSelectionne.NumTel = int.Parse(txtTelephone.Text);
-                clientSelectionne.NumFax = int.Parse(txtFax.Text);
+                clientSelectionne.NumTel = txtTelephone.Text.Trim();
+                clientSelectionne.NumFax = txtFax.Text.Trim();
                 clientSelectionne.Mail = txtEmail.Text.Trim();
 
 
@@ -288,7 +297,7 @@ namespace GesCom.GUI
 
                 foreach (DataGridViewRow row in dgvClients.Rows)
                 {
-                    if (((Produit)row.DataBoundItem).Code == clientSelectionne.Code)
+                    if (((Client)row.DataBoundItem).Code == clientSelectionne.Code)
                     {
                         row.Selected = true;
                         break;
@@ -310,7 +319,10 @@ namespace GesCom.GUI
                 txtEmail.Enabled = false;
                 btnModifier.Text = "✏️ Modifier";
                 btnSupprimer.Enabled = true;
+                btnSupprimer.Visible = true;
                 btnNouveau.Enabled = true;
+                btnNouveau.Visible = true;
+                btnAnnuler.Visible = false;
             }
             catch (Exception ex)
             {
@@ -327,6 +339,13 @@ namespace GesCom.GUI
             {
                 MessageBox.Show("Veuillez sélectionner un client.", "Attention",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (ClientBLL.GetUnClientBLL().isClientInDevis(clientSelectionne.Code))
+            {
+                MessageBox.Show("Le client ne peut pas être supprimé, il appartient a 1 ou plusieurs devis ", "Attention",
+                  MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -363,6 +382,11 @@ namespace GesCom.GUI
         private void btnAjouter_Click(object sender, EventArgs e)
         {
             EnregistrerNouveauClient();
+            btnNouveau.Visible = true;
+            btnSupprimer.Visible = true;
+            btnModifier.Visible = true;
+            btnAjouter.Visible = false;
+            btnAnnuler.Visible = false;
         }
 
         private void EnregistrerNouveauClient()
@@ -370,6 +394,27 @@ namespace GesCom.GUI
             if (!ValiderChamps())
             {
                 return;
+            }
+
+            // vérification de l'existance d'un client lors de l'ajout ou de la modification d'un produit
+
+            bool clientExistant = false;
+            foreach (Client client in ClientBLL.GetUnClientBLL().GetListClients())
+            {
+                if (client.Nom == txtName.Text)
+                {
+                    clientExistant = true;
+                }
+            }
+
+            if (clientExistant)
+            {
+                errorProvider1.SetError(txtName, "Ce client existe déjà");
+                return;
+            }
+            else
+            {
+                errorProvider1.SetError(txtName, "");
             }
 
             try
@@ -387,8 +432,8 @@ namespace GesCom.GUI
                     txtRueLivr.Text.Trim(),
                     txtVilleLivr.Text.Trim(),
                     int.Parse(txtCpLivr.Text),
-                    int.Parse(txtTelephone.Text),
-                    int.Parse(txtFax.Text),
+                    txtTelephone.Text.Trim(),
+                    txtFax.Text.Trim(),
                     txtEmail.Text.Trim()
                     );
 
@@ -496,27 +541,6 @@ namespace GesCom.GUI
             }
             else errorProvider1.SetError(txtEmail, "");
 
-            // vérification de l'existance d'un client lors de l'ajout ou de la modification d'un produit
-
-            bool clientExistant = false;
-            foreach (Client client in ClientBLL.GetUnClientBLL().GetListClients())
-            {
-                if (client.Nom == txtName.Text)
-                {
-                    clientExistant = true;
-                }
-            }
-
-            if (clientExistant)
-            {
-                errorProvider1.SetError(txtName, "Ce client existe déjà");
-                return false;
-            }
-            else
-            {
-                errorProvider1.SetError(txtName, "");
-            }
-
             // vérification du type des champs int  
 
             float nombre;
@@ -558,26 +582,6 @@ namespace GesCom.GUI
             else
             {
                 errorProvider1.SetError(txtCpLivr, "");
-            }
-
-            if (!float.TryParse(txtTelephone.Text, out nombre))
-            {
-                errorProvider1.SetError(txtTelephone, "Le téléphone est incorrect");
-                return false;
-            }
-            else
-            {
-                errorProvider1.SetError(txtTelephone, "");
-            }
-
-            if (!float.TryParse(txtFax.Text, out nombre))
-            {
-                errorProvider1.SetError(txtFax, "Le fax est incorrect");
-                return false;
-            }
-            else
-            {
-                errorProvider1.SetError(txtFax, "");
             }
 
 
