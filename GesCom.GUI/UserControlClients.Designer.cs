@@ -71,6 +71,8 @@
             this.dgvClients = new System.Windows.Forms.DataGridView();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.userControlDevis1 = new GesCom.GUI.UserControlDevis();
+            this.contextMenuStrip4 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip5 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panelRight.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panelRightHeader.SuspendLayout();
@@ -524,6 +526,16 @@
             this.userControlDevis1.Size = new System.Drawing.Size(203, 150);
             this.userControlDevis1.TabIndex = 0;
             // 
+            // contextMenuStrip4
+            // 
+            this.contextMenuStrip4.Name = "contextMenuStrip4";
+            this.contextMenuStrip4.Size = new System.Drawing.Size(61, 4);
+            // 
+            // contextMenuStrip5
+            // 
+            this.contextMenuStrip5.Name = "contextMenuStrip5";
+            this.contextMenuStrip5.Size = new System.Drawing.Size(61, 4);
+            // 
             // UserControlClients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -592,5 +604,7 @@
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip4;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip5;
     }
 }

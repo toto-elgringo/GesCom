@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.dal\\clientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\clientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,20 +27,12 @@
       "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\produitdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.dal\\devisdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +90,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ClientDAL.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\ClientDAL.cs",
               "RelativeDocumentMoniker": "GesCom.DAL\\ClientDAL.cs",
@@ -110,20 +110,20 @@
               "RelativeDocumentMoniker": "GesCom.GUI\\UserControlClients.cs",
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlClients.cs",
               "RelativeToolTip": "GesCom.GUI\\UserControlClients.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAWwJcAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAPMBAAAAAAAAAAAcwDYCAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-19T10:40:51.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Client.cs",
               "RelativeDocumentMoniker": "GesCom.BO\\Client.cs",
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Client.cs",
               "RelativeToolTip": "GesCom.BO\\Client.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAcwEgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwF8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-19T11:09:49.124Z",
               "EditorCaption": ""
@@ -131,6 +131,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "UserControlClients.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlClients.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\UserControlClients.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlClients.cs [Design]",
+              "RelativeToolTip": "GesCom.GUI\\UserControlClients.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T11:20:36.647Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ClientBLL.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BLL\\ClientBLL.cs",
               "RelativeDocumentMoniker": "GesCom.BLL\\ClientBLL.cs",
@@ -143,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ProduitDAL.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\ProduitDAL.cs",
               "RelativeDocumentMoniker": "GesCom.DAL\\ProduitDAL.cs",
@@ -156,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "FrmLogin.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FrmLogin.cs",
               "RelativeDocumentMoniker": "GesCom.GUI\\FrmLogin.cs",
@@ -170,18 +182,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "UserControlClients.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlClients.cs",
-              "RelativeDocumentMoniker": "GesCom.GUI\\UserControlClients.cs",
-              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlClients.cs [Design]",
-              "RelativeToolTip": "GesCom.GUI\\UserControlClients.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T11:20:36.647Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "FrmLogin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FrmLogin.cs",
               "RelativeDocumentMoniker": "GesCom.GUI\\FrmLogin.cs",
