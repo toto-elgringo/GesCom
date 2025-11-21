@@ -461,15 +461,21 @@ namespace GesCom.GUI
         {
             // vérification des champs pour vérifier si ils sont remplis 
 
-            //Nom 
+            // Nom 
             if (string.IsNullOrWhiteSpace(txtName.Text))
             {
                 errorProvider1.SetError(txtName, "Le nom du client est requis");
-               return false;
+                return false;
+            }
+            else if (txtName.Text.Any(char.IsDigit))
+            {
+                errorProvider1.SetError(txtName, "Le nom ne peut pas contenir de chiffres");
+                return false;
             }
             else errorProvider1.SetError(txtName, "");
 
-            // Num Rue Fact
+
+            // Num Rue Fact (autorisé chiffres)
             if (string.IsNullOrWhiteSpace(txtNumRueFact.Text))
             {
                 errorProvider1.SetError(txtNumRueFact, "Numéro de rue facturation requis");
@@ -477,23 +483,31 @@ namespace GesCom.GUI
             }
             else errorProvider1.SetError(txtNumRueFact, "");
 
+
             // Ville Fact
             if (string.IsNullOrWhiteSpace(txtVilleFact.Text))
             {
                 errorProvider1.SetError(txtVilleFact, "Ville facturation requise");
                 return false;
             }
+            else if (txtVilleFact.Text.Any(char.IsDigit))
+            {
+                errorProvider1.SetError(txtVilleFact, "La ville ne peut pas contenir de chiffres");
+                return false;
+            }
             else errorProvider1.SetError(txtVilleFact, "");
 
-            // CP Fact
+
+            // CP Fact (autorisé chiffres)
             if (string.IsNullOrWhiteSpace(txtCpFact.Text))
             {
                 errorProvider1.SetError(txtCpFact, "Code postal facturation requis");
-                return  false;
+                return false;
             }
             else errorProvider1.SetError(txtCpFact, "");
 
-            // Num Rue Livr
+
+            // Num Rue Livr (autorisé chiffres)
             if (string.IsNullOrWhiteSpace(txtNumRueLivr.Text))
             {
                 errorProvider1.SetError(txtNumRueLivr, "Numéro de rue livraison requis");
@@ -501,15 +515,22 @@ namespace GesCom.GUI
             }
             else errorProvider1.SetError(txtNumRueLivr, "");
 
+
             // Ville Livr
             if (string.IsNullOrWhiteSpace(txtVilleLivr.Text))
             {
                 errorProvider1.SetError(txtVilleLivr, "Ville livraison requise");
                 return false;
             }
+            else if (txtVilleLivr.Text.Any(char.IsDigit))
+            {
+                errorProvider1.SetError(txtVilleLivr, "La ville ne peut pas contenir de chiffres");
+                return false;
+            }
             else errorProvider1.SetError(txtVilleLivr, "");
 
-            // CP Livr
+
+            // CP Livr (autorisé chiffres)
             if (string.IsNullOrWhiteSpace(txtCpLivr.Text))
             {
                 errorProvider1.SetError(txtCpLivr, "Code postal livraison requis");
@@ -517,15 +538,17 @@ namespace GesCom.GUI
             }
             else errorProvider1.SetError(txtCpLivr, "");
 
-            // Téléphone
+
+            // Téléphone (autorisé chiffres)
             if (string.IsNullOrWhiteSpace(txtTelephone.Text))
             {
                 errorProvider1.SetError(txtTelephone, "Téléphone requis");
-               return false;
+                return false;
             }
             else errorProvider1.SetError(txtTelephone, "");
 
-            // Fax
+
+            // Fax (autorisé chiffres)
             if (string.IsNullOrWhiteSpace(txtFax.Text))
             {
                 errorProvider1.SetError(txtFax, "Fax requis");
@@ -533,13 +556,15 @@ namespace GesCom.GUI
             }
             else errorProvider1.SetError(txtFax, "");
 
-            // Email
+
+            // Email (pas de blocage de chiffres mais vérification du format possible)
             if (string.IsNullOrWhiteSpace(txtEmail.Text))
             {
                 errorProvider1.SetError(txtEmail, "Email requis");
                 return false;
             }
             else errorProvider1.SetError(txtEmail, "");
+
 
             // vérification du type des champs int  
 
