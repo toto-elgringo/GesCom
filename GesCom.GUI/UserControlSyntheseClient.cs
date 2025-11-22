@@ -44,6 +44,14 @@ namespace GesCom.GUI
 
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
             {
+                Name = "TotalDevis",
+                HeaderText = "Total devis",
+                DataPropertyName = "TotalDevis",
+                Width = 100
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
                 Name = "DevisAcceptes",
                 HeaderText = "Devis acceptés",
                 DataPropertyName = "DevisAcceptes",
@@ -95,6 +103,7 @@ namespace GesCom.GUI
                 {
                     Date = g.Min(d => d.Date).ToString("dd/MM/yyyy"),
                     Client = g.First().Client.Nom,
+                    TotalDevis = g.Count(),
                     DevisAcceptes = g.Count(d => d.Statut.Name.ToLower().Contains("accept")),
                     DevisDeclines = g.Count(d => d.Statut.Name.ToLower().Contains("déclin") || d.Statut.Name.ToLower().Contains("declin")),
                     DevisAttente = g.Count(d => d.Statut.Name.ToLower().Contains("attente")),
