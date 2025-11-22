@@ -95,6 +95,12 @@
     <Compile Include="UserControlProduits.Designer.cs">
       <DependentUpon>UserControlProduits.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlSyntheseClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlSyntheseClient.Designer.cs">
+      <DependentUpon>UserControlSyntheseClient.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlProduits.resx">
       <DependentUpon>UserControlProduits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlSyntheseClient.resx">
+      <DependentUpon>UserControlSyntheseClient.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -146,6 +155,10 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="images\Capture d%27écran 2025-11-22 103620.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

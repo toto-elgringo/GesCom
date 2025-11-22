@@ -17,7 +17,7 @@ namespace GesCom.DAL
         private ConnexionBD()
         {
             // Chaîne de connexion vers SQL Server
-            chaineConnexion = "Data Source=localhost;Initial Catalog=Gestion_Commerciale;Integrated Security=True;";
+            chaineConnexion = "Data Source=localhost;Initial Catalog=Gestion_Commerciale;Integrated Security=True;MultipleActiveResultSets=True;";
         }
 
         // Accesseur statique pour obtenir l'instance unique
@@ -48,12 +48,13 @@ namespace GesCom.DAL
             if (maConnexion == null)
             {
                 maConnexion = new SqlConnection();
+                maConnexion.ConnectionString = chaineConnexion;
             }
-            maConnexion.ConnectionString = chaineConnexion;
 
             // Si la connexion est fermée, on l'ouvre
             if (maConnexion.State == System.Data.ConnectionState.Closed)
             {
+                maConnexion.ConnectionString = chaineConnexion;
                 maConnexion.Open();
             }
             return maConnexion;

@@ -622,5 +622,15 @@ namespace GesCom.GUI
 
             return true;
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblGestionClients_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

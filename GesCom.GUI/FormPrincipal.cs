@@ -15,6 +15,7 @@ namespace GesCom.GUI
         private UserControlProduits ucProduits;
         private UserControlClients ucClients;
         private UserControlDevis ucDevis;
+        private UserControlSyntheseClient ucSynthese;
 
         public FormPrincipal()
         {
@@ -31,6 +32,11 @@ namespace GesCom.GUI
             };
 
             ucClients = new UserControlClients();
+            {
+                Dock = DockStyle.Fill;
+            };
+
+            ucSynthese = new UserControlSyntheseClient();
             {
                 Dock = DockStyle.Fill;
             };
@@ -58,9 +64,7 @@ namespace GesCom.GUI
 
         private void btnSynthese_Click(object sender, EventArgs e)
         {
-            // A FAIRE POUR LE 3/12
-            MessageBox.Show("Module Synthèse clients - À venir", "Information",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            AfficherSynthese();
         }
 
         // Affichage du userControlProduits 
@@ -75,6 +79,12 @@ namespace GesCom.GUI
         {
             panelContent.Controls.Clear();
             panelContent.Controls.Add(ucClients);
+        }
+
+        private void AfficherSynthese()
+        {
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(ucSynthese);
         }
 
         private void FormPrincipal_Load(object sender, EventArgs e)

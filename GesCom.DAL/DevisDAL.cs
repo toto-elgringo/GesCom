@@ -26,54 +26,57 @@ namespace GesCom.DAL
         public List<Devis> GetListDevis()
         {
             List<Devis> devisList = new List<Devis>();
-            string query = @"SELECT D.code_devis, D.date_devis, D.tauxTVA, D.tauxRemiseGlobal,
-                            C.code, C.nom, C.numRueFact, C.rueFact, C.villeFact, C.codePostFact,
-                            C.numRueLivr, C.rueLivr, C.villeLivr, C.codePostLivr, C.numTel, C.numFax, C.mail,
-                            S.code_statut, S.nom_statut
-                            FROM DEVIS D
-                            INNER JOIN CLIENTS C ON D.code_client = C.code
-                            INNER JOIN STATUTS S ON D.code_statut = S.code_statut";
+            string query = @"SELECT D.code_dev, D.date_dev, D.tauxTVA_dev, D.tauxRemiseGlobal_dev,
+                            C.code_cli, C.nom_cli, C.numRueFact_cli, C.rueFact_cli, C.villeFact_cli, C.codePostFact_cli,
+                            C.numRueLivr_cli, C.rueLivr_cli, C.villeLivr_cli, C.codePostLivr_cli, C.numTel_cli, C.numFax_cli, C.mail_cli,
+                            S.code_sta, S.nom_sta
+                            FROM Devis D
+                            INNER JOIN Clients C ON D.code_cli = C.code_cli
+                            INNER JOIN Statut S ON D.code_sta = S.code_sta";
 
-            using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
+            SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion();
+            SqlCommand cmd = new SqlCommand(query, connexion);
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            while (reader.Read())
             {
-                SqlCommand cmd = new SqlCommand(query, connexion);
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    Client client = new Client(
-                        reader.GetInt32(reader.GetOrdinal("code")),
-                        reader.GetString(reader.GetOrdinal("nom")),
-                        reader.GetInt32(reader.GetOrdinal("numRueFact")),
-                        reader.GetString(reader.GetOrdinal("rueFact")),
-                        reader.GetString(reader.GetOrdinal("villeFact")),
-                        reader.GetInt32(reader.GetOrdinal("codePostFact")),
-                        reader.GetInt32(reader.GetOrdinal("numRueLivr")),
-                        reader.GetString(reader.GetOrdinal("rueLivr")),
-                        reader.GetString(reader.GetOrdinal("villeLivr")),
-                        reader.GetInt32(reader.GetOrdinal("codePostLivr")),
-                        reader.GetString(reader.GetOrdinal("numTel")),
-                        reader.GetString(reader.GetOrdinal("numFax")),
-                        reader.GetString(reader.GetOrdinal("mail"))
-                    );
+                Client client = new Client(
+                    reader.GetInt32(reader.GetOrdinal("code_cli")),
+                    reader.GetString(reader.GetOrdinal("nom_cli")),
+                    reader.GetInt32(reader.GetOrdinal("numRueFact_cli")),
+                    reader.GetString(reader.GetOrdinal("rueFact_cli")),
+                    reader.GetString(reader.GetOrdinal("villeFact_cli")),
+                    reader.GetInt32(reader.GetOrdinal("codePostFact_cli")),
+                    reader.GetInt32(reader.GetOrdinal("numRueLivr_cli")),
+                    reader.GetString(reader.GetOrdinal("rueLivr_cli")),
+                    reader.GetString(reader.GetOrdinal("villeLivr_cli")),
+                    reader.GetInt32(reader.GetOrdinal("codePostLivr_cli")),
+                    reader.GetString(reader.GetOrdinal("numTel_cli")),
+                    reader.GetString(reader.GetOrdinal("numFax_cli")),
+                    reader.GetString(reader.GetOrdinal("mail_cli"))
+                );
 
-                    Statut statut = new Statut();
-                    statut.Code = reader.GetInt32(reader.GetOrdinal("code_statut"));
-                    statut.Name = reader.GetString(reader.GetOrdinal("nom_statut"));
+                Statut statut = new Statut();
+                statut.Code = reader.GetInt32(reader.GetOrdinal("code_sta"));
+                statut.Name = reader.GetString(reader.GetOrdinal("nom_sta"));
 
-                    Devis devis = new Devis(
-                        reader.GetInt32(reader.GetOrdinal("code_devis")),
-                        reader.GetDateTime(reader.GetOrdinal("date_devis")),
-                        (float)reader.GetDecimal(reader.GetOrdinal("tauxTVA")),
-                        (float)reader.GetDecimal(reader.GetOrdinal("tauxRemiseGlobal")),
-                        client,
-                        statut
-                    );
+                Devis devis = new Devis(
+                    reader.GetInt32(reader.GetOrdinal("code_dev")),
+                    reader.GetDateTime(reader.GetOrdinal("date_dev")),
+                    (float)reader.GetDecimal(reader.GetOrdinal("tauxTVA_dev")),
+                    (float)reader.GetDecimal(reader.GetOrdinal("tauxRemiseGlobal_dev")),
+                    client,
+                    statut
+                );
 
-                    devis.Lignes = GetProduitsDevis(devis.Code);
+                devisList.Add(devis);
+            }
+            reader.Close();
 
-                    devisList.Add(devis);
-                }
-                reader.Close();
+            // Récupérer les produits pour chaque devis après avoir fermé le reader
+            foreach (Devis devis in devisList)
+            {
+                devis.Lignes = GetProduitsDevis(devis.Code);
             }
 
             return devisList;
@@ -83,14 +86,14 @@ namespace GesCom.DAL
         public Devis GetDevisByCode(int code)
         {
             Devis devis = null;
-            string query = @"SELECT D.code_devis, D.date_devis, D.tauxTVA, D.tauxRemiseGlobal,
-                            C.code, C.nom, C.numRueFact, C.rueFact, C.villeFact, C.codePostFact,
-                            C.numRueLivr, C.rueLivr, C.villeLivr, C.codePostLivr, C.numTel, C.numFax, C.mail,
-                            S.code_statut, S.nom_statut
-                            FROM DEVIS D
-                            INNER JOIN CLIENTS C ON D.code_client = C.code
-                            INNER JOIN STATUTS S ON D.code_statut = S.code_statut
-                            WHERE D.code_devis = @code";
+            string query = @"SELECT D.code_dev, D.date_dev, D.tauxTVA_dev, D.tauxRemiseGlobal_dev,
+                            C.code_cli, C.nom_cli, C.numRueFact_cli, C.rueFact_cli, C.villeFact_cli, C.codePostFact_cli,
+                            C.numRueLivr_cli, C.rueLivr_cli, C.villeLivr_cli, C.codePostLivr_cli, C.numTel_cli, C.numFax_cli, C.mail_cli,
+                            S.code_sta, S.nom_sta
+                            FROM Devis D
+                            INNER JOIN Clients C ON D.code_cli = C.code_cli
+                            INNER JOIN Statut S ON D.code_sta = S.code_sta
+                            WHERE D.code_dev = @code";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
@@ -101,30 +104,30 @@ namespace GesCom.DAL
                 if (reader.Read())
                 {
                     Client client = new Client(
-                        reader.GetInt32(reader.GetOrdinal("code")),
-                        reader.GetString(reader.GetOrdinal("nom")),
-                        reader.GetInt32(reader.GetOrdinal("numRueFact")),
-                        reader.GetString(reader.GetOrdinal("rueFact")),
-                        reader.GetString(reader.GetOrdinal("villeFact")),
-                        reader.GetInt32(reader.GetOrdinal("codePostFact")),
-                        reader.GetInt32(reader.GetOrdinal("numRueLivr")),
-                        reader.GetString(reader.GetOrdinal("rueLivr")),
-                        reader.GetString(reader.GetOrdinal("villeLivr")),
-                        reader.GetInt32(reader.GetOrdinal("codePostLivr")),
-                        reader.GetString(reader.GetOrdinal("numTel")),
-                        reader.GetString(reader.GetOrdinal("numFax")),
-                        reader.GetString(reader.GetOrdinal("mail"))
+                        reader.GetInt32(reader.GetOrdinal("code_cli")),
+                        reader.GetString(reader.GetOrdinal("nom_cli")),
+                        reader.GetInt32(reader.GetOrdinal("numRueFact_cli")),
+                        reader.GetString(reader.GetOrdinal("rueFact_cli")),
+                        reader.GetString(reader.GetOrdinal("villeFact_cli")),
+                        reader.GetInt32(reader.GetOrdinal("codePostFact_cli")),
+                        reader.GetInt32(reader.GetOrdinal("numRueLivr_cli")),
+                        reader.GetString(reader.GetOrdinal("rueLivr_cli")),
+                        reader.GetString(reader.GetOrdinal("villeLivr_cli")),
+                        reader.GetInt32(reader.GetOrdinal("codePostLivr_cli")),
+                        reader.GetString(reader.GetOrdinal("numTel_cli")),
+                        reader.GetString(reader.GetOrdinal("numFax_cli")),
+                        reader.GetString(reader.GetOrdinal("mail_cli"))
                     );
 
                     Statut statut = new Statut();
-                    statut.Code = reader.GetInt32(reader.GetOrdinal("code_statut"));
-                    statut.Name = reader.GetString(reader.GetOrdinal("nom_statut"));
+                    statut.Code = reader.GetInt32(reader.GetOrdinal("code_sta"));
+                    statut.Name = reader.GetString(reader.GetOrdinal("nom_sta"));
 
                     devis = new Devis(
-                        reader.GetInt32(reader.GetOrdinal("code_devis")),
-                        reader.GetDateTime(reader.GetOrdinal("date_devis")),
-                        (float)reader.GetDecimal(reader.GetOrdinal("tauxTVA")),
-                        (float)reader.GetDecimal(reader.GetOrdinal("tauxRemiseGlobal")),
+                        reader.GetInt32(reader.GetOrdinal("code_dev")),
+                        reader.GetDateTime(reader.GetOrdinal("date_dev")),
+                        (float)reader.GetDecimal(reader.GetOrdinal("tauxTVA_dev")),
+                        (float)reader.GetDecimal(reader.GetOrdinal("tauxRemiseGlobal_dev")),
                         client,
                         statut
                     );
@@ -146,9 +149,9 @@ namespace GesCom.DAL
         private List<ContenirDevis> GetProduitsDevis(int codeDevis)
         {
             List<ContenirDevis> lignes = new List<ContenirDevis>();
-            string query = @"SELECT code_devis, code_prod, quantite, remise
-                            FROM CONTENIR
-                            WHERE code_devis = @codeDevis";
+            string query = @"SELECT code_dev, code_prod, quantiteProduit, remiseProduit
+                            FROM Contenir
+                            WHERE code_dev = @codeDevis";
 
             // Liste temporaire pour stocker les données avant de créer les objets ContenirDevis
             List<Tuple<int, int, int, float>> tempData = new List<Tuple<int, int, int, float>>();
@@ -162,10 +165,10 @@ namespace GesCom.DAL
                 while (reader.Read())
                 {
                     tempData.Add(new Tuple<int, int, int, float>(
-                        reader.GetInt32(reader.GetOrdinal("code_devis")),
+                        reader.GetInt32(reader.GetOrdinal("code_dev")),
                         reader.GetInt32(reader.GetOrdinal("code_prod")),
-                        reader.GetInt32(reader.GetOrdinal("quantite")),
-                        (float)reader.GetDecimal(reader.GetOrdinal("remise"))
+                        reader.GetInt32(reader.GetOrdinal("quantiteProduit")),
+                        (float)reader.GetDecimal(reader.GetOrdinal("remiseProduit"))
                     ));
                 }
                 reader.Close();
@@ -191,15 +194,14 @@ namespace GesCom.DAL
         public bool AddDevis(Devis devis)
         {
             bool result = false;
-            string query = @"INSERT INTO DEVIS (code_devis, date_devis, tauxTVA, tauxRemiseGlobal, code_client, code_statut)
-                            VALUES (@code, @date, @tauxTVA, @tauxRemiseGlobal, @codeClient, @codeStatut)";
+            string query = @"INSERT INTO Devis (date_dev, tauxTVA_dev, tauxRemiseGlobal_dev, code_cli, code_sta)
+                            VALUES (@date, @tauxTVA, @tauxRemiseGlobal, @codeClient, @codeStatut)";
 
             try
             {
                 using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
                 {
                     SqlCommand cmd = new SqlCommand(query, connexion);
-                    cmd.Parameters.AddWithValue("@code", devis.Code);
                     cmd.Parameters.AddWithValue("@date", devis.Date);
                     cmd.Parameters.AddWithValue("@tauxTVA", devis.TauxTVA);
                     cmd.Parameters.AddWithValue("@tauxRemiseGlobal", devis.TauxRemiseGlobal);
@@ -227,10 +229,10 @@ namespace GesCom.DAL
         public bool UpdateDevis(Devis devis)
         {
             bool result = false;
-            string query = @"UPDATE DEVIS SET date_devis = @date, tauxTVA = @tauxTVA,
-                            tauxRemiseGlobal = @tauxRemiseGlobal, code_client = @codeClient,
-                            code_statut = @codeStatut
-                            WHERE code_devis = @code";
+            string query = @"UPDATE Devis SET date_dev = @date, tauxTVA_dev = @tauxTVA,
+                            tauxRemiseGlobal_dev = @tauxRemiseGlobal, code_cli = @codeClient,
+                            code_sta = @codeStatut
+                            WHERE code_dev = @code";
 
             try
             {
@@ -271,13 +273,13 @@ namespace GesCom.DAL
                 using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
                 {
                     // Suppression d'abord des produits liés au devis
-                    string deleteProduitsQuery = "DELETE FROM CONTENIR WHERE code_devis = @code";
+                    string deleteProduitsQuery = "DELETE FROM Contenir WHERE code_dev = @code";
                     SqlCommand deleteProdCmd = new SqlCommand(deleteProduitsQuery, connexion);
                     deleteProdCmd.Parameters.AddWithValue("@code", code);
                     deleteProdCmd.ExecuteNonQuery();
 
                     // Puis suppression du devis
-                    string deleteDevisQuery = "DELETE FROM DEVIS WHERE code_devis = @code";
+                    string deleteDevisQuery = "DELETE FROM Devis WHERE code_dev = @code";
                     SqlCommand deleteDevisCmd = new SqlCommand(deleteDevisQuery, connexion);
                     deleteDevisCmd.Parameters.AddWithValue("@code", code);
 
@@ -302,7 +304,7 @@ namespace GesCom.DAL
                 {
                     foreach (ContenirDevis ligne in devis.Lignes)
                     {
-                        string query = @"INSERT INTO CONTENIR (code_devis, code_prod, quantite, remise)
+                        string query = @"INSERT INTO Contenir (code_dev, code_prod, quantiteProduit, remiseProduit)
                                         VALUES (@codeDevis, @codeProd, @quantite, @remise)";
 
                         SqlCommand cmd = new SqlCommand(query, connexion);
@@ -329,7 +331,7 @@ namespace GesCom.DAL
                 using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
                 {
                     // Suppression d'abord de toutes les lignes du devis
-                    string deleteQuery = "DELETE FROM CONTENIR WHERE code_devis = @codeDevis";
+                    string deleteQuery = "DELETE FROM Contenir WHERE code_dev = @codeDevis";
                     SqlCommand deleteCmd = new SqlCommand(deleteQuery, connexion);
                     deleteCmd.Parameters.AddWithValue("@codeDevis", devis.Code);
                     deleteCmd.ExecuteNonQuery();
@@ -353,7 +355,7 @@ namespace GesCom.DAL
                 {
                     foreach (ContenirDevis ligne in devis.Lignes)
                     {
-                        string query = "DELETE FROM CONTENIR WHERE code_devis = @codeDevis AND code_prod = @codeProd";
+                        string query = "DELETE FROM Contenir WHERE code_dev = @codeDevis AND code_prod = @codeProd";
                         SqlCommand cmd = new SqlCommand(query, connexion);
                         cmd.Parameters.AddWithValue("@codeDevis", devis.Code);
                         cmd.Parameters.AddWithValue("@codeProd", ligne.Produit.Code);
