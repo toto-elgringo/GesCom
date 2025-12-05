@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace GesCom.BO
 {
@@ -116,6 +117,11 @@ namespace GesCom.BO
         {
             get { return mail; }
             set { mail = value; }
+        }
+
+        public override string ToString()
+        {
+            return nom;
         }
     }
 }

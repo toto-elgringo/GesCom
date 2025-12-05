@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panelTop = new System.Windows.Forms.Panel();
-            this.btnProduits = new System.Windows.Forms.Button();
-            this.btnClients = new System.Windows.Forms.Button();
             this.btnDevis = new System.Windows.Forms.Button();
+            this.btnClients = new System.Windows.Forms.Button();
+            this.btnProduits = new System.Windows.Forms.Button();
             this.btnSynthese = new System.Windows.Forms.Button();
             this.panelContent = new System.Windows.Forms.Panel();
             this.panelTop.SuspendLayout();
@@ -49,17 +49,17 @@
             this.panelTop.Size = new System.Drawing.Size(1184, 100);
             this.panelTop.TabIndex = 0;
             // 
-            // btnProduits
+            // btnDevis
             // 
-            this.btnProduits.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnProduits.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProduits.Location = new System.Drawing.Point(10, 10);
-            this.btnProduits.Name = "btnProduits";
-            this.btnProduits.Size = new System.Drawing.Size(240, 40);
-            this.btnProduits.TabIndex = 0;
-            this.btnProduits.Text = "Produits";
-            this.btnProduits.UseVisualStyleBackColor = true;
-            this.btnProduits.Click += new System.EventHandler(this.btnProduits_Click);
+            this.btnDevis.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDevis.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDevis.Location = new System.Drawing.Point(510, 10);
+            this.btnDevis.Name = "btnDevis";
+            this.btnDevis.Size = new System.Drawing.Size(240, 40);
+            this.btnDevis.TabIndex = 2;
+            this.btnDevis.Text = "Devis";
+            this.btnDevis.UseVisualStyleBackColor = true;
+            this.btnDevis.Click += new System.EventHandler(this.btnDevis_Click);
             // 
             // btnClients
             // 
@@ -73,17 +73,17 @@
             this.btnClients.UseVisualStyleBackColor = true;
             this.btnClients.Click += new System.EventHandler(this.btnClients_Click);
             // 
-            // btnDevis
+            // btnProduits
             // 
-            this.btnDevis.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDevis.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDevis.Location = new System.Drawing.Point(510, 10);
-            this.btnDevis.Name = "btnDevis";
-            this.btnDevis.Size = new System.Drawing.Size(240, 40);
-            this.btnDevis.TabIndex = 2;
-            this.btnDevis.Text = "Devis";
-            this.btnDevis.UseVisualStyleBackColor = true;
-            this.btnDevis.Click += new System.EventHandler(this.btnDevis_Click);
+            this.btnProduits.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnProduits.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProduits.Location = new System.Drawing.Point(10, 10);
+            this.btnProduits.Name = "btnProduits";
+            this.btnProduits.Size = new System.Drawing.Size(240, 40);
+            this.btnProduits.TabIndex = 0;
+            this.btnProduits.Text = "Produits";
+            this.btnProduits.UseVisualStyleBackColor = true;
+            this.btnProduits.Click += new System.EventHandler(this.btnProduits_Click);
             // 
             // btnSynthese
             // 
@@ -109,6 +109,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.btnSynthese);

@@ -382,11 +382,6 @@ namespace GesCom.GUI
         private void btnAjouter_Click(object sender, EventArgs e)
         {
             EnregistrerNouveauClient();
-            btnNouveau.Visible = true;
-            btnSupprimer.Visible = true;
-            btnModifier.Visible = true;
-            btnAjouter.Visible = false;
-            btnAnnuler.Visible = false;
         }
 
         private void EnregistrerNouveauClient()
@@ -446,7 +441,11 @@ namespace GesCom.GUI
 
                 ChargerClients();
                 InitialiserEtatDetail();
-                btnNouveau.Enabled = true;
+                btnNouveau.Visible = true;
+                btnSupprimer.Visible = true;
+                btnModifier.Visible = true;
+                btnAjouter.Visible = false;
+                btnAnnuler.Visible = false;
             }
             catch (Exception ex)
             {
@@ -475,7 +474,7 @@ namespace GesCom.GUI
             else errorProvider1.SetError(txtName, "");
 
 
-            // Num Rue Fact (autorisé chiffres)
+            // Num Rue Fact 
             if (string.IsNullOrWhiteSpace(txtNumRueFact.Text))
             {
                 errorProvider1.SetError(txtNumRueFact, "Numéro de rue facturation requis");
@@ -483,6 +482,39 @@ namespace GesCom.GUI
             }
             else errorProvider1.SetError(txtNumRueFact, "");
 
+            // Num Rue Livr 
+            if (string.IsNullOrWhiteSpace(txtNumRueLivr.Text))
+            {
+                errorProvider1.SetError(txtNumRueLivr, "Numéro de rue livraison requis");
+                return false;
+            }
+            else errorProvider1.SetError(txtNumRueLivr, "");
+
+            // Rue Fact 
+            if (string.IsNullOrWhiteSpace(txtRueFact.Text))
+            {
+                errorProvider1.SetError(txtRueFact, "Rue de facturation requise");
+                return false;
+            }
+            else if (txtRueFact.Text.Any(char.IsDigit))
+            {
+                errorProvider1.SetError(txtRueFact, "Le nom de la rue ne peut pas contenir de chiffres");
+                return false;
+            }
+            else errorProvider1.SetError(txtRueFact, "");
+
+            // Rue Livr
+            if (string.IsNullOrWhiteSpace(txtRueLivr.Text))
+            {
+                errorProvider1.SetError(txtRueLivr, "Rue de livraison requise");
+                return false;
+            }
+            else if (txtRueLivr.Text.Any(char.IsDigit))
+            {
+                errorProvider1.SetError(txtRueLivr, "Le nom de la rue ne peut pas contenir de chiffres");
+                return false;
+            }
+            else errorProvider1.SetError(txtRueLivr, "");
 
             // Ville Fact
             if (string.IsNullOrWhiteSpace(txtVilleFact.Text))
@@ -497,25 +529,6 @@ namespace GesCom.GUI
             }
             else errorProvider1.SetError(txtVilleFact, "");
 
-
-            // CP Fact (autorisé chiffres)
-            if (string.IsNullOrWhiteSpace(txtCpFact.Text))
-            {
-                errorProvider1.SetError(txtCpFact, "Code postal facturation requis");
-                return false;
-            }
-            else errorProvider1.SetError(txtCpFact, "");
-
-
-            // Num Rue Livr (autorisé chiffres)
-            if (string.IsNullOrWhiteSpace(txtNumRueLivr.Text))
-            {
-                errorProvider1.SetError(txtNumRueLivr, "Numéro de rue livraison requis");
-                return false;
-            }
-            else errorProvider1.SetError(txtNumRueLivr, "");
-
-
             // Ville Livr
             if (string.IsNullOrWhiteSpace(txtVilleLivr.Text))
             {
@@ -529,8 +542,15 @@ namespace GesCom.GUI
             }
             else errorProvider1.SetError(txtVilleLivr, "");
 
+            // CP Fact
+            if (string.IsNullOrWhiteSpace(txtCpFact.Text))
+            {
+                errorProvider1.SetError(txtCpFact, "Code postal facturation requis");
+                return false;
+            }
+            else errorProvider1.SetError(txtCpFact, "");
 
-            // CP Livr (autorisé chiffres)
+            // CP Livr
             if (string.IsNullOrWhiteSpace(txtCpLivr.Text))
             {
                 errorProvider1.SetError(txtCpLivr, "Code postal livraison requis");
@@ -539,7 +559,7 @@ namespace GesCom.GUI
             else errorProvider1.SetError(txtCpLivr, "");
 
 
-            // Téléphone (autorisé chiffres)
+            // Téléphone
             if (string.IsNullOrWhiteSpace(txtTelephone.Text))
             {
                 errorProvider1.SetError(txtTelephone, "Téléphone requis");
@@ -548,7 +568,7 @@ namespace GesCom.GUI
             else errorProvider1.SetError(txtTelephone, "");
 
 
-            // Fax (autorisé chiffres)
+            // Fax
             if (string.IsNullOrWhiteSpace(txtFax.Text))
             {
                 errorProvider1.SetError(txtFax, "Fax requis");
@@ -557,7 +577,7 @@ namespace GesCom.GUI
             else errorProvider1.SetError(txtFax, "");
 
 
-            // Email (pas de blocage de chiffres mais vérification du format possible)
+            // Email
             if (string.IsNullOrWhiteSpace(txtEmail.Text))
             {
                 errorProvider1.SetError(txtEmail, "Email requis");
@@ -568,8 +588,8 @@ namespace GesCom.GUI
 
             // vérification du type des champs int  
 
-            float nombre;
-            if (!float.TryParse(txtNumRueFact.Text, out nombre))
+            int nombre;
+            if (!int.TryParse(txtNumRueFact.Text, out nombre))
             {
                 errorProvider1.SetError(txtNumRueFact, "Le numéro de rue est incorrect");
                 return false;
@@ -579,7 +599,7 @@ namespace GesCom.GUI
                 errorProvider1.SetError(txtNumRueFact, "");
             }
 
-            if(!float.TryParse(txtNumRueLivr.Text, out nombre))
+            if(!int.TryParse(txtNumRueLivr.Text, out nombre))
             {
                 errorProvider1.SetError(txtNumRueLivr, "Le numéro de rue est incorrect");
                 return false;
@@ -589,7 +609,7 @@ namespace GesCom.GUI
                 errorProvider1.SetError(txtNumRueLivr, "");
             }
 
-            if (!float.TryParse(txtCpFact.Text, out nombre))
+            if (!int.TryParse(txtCpFact.Text, out nombre))
             {
                 errorProvider1.SetError(txtCpFact, "Le code postal est incorrect");
                 return false;
@@ -599,7 +619,7 @@ namespace GesCom.GUI
                 errorProvider1.SetError(txtCpFact, "");
             }
 
-            if (!float.TryParse(txtCpLivr.Text, out nombre))
+            if (!int.TryParse(txtCpLivr.Text, out nombre))
             {
                 errorProvider1.SetError(txtCpLivr, "Le code postal est incorrect");
                 return false;

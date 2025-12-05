@@ -11,6 +11,12 @@ namespace GesCom.BO
         private int code;
         private string name;
 
+        public Statut(int code, string name)
+        {
+            this.code = code;
+            this.name = name;
+        }
+
         public int Code
         {
             get { return this.code; }
@@ -21,6 +27,11 @@ namespace GesCom.BO
         {
             get { return this.name; }
             set { this.name = value; }
+        }
+
+        public override string ToString()
+        {
+            return name;
         }
     }
 }
