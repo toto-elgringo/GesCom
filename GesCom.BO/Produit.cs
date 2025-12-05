@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace GesCom.BO
 {
@@ -43,6 +44,11 @@ namespace GesCom.BO
         {
             get { return this.prixVenteHT; }
             set { this.prixVenteHT = value; }
+        }
+
+        public override string ToString()
+        {
+            return libelle;
         }
     }
 }

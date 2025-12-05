@@ -36,6 +36,11 @@ namespace GesCom.GUI
                 Dock = DockStyle.Fill;
             };
 
+            ucDevis = new UserControlDevis();
+            {
+                Dock = DockStyle.Fill;
+            }
+
             ucSynthese = new UserControlSyntheseClient();
             {
                 Dock = DockStyle.Fill;
@@ -57,9 +62,7 @@ namespace GesCom.GUI
 
         private void btnDevis_Click(object sender, EventArgs e)
         {
-            // A FAIRE POUR LE 27/11
-            MessageBox.Show("Module Devis - À venir", "Information",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            AfficherDevis();
         }
 
         private void btnSynthese_Click(object sender, EventArgs e)
@@ -79,6 +82,12 @@ namespace GesCom.GUI
         {
             panelContent.Controls.Clear();
             panelContent.Controls.Add(ucClients);
+        }
+
+        private void AfficherDevis()
+        {
+            panelContent.Controls.Clear();
+            panelContent.Controls.Add(ucDevis);
         }
 
         private void AfficherSynthese()

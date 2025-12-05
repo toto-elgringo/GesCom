@@ -56,9 +56,10 @@ namespace GesCom.DAL
                     reader.GetString(reader.GetOrdinal("mail_cli"))
                 );
 
-                Statut statut = new Statut();
-                statut.Code = reader.GetInt32(reader.GetOrdinal("code_sta"));
-                statut.Name = reader.GetString(reader.GetOrdinal("nom_sta"));
+                Statut statut = new Statut(
+                reader.GetInt32(reader.GetOrdinal("code_sta")),
+                reader.GetString(reader.GetOrdinal("nom_sta"))
+                );
 
                 Devis devis = new Devis(
                     reader.GetInt32(reader.GetOrdinal("code_dev")),
@@ -119,9 +120,10 @@ namespace GesCom.DAL
                         reader.GetString(reader.GetOrdinal("mail_cli"))
                     );
 
-                    Statut statut = new Statut();
-                    statut.Code = reader.GetInt32(reader.GetOrdinal("code_sta"));
-                    statut.Name = reader.GetString(reader.GetOrdinal("nom_sta"));
+                    Statut statut = new Statut(
+                    reader.GetInt32(reader.GetOrdinal("code_sta")),
+                    reader.GetString(reader.GetOrdinal("nom_sta"))
+                    );
 
                     devis = new Devis(
                         reader.GetInt32(reader.GetOrdinal("code_dev")),
@@ -194,8 +196,9 @@ namespace GesCom.DAL
         public bool AddDevis(Devis devis)
         {
             bool result = false;
-            string query = @"INSERT INTO Devis (date_dev, tauxTVA_dev, tauxRemiseGlobal_dev, code_cli, code_sta)
-                            VALUES (@date, @tauxTVA, @tauxRemiseGlobal, @codeClient, @codeStatut)";
+            string query = @"INSERT INTO Devis (date_dev, tauxTVA_dev, tauxRemiseGlobal_dev,MontantHTHorsRemise_dev, code_cli, code_sta)
+                            VALUES (@date, @tauxTVA, @tauxRemiseGlobal,@MontantHT, @codeClient, @codeStatut);
+                            SELECT CAST(SCOPE_IDENTITY() AS INT);";
 
             try
             {
@@ -205,16 +208,15 @@ namespace GesCom.DAL
                     cmd.Parameters.AddWithValue("@date", devis.Date);
                     cmd.Parameters.AddWithValue("@tauxTVA", devis.TauxTVA);
                     cmd.Parameters.AddWithValue("@tauxRemiseGlobal", devis.TauxRemiseGlobal);
+                    cmd.Parameters.AddWithValue("MontantHT", devis.MontantHTHorsRemiseGlobale);
                     cmd.Parameters.AddWithValue("@codeClient", devis.Client.Code);
                     cmd.Parameters.AddWithValue("@codeStatut", devis.Statut.Code);
 
-                    int rowsAffected = cmd.ExecuteNonQuery();
-                    result = (rowsAffected > 0);
 
-                    if (result)
-                    {
-                        AddProduitsInDevis(devis);
-                    }
+                    object id = cmd.ExecuteScalar();
+                    
+                    devis.Code = Convert.ToInt32(id);
+                    AddProduitsInDevis(devis);
                 }
             }
             catch (Exception ex)

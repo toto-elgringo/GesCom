@@ -34,18 +34,17 @@ namespace GesCom.BLL
         }
 
         public void AjouterDevis(Devis devis)
-        {
-            DevisDAL.GetUnDevisDAL().AddDevis(devis);
-        }
-
-        public void UpdateDevis(Devis devis)
-        {
+        { 
             GetListDevis();
             if (listDevis.Any(d => d.Code != devis.Code && d.Date == devis.Date && d.Client.Code == devis.Client.Code))
             {
                 throw new InvalidOperationException("Un autre devis avec cette date et ce client existe déjà.");
             }
+            DevisDAL.GetUnDevisDAL().AddDevis(devis);
+        }
 
+        public void UpdateDevis(Devis devis)
+        {
             DevisDAL.GetUnDevisDAL().UpdateDevis(devis);
         }
 

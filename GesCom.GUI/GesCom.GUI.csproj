@@ -119,6 +119,9 @@
     <EmbeddedResource Include="UserControlClients.resx">
       <DependentUpon>UserControlClients.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDevis.resx">
+      <DependentUpon>UserControlDevis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlProduits.resx">
       <DependentUpon>UserControlProduits.cs</DependentUpon>
     </EmbeddedResource>
