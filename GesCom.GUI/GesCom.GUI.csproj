@@ -160,8 +160,5 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Content Include="images\Capture d%27écran 2025-11-22 103620.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
