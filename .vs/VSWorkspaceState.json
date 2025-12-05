@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\GesCom.BLL",
-    "\\GesCom.BO",
-    "\\GesCom.DAL",
-    "\\GesCom.GUI"
+    ""
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\GesCom.sln",
   "PreviewInSolutionExplorer": false
 }
