@@ -3,20 +3,94 @@
   "WorkspaceRootPath": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontroldevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontroldevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\formprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\formprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontrolproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontrolproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.dal\\clientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\clientdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bll\\clientbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|solutionrelative:gescom.bll\\clientbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.dal\\produitdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\produitdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.dal\\devisdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\devisdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bll\\devisbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|solutionrelative:gescom.bll\\devisbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontroldevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontroldevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.dal\\devisdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\devisdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.gui\\usercontrolproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontrolproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.dal\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\userdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|solutionrelative:gescom.bll\\userbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.dal\\connexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\connexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bo\\devis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,6 +180,7 @@
           "Children": [
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 0,
               "Title": "UserControlDevis.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlDevis.cs",
@@ -113,6 +188,15 @@
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlDevis.cs",
               "RelativeToolTip": "GesCom.GUI\\UserControlDevis.cs",
               "ViewState": "AgIAAI4BAAAAAAAAAAAowK0BAAANAAAAAAAAAA==",
+=======
+              "DocumentIndex": 6,
+              "Title": "ClientDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\ClientDAL.cs",
+              "RelativeDocumentMoniker": "GesCom.DAL\\ClientDAL.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\ClientDAL.cs",
+              "RelativeToolTip": "GesCom.DAL\\ClientDAL.cs",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAowGEAAAAUAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T16:23:42.98Z",
               "IsPinned": true,
@@ -120,6 +204,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 2,
               "Title": "UserControlDevis.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlDevis.cs",
@@ -128,10 +213,72 @@
               "RelativeToolTip": "GesCom.GUI\\UserControlDevis.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T16:21:36.25Z",
+=======
+              "DocumentIndex": 0,
+              "Title": "FormPrincipal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FormPrincipal.cs [Design]",
+              "RelativeToolTip": "GesCom.GUI\\FormPrincipal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T17:39:15.766Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FormPrincipal.cs",
+              "RelativeToolTip": "GesCom.GUI\\FormPrincipal.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAEwGEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T14:59:05.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormPrincipal.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FormPrincipal.Designer.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\FormPrincipal.Designer.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FormPrincipal.Designer.cs",
+              "RelativeToolTip": "GesCom.GUI\\FormPrincipal.Designer.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAowHcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T15:01:30.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserControlClients.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlClients.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\UserControlClients.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlClients.cs",
+              "RelativeToolTip": "GesCom.GUI\\UserControlClients.cs",
+              "ViewState": "AgIAAG0CAAAAAAAAAAAIwLIBAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T10:40:51.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserControlClients.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlClients.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\UserControlClients.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlClients.cs [Design]",
+              "RelativeToolTip": "GesCom.GUI\\UserControlClients.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T13:05:37.694Z",
+>>>>>>> Stashed changes
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
               "Title": "Devis.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Devis.cs",
@@ -139,13 +286,102 @@
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Devis.cs",
               "RelativeToolTip": "GesCom.BO\\Devis.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAswFwAAAAVAAAAAAAAAA==",
+=======
+              "DocumentIndex": 5,
+              "Title": "UserControlProduits.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlProduits.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\UserControlProduits.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlProduits.cs [Design]",
+              "RelativeToolTip": "GesCom.GUI\\UserControlProduits.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T17:41:20.404Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClientBLL.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BLL\\ClientBLL.cs",
+              "RelativeDocumentMoniker": "GesCom.BLL\\ClientBLL.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BLL\\ClientBLL.cs",
+              "RelativeToolTip": "GesCom.BLL\\ClientBLL.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwCUAAAAwAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T17:51:35.043Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
+=======
+              "DocumentIndex": 8,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Client.cs",
+              "RelativeDocumentMoniker": "GesCom.BO\\Client.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Client.cs",
+              "RelativeToolTip": "GesCom.BO\\Client.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T11:09:49.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProduitDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\ProduitDAL.cs",
+              "RelativeDocumentMoniker": "GesCom.DAL\\ProduitDAL.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\ProduitDAL.cs",
+              "RelativeToolTip": "GesCom.DAL\\ProduitDAL.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAwwGAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T17:44:29.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FrmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\FrmLogin.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FrmLogin.cs",
+              "RelativeToolTip": "GesCom.GUI\\FrmLogin.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAcwGsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T17:41:52.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\FrmLogin.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FrmLogin.cs [Design]",
+              "RelativeToolTip": "GesCom.GUI\\FrmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T17:39:08.624Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DevisDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\DevisDAL.cs",
+              "RelativeDocumentMoniker": "GesCom.DAL\\DevisDAL.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\DevisDAL.cs",
+              "RelativeToolTip": "GesCom.DAL\\DevisDAL.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAtwDYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T19:27:47.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+>>>>>>> Stashed changes
               "Title": "DevisBLL.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BLL\\DevisBLL.cs",
               "RelativeDocumentMoniker": "GesCom.BLL\\DevisBLL.cs",
@@ -158,6 +394,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 3,
               "Title": "DevisDAL.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\DevisDAL.cs",
@@ -216,6 +453,15 @@
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlClients.cs",
               "RelativeToolTip": "GesCom.GUI\\UserControlClients.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAgwBcAAAAVAAAAAAAAAA==",
+=======
+              "DocumentIndex": 14,
+              "Title": "UserControlProduits.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlProduits.cs",
+              "RelativeDocumentMoniker": "GesCom.GUI\\UserControlProduits.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlProduits.cs",
+              "RelativeToolTip": "GesCom.GUI\\UserControlProduits.cs",
+              "ViewState": "AgIAALcAAAAAAAAAAAAswB0AAAAHAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T18:17:41.941Z",
               "EditorCaption": ""
@@ -247,6 +493,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 14,
               "Title": "StatutDAL.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\StatutDAL.cs",
@@ -256,10 +503,35 @@
               "ViewState": "AgIAABgAAAAAAAAAAAAowEIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T17:13:27.825Z",
+=======
+              "DocumentIndex": 16,
+              "Title": "UserBLL.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BLL\\UserBLL.cs",
+              "RelativeDocumentMoniker": "GesCom.BLL\\UserBLL.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BLL\\UserBLL.cs",
+              "RelativeToolTip": "GesCom.BLL\\UserBLL.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwCQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T18:10:07.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ConnexionDB.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\ConnexionDB.cs",
+              "RelativeDocumentMoniker": "GesCom.DAL\\ConnexionDB.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\ConnexionDB.cs",
+              "RelativeToolTip": "GesCom.DAL\\ConnexionDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T18:11:05.167Z",
+>>>>>>> Stashed changes
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 16,
               "Title": "FormPrincipal.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FormPrincipal.cs",
@@ -269,16 +541,63 @@
               "ViewState": "AgIAAGsAAAAAAAAAAADwv3wAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T17:42:42.069Z",
+=======
+              "DocumentIndex": 18,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\App.config",
+              "RelativeDocumentMoniker": "GesCom.GUI\\App.config",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\App.config",
+              "RelativeToolTip": "GesCom.GUI\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-19T18:12:01.093Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserDAL.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\UserDAL.cs",
+              "RelativeDocumentMoniker": "GesCom.DAL\\UserDAL.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\UserDAL.cs",
+              "RelativeToolTip": "GesCom.DAL\\UserDAL.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T18:13:07.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Produit.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Produit.cs",
+              "RelativeDocumentMoniker": "GesCom.BO\\Produit.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Produit.cs",
+              "RelativeToolTip": "GesCom.BO\\Produit.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T17:44:14.919Z",
+>>>>>>> Stashed changes
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 17,
               "Title": "FormPrincipal.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FormPrincipal.cs",
               "RelativeDocumentMoniker": "GesCom.GUI\\FormPrincipal.cs",
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FormPrincipal.cs [Design]",
               "RelativeToolTip": "GesCom.GUI\\FormPrincipal.cs [Design]",
+=======
+              "DocumentIndex": 19,
+              "Title": "Devis.cs",
+              "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Devis.cs",
+              "RelativeDocumentMoniker": "GesCom.BO\\Devis.cs",
+              "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BO\\Devis.cs",
+              "RelativeToolTip": "GesCom.BO\\Devis.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAAJAAAAAAAAAA==",
+>>>>>>> Stashed changes
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T17:42:39.213Z",
               "EditorCaption": " [Design]"

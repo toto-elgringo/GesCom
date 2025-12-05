@@ -555,6 +555,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.Controls.Add(this.dgvClients);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelRight);
