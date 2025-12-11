@@ -3,55 +3,55 @@
   "WorkspaceRootPath": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontroldevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontroldevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontroldevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontroldevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bll\\devisbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|solutionrelative:gescom.bll\\devisbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.dal\\devisdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\devisdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bo\\devis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bll\\devisbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|solutionrelative:gescom.bll\\devisbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.gui\\usercontroldevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontroldevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.gui\\usercontroldevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontroldevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\devis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\devis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bo\\contenirdevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\contenirdevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\contenirdevis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bo\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\produit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontrolproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.gui\\usercontrolproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontrolproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontrolclients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bo\\statut.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\statut.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\statut.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bo\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bo\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4FED83E7-4A4A-45CB-9F7E-68FBBC5CD65E}|GesCom.BO\\GesCom.BO.csproj|solutionrelative:gescom.bo\\categorie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -59,39 +59,39 @@
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontrolproduits.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.dal\\statutdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.dal\\statutdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\statutdal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.dal\\categoriedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.dal\\categoriedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C6B61507-C7E5-4B89-824F-F3C2841FCC37}|GesCom.DAL\\GesCom.DAL.csproj|solutionrelative:gescom.dal\\categoriedal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bll\\statutbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bll\\statutbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|solutionrelative:gescom.bll\\statutbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.bll\\categoriebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.bll\\categoriebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14CBF2B2-47C1-4DAB-86D3-4E38FB2CD22E}|GesCom.BLL\\GesCom.BLL.csproj|solutionrelative:gescom.bll\\categoriebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontroldevis.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.gui\\usercontroldevis.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontroldevis.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontroldevis.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.gui\\usercontroldevis.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontroldevis.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|c:\\users\\deoli\\source\\repos\\gestioncommerciale\\gescom\\gescom.gui\\usercontrolsyntheseclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\gescom.gui\\usercontrolsyntheseclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D0C535B-A180-463A-B5C6-73CDD0DC7D39}|GesCom.GUI\\GesCom.GUI.csproj|solutionrelative:gescom.gui\\usercontrolsyntheseclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -102,33 +102,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 447,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserControlDevis.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlDevis.cs",
               "RelativeDocumentMoniker": "GesCom.GUI\\UserControlDevis.cs",
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlDevis.cs",
               "RelativeToolTip": "GesCom.GUI\\UserControlDevis.cs",
-              "ViewState": "AgIAAI4BAAAAAAAAAAAowJgBAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAIUBAAAAAAAAAAAowJEBAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-02T16:23:42.98Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UserControlDevis.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlDevis.cs",
               "RelativeDocumentMoniker": "GesCom.GUI\\UserControlDevis.cs",
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlDevis.cs [Design]",
               "RelativeToolTip": "GesCom.GUI\\UserControlDevis.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T16:21:36.25Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-02T16:21:36.25Z"
             },
             {
               "$type": "Document",
@@ -140,31 +138,29 @@
               "RelativeToolTip": "GesCom.BO\\Devis.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAswFwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T17:51:35.043Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T17:51:35.043Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DevisBLL.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BLL\\DevisBLL.cs",
               "RelativeDocumentMoniker": "GesCom.BLL\\DevisBLL.cs",
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.BLL\\DevisBLL.cs",
               "RelativeToolTip": "GesCom.BLL\\DevisBLL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAArwDQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T17:09:08.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T17:09:08.77Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "DevisDAL.cs",
               "DocumentMoniker": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\DevisDAL.cs",
               "RelativeDocumentMoniker": "GesCom.DAL\\DevisDAL.cs",
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.DAL\\DevisDAL.cs",
               "RelativeToolTip": "GesCom.DAL\\DevisDAL.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAiwC4AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAMBAAAAAAAAAAAhwAwBAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-04T17:45:26.697Z",
               "EditorCaption": ""
@@ -179,8 +175,7 @@
               "RelativeToolTip": "GesCom.BO\\ContenirDevis.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T10:30:35.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-05T10:30:35.385Z"
             },
             {
               "$type": "Document",
@@ -192,8 +187,7 @@
               "RelativeToolTip": "GesCom.BO\\Produit.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAAADMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T17:52:22.946Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T17:52:22.946Z"
             },
             {
               "$type": "Document",
@@ -204,8 +198,7 @@
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlProduits.cs [Design]",
               "RelativeToolTip": "GesCom.GUI\\UserControlProduits.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T17:50:56.508Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-04T17:50:56.508Z"
             },
             {
               "$type": "Document",
@@ -217,8 +210,7 @@
               "RelativeToolTip": "GesCom.GUI\\UserControlClients.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAgwBcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T18:17:41.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T18:17:41.941Z"
             },
             {
               "$type": "Document",
@@ -229,8 +221,7 @@
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlClients.cs [Design]",
               "RelativeToolTip": "GesCom.GUI\\UserControlClients.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T18:12:04.304Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-04T18:12:04.304Z"
             },
             {
               "$type": "Document",
@@ -242,8 +233,7 @@
               "RelativeToolTip": "GesCom.BO\\Client.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAcwHcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T18:02:22.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T18:02:22.858Z"
             },
             {
               "$type": "Document",
@@ -255,8 +245,7 @@
               "RelativeToolTip": "GesCom.DAL\\StatutDAL.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAowEIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T17:13:27.825Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T17:13:27.825Z"
             },
             {
               "$type": "Document",
@@ -268,8 +257,7 @@
               "RelativeToolTip": "GesCom.GUI\\FormPrincipal.cs",
               "ViewState": "AgIAAGsAAAAAAAAAAADwv3wAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T17:42:42.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T17:42:42.069Z"
             },
             {
               "$type": "Document",
@@ -280,8 +268,7 @@
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\FormPrincipal.cs [Design]",
               "RelativeToolTip": "GesCom.GUI\\FormPrincipal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T17:42:39.213Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-12-04T17:42:39.213Z"
             },
             {
               "$type": "Document",
@@ -293,8 +280,7 @@
               "RelativeToolTip": "GesCom.GUI\\UserControlProduits.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAgwBoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T12:18:38.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T12:18:38.964Z"
             },
             {
               "$type": "Document",
@@ -306,8 +292,7 @@
               "RelativeToolTip": "GesCom.DAL\\CategorieDAL.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T17:13:35.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T17:13:35.897Z"
             },
             {
               "$type": "Document",
@@ -319,8 +304,7 @@
               "RelativeToolTip": "GesCom.BO\\Statut.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAADgvxMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T17:25:02.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T17:25:02.242Z"
             },
             {
               "$type": "Document",
@@ -332,8 +316,7 @@
               "RelativeToolTip": "GesCom.BO\\Categorie.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T17:25:14.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T17:25:14.121Z"
             },
             {
               "$type": "Document",
@@ -345,8 +328,7 @@
               "RelativeToolTip": "GesCom.BLL\\StatutBLL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T17:28:03.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T17:28:03.683Z"
             },
             {
               "$type": "Document",
@@ -358,8 +340,7 @@
               "RelativeToolTip": "GesCom.BLL\\CategorieBLL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T17:28:09.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-04T17:28:09.954Z"
             },
             {
               "$type": "Document",
@@ -370,8 +351,7 @@
               "ToolTip": "C:\\Users\\Deoli\\source\\repos\\GestionCommerciale\\GesCom\\GesCom.GUI\\UserControlDevis.resx",
               "RelativeToolTip": "GesCom.GUI\\UserControlDevis.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-12-02T16:21:19.455Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T16:21:19.455Z"
             },
             {
               "$type": "Document",
@@ -383,8 +363,7 @@
               "RelativeToolTip": "GesCom.GUI\\UserControlDevis.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-02T16:21:19.071Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-02T16:21:19.071Z"
             },
             {
               "$type": "Document",
@@ -396,8 +375,7 @@
               "RelativeToolTip": "GesCom.GUI\\UserControlSyntheseClient.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAIBJwEoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T12:12:34.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-22T12:12:34.335Z"
             }
           ]
         },
