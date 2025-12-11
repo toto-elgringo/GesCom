@@ -53,6 +53,11 @@ namespace GesCom.BLL
 
         public void SupprimerProduit(int code)
         {
+            if (ProduitDAL.GetUnProduitDAL().IsProduitInDevis(code))
+            {
+                throw new InvalidOperationException("Ce produit ne peut pas être supprimé car il est utilisé dans un ou plusieurs devis.");
+            }
+
             ProduitDAL.GetUnProduitDAL().DeleteProduit(code);
         }
     }

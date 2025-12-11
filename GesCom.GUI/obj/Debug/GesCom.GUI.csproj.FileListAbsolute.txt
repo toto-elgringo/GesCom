@@ -62,3 +62,4 @@ C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.UserContro
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.UserControlSyntheseClient.resources
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.UserControlSyntheseClient.resources
 C:\Users\Deoli\source\repos\GestionCommerciale\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.UserControlDevis.resources
+C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.GUI\obj\Debug\GesCom.GUI.UserControlDevis.resources
