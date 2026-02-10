@@ -28,10 +28,12 @@ namespace GesCom.DAL
             List<Devis> devisList = new List<Devis>();
             string query = @"SELECT D.code_dev, D.date_dev, D.tauxTVA_dev, D.tauxRemiseGlobal_dev,
                             C.code_cli, C.nom_cli, C.numRueFact_cli, C.rueFact_cli, C.villeFact_cli, C.codePostFact_cli,
-                            C.numRueLivr_cli, C.rueLivr_cli, C.villeLivr_cli, C.codePostLivr_cli, C.numTel_cli, C.numFax_cli, C.mail_cli,
+                            C.numRueLivr_cli, C.rueLivr_cli, C.villeLivr_cli, C.codePostLivr_cli, C.numTel_cli, C.numFax_cli, C.mail_cli, C.id_tva,
+                            T.nom_pays, T.taux_tva,
                             S.code_sta, S.nom_sta
                             FROM Devis D
                             INNER JOIN Clients C ON D.code_cli = C.code_cli
+                            INNER JOIN TVA T ON C.id_tva = T.id_tva
                             INNER JOIN Statut S ON D.code_sta = S.code_sta";
 
             SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion();
@@ -40,6 +42,12 @@ namespace GesCom.DAL
 
             while (reader.Read())
             {
+                TVA tva = new TVA(
+                    reader.GetInt32(reader.GetOrdinal("id_tva")),
+                    reader.GetString(reader.GetOrdinal("nom_pays")),
+                    (float)reader.GetDecimal(reader.GetOrdinal("taux_tva"))
+                );
+
                 Client client = new Client(
                     reader.GetInt32(reader.GetOrdinal("code_cli")),
                     reader.GetString(reader.GetOrdinal("nom_cli")),
@@ -53,7 +61,8 @@ namespace GesCom.DAL
                     reader.GetInt32(reader.GetOrdinal("codePostLivr_cli")),
                     reader.GetString(reader.GetOrdinal("numTel_cli")),
                     reader.GetString(reader.GetOrdinal("numFax_cli")),
-                    reader.GetString(reader.GetOrdinal("mail_cli"))
+                    reader.GetString(reader.GetOrdinal("mail_cli")),
+                    tva
                 );
 
                 Statut statut = new Statut(
@@ -89,10 +98,12 @@ namespace GesCom.DAL
             Devis devis = null;
             string query = @"SELECT D.code_dev, D.date_dev, D.tauxTVA_dev, D.tauxRemiseGlobal_dev,
                             C.code_cli, C.nom_cli, C.numRueFact_cli, C.rueFact_cli, C.villeFact_cli, C.codePostFact_cli,
-                            C.numRueLivr_cli, C.rueLivr_cli, C.villeLivr_cli, C.codePostLivr_cli, C.numTel_cli, C.numFax_cli, C.mail_cli,
+                            C.numRueLivr_cli, C.rueLivr_cli, C.villeLivr_cli, C.codePostLivr_cli, C.numTel_cli, C.numFax_cli, C.mail_cli, C.id_tva,
+                            T.nom_pays, T.taux_tva,
                             S.code_sta, S.nom_sta
                             FROM Devis D
                             INNER JOIN Clients C ON D.code_cli = C.code_cli
+                            INNER JOIN TVA T ON C.id_tva = T.id_tva
                             INNER JOIN Statut S ON D.code_sta = S.code_sta
                             WHERE D.code_dev = @code";
 
@@ -104,6 +115,12 @@ namespace GesCom.DAL
 
                 if (reader.Read())
                 {
+                    TVA tva = new TVA(
+                        reader.GetInt32(reader.GetOrdinal("id_tva")),
+                        reader.GetString(reader.GetOrdinal("nom_pays")),
+                        (float)reader.GetDecimal(reader.GetOrdinal("taux_tva"))
+                    );
+
                     Client client = new Client(
                         reader.GetInt32(reader.GetOrdinal("code_cli")),
                         reader.GetString(reader.GetOrdinal("nom_cli")),
@@ -117,7 +134,8 @@ namespace GesCom.DAL
                         reader.GetInt32(reader.GetOrdinal("codePostLivr_cli")),
                         reader.GetString(reader.GetOrdinal("numTel_cli")),
                         reader.GetString(reader.GetOrdinal("numFax_cli")),
-                        reader.GetString(reader.GetOrdinal("mail_cli"))
+                        reader.GetString(reader.GetOrdinal("mail_cli")),
+                        tva
                     );
 
                     Statut statut = new Statut(

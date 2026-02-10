@@ -64,6 +64,7 @@
     <Compile Include="ProduitBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StatutBLL.cs" />
+    <Compile Include="TVABLL.cs" />
     <Compile Include="UserBLL.cs" />
   </ItemGroup>
   <ItemGroup>

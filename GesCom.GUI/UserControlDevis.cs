@@ -27,6 +27,18 @@ namespace GesCom.GUI
             ChargerStatuts();
             ChargerProduitsAjout();
             InitialiserEtatDetail();
+
+            cmbClient.SelectedIndexChanged += CmbClient_SelectedIndexChanged;
+        }
+
+        private void CmbClient_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbClient.SelectedItem != null && devisSelectionne != null)
+            {
+                Client clientSelectionne = (Client)cmbClient.SelectedItem;
+                devisSelectionne.TauxTVA = clientSelectionne.Tva.TauxTva;
+                CalculerTotaux();
+            }
         }
 
         #region Chargement des données
@@ -301,7 +313,7 @@ namespace GesCom.GUI
         private void btnNouveau_Click(object sender, EventArgs e)
         {
             modeCreation = true;
-            devisSelectionne = new Devis(0, DateTime.Now, 20.0f, 0.0f, null, null);
+            devisSelectionne = new Devis(0, DateTime.Now, 0.0f, 0.0f, null, null);
             devisSelectionne.Lignes = new List<ContenirDevis>();
 
             dgvDevis.ClearSelection();
@@ -635,20 +647,20 @@ namespace GesCom.GUI
 
         private void CalculerTotaux()
         {
-            
+
             if (devisSelectionne != null && devisSelectionne.Lignes != null)
             {
                 devisSelectionne.TauxRemiseGlobal = (float)numRemiseGlobale.Value;
                 lblMontantHTSansRemise.Text = "Montant HT Sans Remise : " + devisSelectionne.MontantHTHorsRemiseGlobale.ToString("N2") + " €";
                 lblMontantHTAvecRemise.Text = "Montant HT Avec Remise : " + devisSelectionne.MontantHT.ToString("N2") + " €";
-                lblMontantTVA.Text = "Montant TVA : " + devisSelectionne.MontantTVA.ToString("N2") + " €";
+                lblMontantTVA.Text = "Montant TVA (" + devisSelectionne.TauxTVA.ToString("N2") + "%) : " + devisSelectionne.MontantTVA.ToString("N2") + " €";
                 lblMontantTTC.Text = "Montant TTC : " +  devisSelectionne.MontantTTC.ToString("N2") + " €";
             }
             else
             {
                 lblMontantHTSansRemise.Text = "Montant HT Sans Remise : 0.00 €";
                 lblMontantHTAvecRemise.Text = "Montant HT Avec Remise : 0.00 €";
-                lblMontantTVA.Text = "Montant TVA : 0.00 €";
+                lblMontantTVA.Text = "Montant TVA (0.00%) : 0.00 €";
                 lblMontantTTC.Text = "Montant TTC : 0.00 €";
             }
         }

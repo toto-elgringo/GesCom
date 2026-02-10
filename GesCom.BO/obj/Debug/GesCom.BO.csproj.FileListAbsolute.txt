@@ -32,3 +32,20 @@ C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BO\obj\Debug\GesCom.BO.csproj.CoreC
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BO\obj\Debug\GesCom.BO.csproj.Up2Date
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BO\obj\Debug\GesCom.BO.dll
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BO\obj\Debug\GesCom.BO.pdb
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\bin\Debug\GesCom.BO.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\bin\Debug\GesCom.BO.pdb
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\bin\Debug\System.Buffers.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\bin\Debug\System.Memory.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\bin\Debug\System.Buffers.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\bin\Debug\System.Memory.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\Debug\GesCom.BO.csproj.AssemblyReference.cache
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\Debug\GesCom.BO.csproj.CoreCompileInputs.cache
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\Debug\GesCom.BO.csproj.Up2Date
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\Debug\GesCom.BO.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\Debug\GesCom.BO.pdb

@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GesCom.BO"
   ],
-  "SelectedNode": "\\GesCom.sln",
+  "SelectedNode": "\\GesCom.BO\\TVA.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -225,3 +225,45 @@ JOIN Clients C ON D.code_cli = C.code_cli
 JOIN Produits P ON P.libelle_prod = 'Carte Mere ASUS B450'
 WHERE C.nom_cli = 'Batitech';
 GO
+
+------------------------------------------------------------
+-- MISE A JOUR : GESTION TVA PAR PROVENANCE CLIENT
+------------------------------------------------------------
+
+-- TABLE : TVA
+------------------------------------------------------------
+CREATE TABLE [TVA] (
+    [id_tva] INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    [nom_pays] VARCHAR(50) NOT NULL UNIQUE,
+    [taux_tva] DECIMAL(5,2) NOT NULL,
+    CONSTRAINT ck_tva_taux CHECK ([taux_tva] >= 0)
+);
+GO
+
+-- Insert taux TVA
+INSERT INTO [TVA] ([nom_pays], [taux_tva]) VALUES
+('France', 20.00),
+('Etranger', 25.00);
+GO
+
+-- Add colonne id_tva  table Clients
+ALTER TABLE [Clients]
+ADD [id_tva] INT NULL;
+GO
+
+-- Ajout contrainte clé étrangère
+ALTER TABLE [Clients]
+ADD CONSTRAINT fk_clients_tva FOREIGN KEY ([id_tva])
+    REFERENCES [TVA]([id_tva]);
+GO
+
+-- MAJ clients actuels avec TVA France par défaut
+UPDATE [Clients]
+SET [id_tva] = (SELECT [id_tva] FROM [TVA] WHERE [nom_pays] = 'France')
+WHERE [id_tva] IS NULL;
+GO
+
+-- Colonne id_tva obligatoire après MAJ
+ALTER TABLE [Clients]
+ALTER COLUMN [id_tva] INT NOT NULL;
+GO

@@ -27,12 +27,30 @@ namespace GesCom.GUI
         {
             InitializeComponent();
             ChargerClients();
+            ChargerTVA();
         }
 
         private void UserControlClients_Load(object sender, EventArgs e)
         {
             ChargerClients();
             InitialiserEtatDetail();
+        }
+
+        private void ChargerTVA()
+        {
+            try
+            {
+                List<TVA> listeTVA = TVABLL.GetUnTVABLL().GetListTVA();
+                cmbTVA.DataSource = listeTVA;
+                cmbTVA.DisplayMember = "NomPays";
+                cmbTVA.ValueMember = "IdTva";
+                cmbTVA.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors du chargement des TVA : {ex.Message}",
+                    "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void ChargerClients()
@@ -45,14 +63,14 @@ namespace GesCom.GUI
                 if (dgvClients.Columns.Count > 0)
                 {
                     dgvClients.Columns["Nom"].HeaderText = "Nom";
-                    
+
 
                     dgvClients.Columns["NumRueFact"].HeaderText = "Num Rue Fact";
 
                     dgvClients.Columns["RueFact"].HeaderText = "Rue Fact";
-                  
+
                     dgvClients.Columns["VilleFact"].HeaderText = "Ville Fact";
-                  
+
                     dgvClients.Columns["CodePostFact"].HeaderText = "CP Fact";
 
                     dgvClients.Columns["NumRueLivr"].HeaderText = "Num Rue Livr";
@@ -69,9 +87,14 @@ namespace GesCom.GUI
 
                     dgvClients.Columns["Mail"].HeaderText = "Email";
 
+                    // Masquer la colonne TVA dans le DataGridView
+                    if (dgvClients.Columns.Contains("Tva"))
+                    {
+                        dgvClients.Columns["Tva"].Visible = false;
+                    }
                 }
             }
-          
+
              catch (Exception ex)
             {
                 MessageBox.Show($"Erreur lors du chargement des clients : {ex.Message}",
@@ -96,6 +119,7 @@ namespace GesCom.GUI
             txtTelephone.Text = "";
             txtFax.Text = "";
             txtEmail.Text = "";
+            cmbTVA.SelectedIndex = -1;
 
 
             txtName.Enabled = false;
@@ -110,6 +134,7 @@ namespace GesCom.GUI
             txtTelephone.Enabled = false;
             txtFax.Enabled = false;
             txtEmail.Enabled = false;
+            cmbTVA.Enabled = false;
 
             btnModifier.Enabled = false;
             btnSupprimer.Enabled = false;
@@ -130,6 +155,7 @@ namespace GesCom.GUI
             txtTelephone.Text = clientSelectionne.NumTel;
             txtFax.Text = clientSelectionne.NumFax;
             txtEmail.Text = clientSelectionne.Mail;
+            cmbTVA.SelectedValue = clientSelectionne.Tva.IdTva;
 
             txtName.Enabled = false;
             txtNumRueFact.Enabled = false;
@@ -143,6 +169,7 @@ namespace GesCom.GUI
             txtTelephone.Enabled = false;
             txtFax.Enabled = false;
             txtEmail.Enabled = false;
+            cmbTVA.Enabled = false;
 
             btnModifier.Enabled = true;
             btnModifier.Visible = true;
@@ -183,6 +210,7 @@ namespace GesCom.GUI
             txtTelephone.Text = "";
             txtFax.Text = "";
             txtEmail.Text = "";
+            cmbTVA.SelectedIndex = -1;
 
             txtName.Enabled = true;
             txtNumRueFact.Enabled = true;
@@ -196,6 +224,7 @@ namespace GesCom.GUI
             txtTelephone.Enabled = true;
             txtFax.Enabled = true;
             txtEmail.Enabled = true;
+            cmbTVA.Enabled = true;
 
             btnModifier.Enabled = false;
             btnSupprimer.Enabled = false;
@@ -249,6 +278,7 @@ namespace GesCom.GUI
                 txtTelephone.Enabled = true;
                 txtFax.Enabled = true;
                 txtEmail.Enabled = true;
+                cmbTVA.Enabled = true;
                 btnModifier.Text = "💾 Enregistrer";
                 btnSupprimer.Enabled = false;
                 btnNouveau.Enabled = false;
@@ -284,6 +314,7 @@ namespace GesCom.GUI
                 clientSelectionne.NumTel = txtTelephone.Text.Trim();
                 clientSelectionne.NumFax = txtFax.Text.Trim();
                 clientSelectionne.Mail = txtEmail.Text.Trim();
+                clientSelectionne.Tva = (TVA)cmbTVA.SelectedItem;
 
 
                 ClientBLL.GetUnClientBLL().UpdateClient(clientSelectionne);
@@ -317,6 +348,7 @@ namespace GesCom.GUI
                 txtTelephone.Enabled = false;
                 txtFax.Enabled = false;
                 txtEmail.Enabled = false;
+                cmbTVA.Enabled = false;
                 btnModifier.Text = "✏️ Modifier";
                 btnSupprimer.Enabled = true;
                 btnSupprimer.Visible = true;
@@ -429,7 +461,8 @@ namespace GesCom.GUI
                     int.Parse(txtCpLivr.Text),
                     txtTelephone.Text.Trim(),
                     txtFax.Text.Trim(),
-                    txtEmail.Text.Trim()
+                    txtEmail.Text.Trim(),
+                    (TVA)cmbTVA.SelectedItem
                     );
 
                 ClientBLL.GetUnClientBLL().AjouterClient(NouveauClient);
@@ -638,6 +671,17 @@ namespace GesCom.GUI
             else
             {
                 errorProvider1.SetError(txtEmail, "");
+            }
+
+            // Vérification de la sélection de la TVA
+            if (cmbTVA.SelectedIndex == -1)
+            {
+                errorProvider1.SetError(cmbTVA, "Veuillez sélectionner la provenance du client");
+                return false;
+            }
+            else
+            {
+                errorProvider1.SetError(cmbTVA, "");
             }
 
             return true;

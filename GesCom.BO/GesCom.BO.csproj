@@ -63,6 +63,7 @@
     <Compile Include="Devis.cs" />
     <Compile Include="Produit.cs" />
     <Compile Include="Statut.cs" />
+    <Compile Include="TVA.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

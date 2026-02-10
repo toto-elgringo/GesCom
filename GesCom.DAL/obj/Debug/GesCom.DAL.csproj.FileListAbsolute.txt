@@ -36,3 +36,22 @@ C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.csproj.Cor
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.csproj.Up2Date
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.dll
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.pdb
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\GesCom.DAL.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\GesCom.DAL.pdb
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\GesCom.BO.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\System.Buffers.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\System.Memory.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\GesCom.BO.pdb
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\System.Buffers.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\System.Memory.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.csproj.AssemblyReference.cache
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.csproj.CoreCompileInputs.cache
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.csproj.Up2Date
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.DAL\obj\Debug\GesCom.DAL.pdb

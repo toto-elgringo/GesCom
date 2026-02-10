@@ -22,9 +22,10 @@ namespace GesCom.BO
         private string numTel;
         private string numFax;
         private string mail;
+        private TVA tva;
 
         public Client(int code, string nom, int numRueFact, string rueFact, string villeFact, int codePostFact, int numRueLivr,
-                        string rueLivr, string villeLivr, int codePostLivr, string numTel, string numFax, string mail) {
+                        string rueLivr, string villeLivr, int codePostLivr, string numTel, string numFax, string mail, TVA tva) {
 
             this.code = code;
             this.nom = nom;
@@ -39,6 +40,7 @@ namespace GesCom.BO
             this.numTel = numTel;
             this.numFax = numFax;
             this.mail = mail;
+            this.tva = tva;
         }
 
         public int Code
@@ -117,6 +119,12 @@ namespace GesCom.BO
         {
             get { return mail; }
             set { mail = value; }
+        }
+
+        public TVA Tva
+        {
+            get { return tva; }
+            set { tva = value; }
         }
 
         public override string ToString()

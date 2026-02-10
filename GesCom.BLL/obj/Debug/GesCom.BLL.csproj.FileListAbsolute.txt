@@ -40,3 +40,24 @@ C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.Cor
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.Up2Date
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.dll
 C:\xampp\htdocs\php\4 - GitHub\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.pdb
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\GesCom.BLL.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\GesCom.BLL.pdb
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\GesCom.BO.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\GesCom.DAL.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\System.Buffers.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\System.Memory.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\GesCom.BO.pdb
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\GesCom.DAL.pdb
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\System.Buffers.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\System.Memory.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.AssemblyReference.cache
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.CoreCompileInputs.cache
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.csproj.Up2Date
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BLL\obj\Debug\GesCom.BLL.pdb

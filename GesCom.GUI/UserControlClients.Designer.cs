@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.panelRight = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbTVA = new System.Windows.Forms.ComboBox();
+            this.lblTVA = new System.Windows.Forms.Label();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnSupprimer = new System.Windows.Forms.Button();
@@ -89,11 +91,13 @@
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelRight.Location = new System.Drawing.Point(720, 0);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(380, 970);
+            this.panelRight.Size = new System.Drawing.Size(380, 1020);
             this.panelRight.TabIndex = 1;
-            // 
+            //
             // panel1
-            // 
+            //
+            this.panel1.Controls.Add(this.cmbTVA);
+            this.panel1.Controls.Add(this.lblTVA);
             this.panel1.Controls.Add(this.btnAjouter);
             this.panel1.Controls.Add(this.btnAnnuler);
             this.panel1.Controls.Add(this.btnSupprimer);
@@ -127,17 +131,17 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 70);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(380, 900);
+            this.panel1.Size = new System.Drawing.Size(380, 950);
             this.panel1.TabIndex = 1;
             // 
             // btnAjouter
-            // 
+            //
             this.btnAjouter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAjouter.FlatAppearance.BorderSize = 0;
             this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjouter.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjouter.ForeColor = System.Drawing.Color.White;
-            this.btnAjouter.Location = new System.Drawing.Point(24, 797);
+            this.btnAjouter.Location = new System.Drawing.Point(24, 830);
             this.btnAjouter.Name = "btnAjouter";
             this.btnAjouter.Size = new System.Drawing.Size(160, 46);
             this.btnAjouter.TabIndex = 28;
@@ -145,15 +149,15 @@
             this.btnAjouter.UseVisualStyleBackColor = false;
             this.btnAjouter.Visible = false;
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
-            // 
+            //
             // btnAnnuler
-            // 
+            //
             this.btnAnnuler.BackColor = System.Drawing.Color.Red;
             this.btnAnnuler.FlatAppearance.BorderSize = 0;
             this.btnAnnuler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnnuler.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.btnAnnuler.ForeColor = System.Drawing.Color.White;
-            this.btnAnnuler.Location = new System.Drawing.Point(204, 797);
+            this.btnAnnuler.Location = new System.Drawing.Point(204, 830);
             this.btnAnnuler.Name = "btnAnnuler";
             this.btnAnnuler.Size = new System.Drawing.Size(160, 46);
             this.btnAnnuler.TabIndex = 27;
@@ -163,27 +167,27 @@
             this.btnAnnuler.Click += new System.EventHandler(this.btnAnnuler_Click);
             // 
             // btnSupprimer
-            // 
+            //
             this.btnSupprimer.BackColor = System.Drawing.Color.Red;
             this.btnSupprimer.FlatAppearance.BorderSize = 0;
             this.btnSupprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSupprimer.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSupprimer.ForeColor = System.Drawing.Color.White;
-            this.btnSupprimer.Location = new System.Drawing.Point(204, 797);
+            this.btnSupprimer.Location = new System.Drawing.Point(204, 830);
             this.btnSupprimer.Name = "btnSupprimer";
             this.btnSupprimer.Size = new System.Drawing.Size(160, 46);
             this.btnSupprimer.TabIndex = 26;
             this.btnSupprimer.Text = "🗑️ Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = false;
             this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
-            // 
+            //
             // btnModifier
-            // 
+            //
             this.btnModifier.BackColor = System.Drawing.Color.White;
             this.btnModifier.FlatAppearance.BorderSize = 0;
             this.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModifier.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModifier.Location = new System.Drawing.Point(24, 797);
+            this.btnModifier.Location = new System.Drawing.Point(24, 830);
             this.btnModifier.Name = "btnModifier";
             this.btnModifier.Size = new System.Drawing.Size(160, 46);
             this.btnModifier.TabIndex = 0;
@@ -202,7 +206,7 @@
             this.lblEmail.Text = "Email";
             // 
             // txtEmail
-            // 
+            //
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.Enabled = false;
             this.txtEmail.Location = new System.Drawing.Point(24, 699);
@@ -210,9 +214,30 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(340, 45);
             this.txtEmail.TabIndex = 24;
-            // 
+            //
+            // lblTVA
+            //
+            this.lblTVA.AutoSize = true;
+            this.lblTVA.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTVA.Location = new System.Drawing.Point(20, 760);
+            this.lblTVA.Name = "lblTVA";
+            this.lblTVA.Size = new System.Drawing.Size(96, 21);
+            this.lblTVA.TabIndex = 27;
+            this.lblTVA.Text = "Provenance";
+            //
+            // cmbTVA
+            //
+            this.cmbTVA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTVA.Enabled = false;
+            this.cmbTVA.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTVA.FormattingEnabled = true;
+            this.cmbTVA.Location = new System.Drawing.Point(24, 785);
+            this.cmbTVA.Name = "cmbTVA";
+            this.cmbTVA.Size = new System.Drawing.Size(340, 29);
+            this.cmbTVA.TabIndex = 26;
+            //
             // txtFax
-            // 
+            //
             this.txtFax.Enabled = false;
             this.txtFax.Location = new System.Drawing.Point(204, 614);
             this.txtFax.Multiline = true;
@@ -622,6 +647,8 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip4;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip5;
+        private System.Windows.Forms.ComboBox cmbTVA;
+        private System.Windows.Forms.Label lblTVA;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip6;
     }
 }

@@ -26,7 +26,9 @@ namespace GesCom.DAL
         public List<Client> GetListClients()
         {
             List<Client> clients = new List<Client>();
-            string query = "SELECT * FROM Clients";
+            string query = @"SELECT C.*, T.id_tva, T.nom_pays, T.taux_tva
+                            FROM Clients C
+                            INNER JOIN TVA T ON C.id_tva = T.id_tva";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
@@ -35,6 +37,12 @@ namespace GesCom.DAL
 
                 while (reader.Read())
                 {
+                    TVA tva = new TVA(
+                        reader.GetInt32(reader.GetOrdinal("id_tva")),
+                        reader.GetString(reader.GetOrdinal("nom_pays")),
+                        (float)reader.GetDecimal(reader.GetOrdinal("taux_tva"))
+                    );
+
                     Client client = new Client(
                         reader.GetInt32(reader.GetOrdinal("code_cli")),
                         reader.GetString(reader.GetOrdinal("nom_cli")),
@@ -48,7 +56,8 @@ namespace GesCom.DAL
                         reader.GetInt32(reader.GetOrdinal("codePostLivr_cli")),
                         reader.GetString(reader.GetOrdinal("numTel_cli")),
                         reader.GetString(reader.GetOrdinal("numFax_cli")),
-                        reader.GetString(reader.GetOrdinal("mail_cli"))
+                        reader.GetString(reader.GetOrdinal("mail_cli")),
+                        tva
                     );
                     clients.Add(client);
                 }
@@ -62,7 +71,10 @@ namespace GesCom.DAL
         public Client GetClientByCode(int codeClient)
         {
             Client client = null;
-            string query = "SELECT * FROM CLIENTS WHERE code_cli = @code";
+            string query = @"SELECT C.*, T.id_tva, T.nom_pays, T.taux_tva
+                            FROM Clients C
+                            INNER JOIN TVA T ON C.id_tva = T.id_tva
+                            WHERE C.code_cli = @code";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
@@ -72,6 +84,12 @@ namespace GesCom.DAL
 
                 if (reader.Read())
                 {
+                    TVA tva = new TVA(
+                        reader.GetInt32(reader.GetOrdinal("id_tva")),
+                        reader.GetString(reader.GetOrdinal("nom_pays")),
+                        (float)reader.GetDecimal(reader.GetOrdinal("taux_tva"))
+                    );
+
                     client = new Client(
                         reader.GetInt32(reader.GetOrdinal("code_cli")),
                         reader.GetString(reader.GetOrdinal("nom_cli")),
@@ -85,7 +103,8 @@ namespace GesCom.DAL
                         reader.GetInt32(reader.GetOrdinal("codePostLivr_cli")),
                         reader.GetString(reader.GetOrdinal("numTel_cli")),
                         reader.GetString(reader.GetOrdinal("numFax_cli")),
-                        reader.GetString(reader.GetOrdinal("mail_cli"))
+                        reader.GetString(reader.GetOrdinal("mail_cli")),
+                        tva
                     );
                 }
                 reader.Close();
@@ -99,9 +118,9 @@ namespace GesCom.DAL
         {
             bool result = false;
             string query = @"INSERT INTO CLIENTS (nom_cli, numRueFact_cli, rueFact_cli, villeFact_cli, codePostFact_cli,
-                            numRueLivr_cli, rueLivr_cli, villeLivr_cli, codePostLivr_cli, numTel_cli, numFax_cli, mail_cli)
+                            numRueLivr_cli, rueLivr_cli, villeLivr_cli, codePostLivr_cli, numTel_cli, numFax_cli, mail_cli, id_tva)
                             VALUES (@nom, @numRueFact, @rueFact, @villeFact, @codePostFact,
-                            @numRueLivr, @rueLivr, @villeLivr, @codePostLivr, @numTel, @numFax, @mail)";
+                            @numRueLivr, @rueLivr, @villeLivr, @codePostLivr, @numTel, @numFax, @mail, @idTva)";
 
             try
             {
@@ -120,6 +139,7 @@ namespace GesCom.DAL
                     cmd.Parameters.AddWithValue("@numTel", client.NumTel);
                     cmd.Parameters.AddWithValue("@numFax", client.NumFax);
                     cmd.Parameters.AddWithValue("@mail", client.Mail);
+                    cmd.Parameters.AddWithValue("@idTva", client.Tva.IdTva);
 
                     // verification si la requete a fonctionne, 0 = ko, 1 = ok
                     int rowsAffected = cmd.ExecuteNonQuery();
@@ -141,7 +161,7 @@ namespace GesCom.DAL
             string query = @"UPDATE CLIENTS SET nom_cli = @nom, numRueFact_cli = @numRueFact, rueFact_cli = @rueFact,
                             villeFact_cli = @villeFact, codePostFact_cli = @codePostFact, numRueLivr_cli = @numRueLivr,
                             rueLivr_cli = @rueLivr, villeLivr_cli = @villeLivr, codePostLivr_cli = @codePostLivr,
-                            numTel_cli = @numTel, numFax_cli = @numFax, mail_cli = @mail
+                            numTel_cli = @numTel, numFax_cli = @numFax, mail_cli = @mail, id_tva = @idTva
                             WHERE code_cli = @code";
 
             try
@@ -162,6 +182,7 @@ namespace GesCom.DAL
                     cmd.Parameters.AddWithValue("@numTel", client.NumTel);
                     cmd.Parameters.AddWithValue("@numFax", client.NumFax);
                     cmd.Parameters.AddWithValue("@mail", client.Mail);
+                    cmd.Parameters.AddWithValue("@idTva", client.Tva.IdTva);
 
                     int rowsAffected = cmd.ExecuteNonQuery();
                     result = (rowsAffected > 0);
