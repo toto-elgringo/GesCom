@@ -34,9 +34,9 @@ namespace GesCom.DAL
                 while (reader.Read())
                 {
                     TVA tva = new TVA(
-                        reader.GetInt32(reader.GetOrdinal("id_tva")),
-                        reader.GetString(reader.GetOrdinal("nom_pays")),
-                        (float)reader.GetDecimal(reader.GetOrdinal("taux_tva"))
+                        reader.GetInt32(reader.GetOrdinal("code_tva")),
+                        reader.GetString(reader.GetOrdinal("pays")),
+                        (float)reader.GetDecimal(reader.GetOrdinal("taux"))
                     );
                     listeTVA.Add(tva);
                 }
@@ -49,7 +49,7 @@ namespace GesCom.DAL
         public TVA GetTVAById(int idTva)
         {
             TVA tva = null;
-            string query = "SELECT * FROM TVA WHERE id_tva = @id";
+            string query = "SELECT * FROM TVA WHERE code_tva = @id";
 
             using (SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion())
             {
@@ -60,9 +60,9 @@ namespace GesCom.DAL
                 if (reader.Read())
                 {
                     tva = new TVA(
-                        reader.GetInt32(reader.GetOrdinal("id_tva")),
-                        reader.GetString(reader.GetOrdinal("nom_pays")),
-                        (float)reader.GetDecimal(reader.GetOrdinal("taux_tva"))
+                        reader.GetInt32(reader.GetOrdinal("code_tva")),
+                        reader.GetString(reader.GetOrdinal("pays")),
+                        (float)reader.GetDecimal(reader.GetOrdinal("taux"))
                     );
                 }
                 reader.Close();

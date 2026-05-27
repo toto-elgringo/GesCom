@@ -33,7 +33,7 @@ namespace GesCom.DAL
                             S.code_sta, S.nom_sta
                             FROM Devis D
                             INNER JOIN Clients C ON D.code_cli = C.code_cli
-                            INNER JOIN TVA T ON C.id_tva = T.id_tva
+                            INNER JOIN TVA T ON C.TvaID = T.code_tva
                             INNER JOIN Statut S ON D.code_sta = S.code_sta";
 
             SqlConnection connexion = ConnexionBD.GetConnexionBD().GetSqlConnexion();
@@ -43,9 +43,9 @@ namespace GesCom.DAL
             while (reader.Read())
             {
                 TVA tva = new TVA(
-                    reader.GetInt32(reader.GetOrdinal("id_tva")),
-                    reader.GetString(reader.GetOrdinal("nom_pays")),
-                    (float)reader.GetDecimal(reader.GetOrdinal("taux_tva"))
+                    reader.GetInt32(reader.GetOrdinal("code_tva")),
+                    reader.GetString(reader.GetOrdinal("pays")),
+                    (float)reader.GetDecimal(reader.GetOrdinal("taux"))
                 );
 
                 Client client = new Client(
