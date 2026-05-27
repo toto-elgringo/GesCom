@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,9 +17,9 @@ namespace GesCom.GUI
     {
         private List<Produit> listeProduits;
         private List<Categorie> listeCategories;
+        private List<Provenance> listeProvenances;
         private Produit produitSelectionne;
 
-        // cette variable sert à savoir si on est en mode création ou pas  
         private bool modeCreation = false;
 
         public UserControlProduits()
@@ -30,6 +30,7 @@ namespace GesCom.GUI
         private void UserControlProduits_Load(object sender, EventArgs e)
         {
             ChargerCategories();
+            ChargerProvenances();
             ChargerProduits();
             InitialiserEtatDetail();
         }
@@ -52,7 +53,23 @@ namespace GesCom.GUI
             }
         }
 
-        // Affichage des produits dans la dataGridView
+        private void ChargerProvenances()
+        {
+            try
+            {
+                listeProvenances = ProvenanceBLL.GetUneProvenanceBLL().GetListeProvenances();
+                cmbProvenance.DataSource = null;
+                cmbProvenance.DataSource = listeProvenances;
+                cmbProvenance.DisplayMember = "Libelle";
+                cmbProvenance.ValueMember = "Code";
+                cmbProvenance.SelectedIndex = -1;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erreur lors du chargement des provenances : {ex.Message}",
+                    "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void ChargerProduits()
         {
@@ -60,6 +77,7 @@ namespace GesCom.GUI
             {
                 listeProduits = ProduitBLL.GetUnProduitBLL().GetListeProduits();
 
+                dgvProduits.AutoGenerateColumns = true;
                 dgvProduits.DataSource = null;
                 dgvProduits.DataSource = listeProduits;
 
@@ -67,15 +85,33 @@ namespace GesCom.GUI
                 {
                     lblZeroProduit.Visible = false;
 
+                    if (dgvProduits.Columns["Code"] != null)
+                    {
+                        dgvProduits.Columns["Code"].Visible = false;
+                    }
+
                     dgvProduits.Columns["Libelle"].HeaderText = "Libellé";
-                    dgvProduits.Columns["Libelle"].Width = 250;
+                    dgvProduits.Columns["Libelle"].Width = 200;
 
                     dgvProduits.Columns["Categorie"].HeaderText = "Catégorie";
-                    dgvProduits.Columns["Categorie"].Width = 150;
+                    dgvProduits.Columns["Categorie"].Width = 120;
 
-                    dgvProduits.Columns["PrixVenteHT"].HeaderText = "Prix de vente";
-                    dgvProduits.Columns["PrixVenteHT"].Width = 120;
+                    dgvProduits.Columns["PrixVenteHT"].HeaderText = "Prix de base";
+                    dgvProduits.Columns["PrixVenteHT"].Width = 110;
                     dgvProduits.Columns["PrixVenteHT"].DefaultCellStyle.Format = "N2";
+
+                    if (dgvProduits.Columns["Provenance"] != null)
+                    {
+                        dgvProduits.Columns["Provenance"].HeaderText = "Provenance";
+                        dgvProduits.Columns["Provenance"].Width = 130;
+                    }
+
+                    if (dgvProduits.Columns["PrixVenteFinal"] != null)
+                    {
+                        dgvProduits.Columns["PrixVenteFinal"].HeaderText = "Prix de vente";
+                        dgvProduits.Columns["PrixVenteFinal"].Width = 120;
+                        dgvProduits.Columns["PrixVenteFinal"].DefaultCellStyle.Format = "N2";
+                    }
                 }
                 else
                 {
@@ -90,8 +126,6 @@ namespace GesCom.GUI
             }
         }
 
-        // Tous les champs sont remis à 0
-
         private void InitialiserEtatDetail()
         {
             modeCreation = false;
@@ -100,18 +134,19 @@ namespace GesCom.GUI
             txtLibelle.Text = "";
             txtPrix.Text = "";
             cmbCategorie.SelectedIndex = -1;
+            cmbProvenance.SelectedIndex = -1;
+            lblPrixVenteValeur.Text = "-";
 
             txtLibelle.Enabled = false;
             txtPrix.Enabled = false;
             cmbCategorie.Enabled = false;
+            cmbProvenance.Enabled = false;
 
             btnModifier.Enabled = false;
             btnSupprimer.Enabled = false;
             btnNouveau.Enabled = true;
             btnAnnuler.Visible = false;
         }
-
-        // Selection du produit sur lequel on clique dans le formulaire
 
         private void dgvProduits_SelectionChanged(object sender, EventArgs e)
         {
@@ -122,38 +157,69 @@ namespace GesCom.GUI
             }
         }
 
-        // Affichage des détails du produit dans le formulaire
-
         private void AfficherDetailProduit()
         {
-                txtLibelle.Text = produitSelectionne.Libelle;
-                txtPrix.Text = produitSelectionne.PrixVenteHT.ToString("F2");
-                cmbCategorie.SelectedValue = produitSelectionne.Categorie.Code;
+            txtLibelle.Text = produitSelectionne.Libelle;
+            txtPrix.Text = produitSelectionne.PrixVenteHT.ToString("F2");
+            cmbCategorie.SelectedValue = produitSelectionne.Categorie.Code;
 
-                txtLibelle.Enabled = false;
-                txtPrix.Enabled = false;
-                cmbCategorie.Enabled = false;
+            if (produitSelectionne.Provenance != null)
+            {
+                cmbProvenance.SelectedValue = produitSelectionne.Provenance.Code;
+            }
+            else
+            {
+                cmbProvenance.SelectedIndex = -1;
+            }
 
-                btnModifier.Enabled = true;
-                btnSupprimer.Enabled = true;
+            ActualiserPrixVenteAffiche();
+
+            txtLibelle.Enabled = false;
+            txtPrix.Enabled = false;
+            cmbCategorie.Enabled = false;
+            cmbProvenance.Enabled = false;
+
+            btnModifier.Enabled = true;
+            btnSupprimer.Enabled = true;
         }
 
-        // Affichage des boutons d'ajout et d'annulation, si un produit était séléctionné les informations sont enlevés du formulaire
+        private void ActualiserPrixVenteAffiche()
+        {
+            Provenance provenance = cmbProvenance.SelectedItem as Provenance;
+            if (provenance == null)
+            {
+                lblPrixVenteValeur.Text = "-";
+                return;
+            }
+
+            float prixBase;
+            if (!float.TryParse(txtPrix.Text, out prixBase))
+            {
+                lblPrixVenteValeur.Text = "-";
+                return;
+            }
+
+            float prixFinal = prixBase * provenance.Coefficient;
+            lblPrixVenteValeur.Text = prixFinal.ToString("F2") + " € (" + provenance.Libelle + ")";
+        }
 
         private void btnNouveau_Click(object sender, EventArgs e)
         {
             modeCreation = true;
-            produitSelectionne = null; 
+            produitSelectionne = null;
 
             dgvProduits.ClearSelection();
 
             txtLibelle.Text = "";
             txtPrix.Text = "";
             cmbCategorie.SelectedIndex = -1;
+            cmbProvenance.SelectedIndex = -1;
+            lblPrixVenteValeur.Text = "-";
 
             txtLibelle.Enabled = true;
             txtPrix.Enabled = true;
             cmbCategorie.Enabled = true;
+            cmbProvenance.Enabled = true;
 
             btnModifier.Enabled = false;
             btnSupprimer.Enabled = false;
@@ -164,14 +230,10 @@ namespace GesCom.GUI
             btnNouveau.Visible = false;
         }
 
-        // Ajout du nouveau produit dans la bdd 
-
         private void btnAjouter_Click(object sender, EventArgs e)
         {
             EnregistrerNouveauProduit();
         }
-
-        // Annulation de la requete en cours pour revenir a l'état de base du formulaire
 
         private void btnAnnuler_Click(object sender, EventArgs e)
         {
@@ -190,8 +252,6 @@ namespace GesCom.GUI
             }
         }
 
-        // Les champs ne sont plus grisés et sont modifiables
-
         private void btnModifier_Click(object sender, EventArgs e)
         {
             if (produitSelectionne == null)
@@ -204,25 +264,24 @@ namespace GesCom.GUI
             btnNouveau.Visible = false;
             btnAnnuler.Visible = true;
 
-            if (!txtLibelle.Enabled) 
+            if (!txtLibelle.Enabled)
             {
                 txtLibelle.Enabled = true;
                 txtPrix.Enabled = true;
                 cmbCategorie.Enabled = true;
+                cmbProvenance.Enabled = true;
                 btnModifier.Text = "💾 Enregistrer";
                 btnSupprimer.Enabled = false;
                 btnNouveau.Enabled = false;
                 btnAjouter.Visible = false;
                 txtLibelle.Focus();
             }
-            else 
+            else
             {
                 EnregistrerModificationProduit();
                 btnModifier.Text = "✏️ Modifier";
             }
         }
-
-        // Le produit est modifié dans la bdd
 
         private void EnregistrerModificationProduit()
         {
@@ -233,17 +292,15 @@ namespace GesCom.GUI
 
             try
             {
-                
                 produitSelectionne.Libelle = txtLibelle.Text.Trim();
                 produitSelectionne.PrixVenteHT = float.Parse(txtPrix.Text);
                 produitSelectionne.Categorie = (Categorie)cmbCategorie.SelectedItem;
+                produitSelectionne.Provenance = cmbProvenance.SelectedItem as Provenance;
 
                 ProduitBLL.GetUnProduitBLL().ModifierProduit(produitSelectionne);
 
                 MessageBox.Show("Produit modifié avec succès !", "Succès",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                // rechargement de la page une fois le produit bien modifié 
 
                 ChargerProduits();
 
@@ -259,6 +316,7 @@ namespace GesCom.GUI
                 txtLibelle.Enabled = false;
                 txtPrix.Enabled = false;
                 cmbCategorie.Enabled = false;
+                cmbProvenance.Enabled = false;
                 btnModifier.Text = "✏️ Modifier";
                 btnSupprimer.Enabled = true;
                 btnNouveau.Enabled = true;
@@ -269,8 +327,6 @@ namespace GesCom.GUI
                     "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        // Le produit séléctionné à la base est supprimé apres une confirmation via un mesageBox
 
         private void btnSupprimer_Click(object sender, EventArgs e)
         {
@@ -296,8 +352,6 @@ namespace GesCom.GUI
                     MessageBox.Show("Produit supprimé avec succès !", "Succès",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // rechargement de la page une fois le produit bien supprimé avec les champs du formulaires vidés
-
                     ChargerProduits();
                     InitialiserEtatDetail();
                     btnNouveau.Visible = true;
@@ -310,8 +364,6 @@ namespace GesCom.GUI
                 }
             }
         }
-
-
 
         private void txtLibelle_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -337,9 +389,16 @@ namespace GesCom.GUI
                 e.Handled = true;
                 e.SuppressKeyPress = true;
             }
+            else
+            {
+                ActualiserPrixVenteAffiche();
+            }
         }
 
-        // Nouveau produit dans la bdd
+        private void cmbProvenance_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ActualiserPrixVenteAffiche();
+        }
 
         private void EnregistrerNouveauProduit()
         {
@@ -351,12 +410,14 @@ namespace GesCom.GUI
             try
             {
                 Categorie categorieSelectionnee = (Categorie)cmbCategorie.SelectedItem;
+                Provenance provenanceSelectionnee = cmbProvenance.SelectedItem as Provenance;
 
                 Produit nouveauProduit = new Produit(
                     0,
                     txtLibelle.Text.Trim(),
                     categorieSelectionnee,
-                    float.Parse(txtPrix.Text)
+                    float.Parse(txtPrix.Text),
+                    provenanceSelectionnee
                 );
 
                 ProduitBLL.GetUnProduitBLL().AjouterProduit(nouveauProduit);
@@ -364,10 +425,11 @@ namespace GesCom.GUI
                 MessageBox.Show("Produit ajouté avec succès !", "Succès",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // rechargement de la page avec le nouveau produit 
-
                 ChargerProduits();
                 InitialiserEtatDetail();
+                btnNouveau.Visible = true;
+                btnAjouter.Visible = false;
+                btnAnnuler.Visible = false;
                 btnNouveau.Enabled = true;
             }
             catch (Exception ex)
@@ -377,12 +439,8 @@ namespace GesCom.GUI
             }
         }
 
-        // Fonctions de validation des champs dans le formulaire
-
         private bool ValiderChamps()
         {
-            // vérification du champ libellé pour vérifier si il est vide 
-
             if (string.IsNullOrWhiteSpace(txtLibelle.Text))
             {
                 errorProvider1.SetError(txtLibelle, "Le champ du libellé du produit est requis");
@@ -392,8 +450,6 @@ namespace GesCom.GUI
             {
                 errorProvider1.SetError(txtLibelle, "");
             }
-
-            // vérification du champ prix pour vérifier si il est vide 
 
             if (string.IsNullOrWhiteSpace(txtPrix.Text))
             {
@@ -405,19 +461,17 @@ namespace GesCom.GUI
                 errorProvider1.SetError(txtPrix, "");
             }
 
-            // vérification de l'existance de la catégorie séléctionnée lors de l'ajout ou la modification d'un produit 
-
-            bool categorieTrue = false;
-
-            foreach (Produit p in ProduitBLL.GetUnProduitBLL().GetListeProduits())
+            bool categorieValide = false;
+            foreach (Categorie c in listeCategories)
             {
-                if (p.Categorie.Nom == cmbCategorie.Text)
+                if (c.Nom == cmbCategorie.Text)
                 {
-                    categorieTrue = true;
+                    categorieValide = true;
+                    break;
                 }
             }
 
-            if (!categorieTrue)
+            if (!categorieValide)
             {
                 errorProvider1.SetError(cmbCategorie, "Veuillez choisir une catégorie existante");
                 return false;
@@ -427,14 +481,14 @@ namespace GesCom.GUI
                 errorProvider1.SetError(cmbCategorie, "");
             }
 
-            // vérification de l'existance d'un produit lors de l'ajout ou de la modification d'un produit
-
             bool produitExistant = false;
+            int codeCourant = produitSelectionne != null ? produitSelectionne.Code : 0;
             foreach (Produit p in ProduitBLL.GetUnProduitBLL().GetListeProduits())
             {
-                if (p.Libelle == txtLibelle.Text)
+                if (p.Libelle.Trim().ToLower() == txtLibelle.Text.Trim().ToLower() && p.Code != codeCourant)
                 {
                     produitExistant = true;
+                    break;
                 }
             }
 
@@ -448,9 +502,7 @@ namespace GesCom.GUI
                 errorProvider1.SetError(txtLibelle, "");
             }
 
-            // vérification du type du champ prix 
-
-                float prix;
+            float prix;
             if (!float.TryParse(txtPrix.Text, out prix))
             {
                 errorProvider1.SetError(txtPrix, "Le prix est incorrect");
@@ -461,8 +513,6 @@ namespace GesCom.GUI
                 errorProvider1.SetError(txtPrix, "");
             }
 
-            // vérification du prix pour savoir si il est bien positif
-
             if (prix <= 0)
             {
                 errorProvider1.SetError(txtPrix, "Le prix du produit doit être positif");
@@ -472,7 +522,6 @@ namespace GesCom.GUI
             {
                 errorProvider1.SetError(txtPrix, "");
             }
-
 
             return true;
         }

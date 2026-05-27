@@ -49,3 +49,15 @@ C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\Debug\GesCom.BO.csproj.Core
 C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\Debug\GesCom.BO.csproj.Up2Date
 C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\Debug\GesCom.BO.dll
 C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\Debug\GesCom.BO.pdb
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\buildcheck\GesCom.BO.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\buildcheck\GesCom.BO.pdb
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\buildcheck\BCrypt.Net-Next.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\buildcheck\System.Buffers.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\buildcheck\System.Memory.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\buildcheck\System.Numerics.Vectors.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\buildcheck\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\buildcheck\BCrypt.Net-Next.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\buildcheck\System.Buffers.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\buildcheck\System.Memory.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\buildcheck\System.Numerics.Vectors.xml
+C:\Users\totoa\Documents\Github\GesCom\GesCom.BO\obj\buildcheck\System.Runtime.CompilerServices.Unsafe.xml

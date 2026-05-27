@@ -62,6 +62,7 @@
     <Compile Include="ContenirDevis.cs" />
     <Compile Include="Devis.cs" />
     <Compile Include="Produit.cs" />
+    <Compile Include="Provenance.cs" />
     <Compile Include="Statut.cs" />
     <Compile Include="TVA.cs" />
     <Compile Include="User.cs" />

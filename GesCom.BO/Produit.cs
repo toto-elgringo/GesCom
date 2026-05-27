@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +13,7 @@ namespace GesCom.BO
         private string libelle;
         private Categorie categorie;
         private float prixVenteHT;
+        private Provenance provenance;
 
         public Produit(int code, string libelle, Categorie categorie, float prixVenteHT)
         {
@@ -20,6 +21,16 @@ namespace GesCom.BO
             this.libelle = libelle;
             this.categorie = categorie;
             this.prixVenteHT = prixVenteHT;
+            this.provenance = null;
+        }
+
+        public Produit(int code, string libelle, Categorie categorie, float prixVenteHT, Provenance provenance)
+        {
+            this.code = code;
+            this.libelle = libelle;
+            this.categorie = categorie;
+            this.prixVenteHT = prixVenteHT;
+            this.provenance = provenance;
         }
 
         public int Code
@@ -44,6 +55,24 @@ namespace GesCom.BO
         {
             get { return this.prixVenteHT; }
             set { this.prixVenteHT = value; }
+        }
+
+        public Provenance Provenance
+        {
+            get { return this.provenance; }
+            set { this.provenance = value; }
+        }
+
+        public float PrixVenteFinal
+        {
+            get
+            {
+                if (this.provenance == null)
+                {
+                    return this.prixVenteHT;
+                }
+                return this.prixVenteHT * this.provenance.Coefficient;
+            }
         }
 
         public override string ToString()

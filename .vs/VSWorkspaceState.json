@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\GesCom.BO"
+    "\\GesCom.BLL",
+    "\\GesCom.BO",
+    "\\GesCom.DAL"
   ],
-  "SelectedNode": "\\GesCom.BO\\TVA.cs",
+  "SelectedNode": "\\GesCom.DAL\\ProduitDAL.cs",
   "PreviewInSolutionExplorer": false
 }

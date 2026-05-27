@@ -34,12 +34,16 @@
             this.btnAnnuler = new System.Windows.Forms.Button();
             this.btnAjouter = new System.Windows.Forms.Button();
             this.cmbCategorie = new System.Windows.Forms.ComboBox();
+            this.cmbProvenance = new System.Windows.Forms.ComboBox();
             this.panelButtons = new System.Windows.Forms.Panel();
             this.btnSupprimer = new System.Windows.Forms.Button();
             this.btnModifier = new System.Windows.Forms.Button();
             this.txtPrix = new System.Windows.Forms.TextBox();
             this.txtLibelle = new System.Windows.Forms.TextBox();
             this.lblPrix = new System.Windows.Forms.Label();
+            this.lblPrixVente = new System.Windows.Forms.Label();
+            this.lblPrixVenteValeur = new System.Windows.Forms.Label();
+            this.lblProvenance = new System.Windows.Forms.Label();
             this.lblCategorie = new System.Windows.Forms.Label();
             this.lblLibelle = new System.Windows.Forms.Label();
             this.btnNouveau = new System.Windows.Forms.Button();
@@ -70,7 +74,7 @@
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelRight.Location = new System.Drawing.Point(760, 0);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(380, 550);
+            this.panelRight.Size = new System.Drawing.Size(380, 720);
             this.panelRight.TabIndex = 0;
             // 
             // panelDetail
@@ -78,16 +82,20 @@
             this.panelDetail.Controls.Add(this.btnAnnuler);
             this.panelDetail.Controls.Add(this.btnAjouter);
             this.panelDetail.Controls.Add(this.cmbCategorie);
+            this.panelDetail.Controls.Add(this.cmbProvenance);
             this.panelDetail.Controls.Add(this.panelButtons);
             this.panelDetail.Controls.Add(this.txtPrix);
             this.panelDetail.Controls.Add(this.txtLibelle);
             this.panelDetail.Controls.Add(this.lblPrix);
+            this.panelDetail.Controls.Add(this.lblPrixVente);
+            this.panelDetail.Controls.Add(this.lblPrixVenteValeur);
+            this.panelDetail.Controls.Add(this.lblProvenance);
             this.panelDetail.Controls.Add(this.lblCategorie);
             this.panelDetail.Controls.Add(this.lblLibelle);
             this.panelDetail.Controls.Add(this.btnNouveau);
             this.panelDetail.Location = new System.Drawing.Point(0, 60);
             this.panelDetail.Name = "panelDetail";
-            this.panelDetail.Size = new System.Drawing.Size(380, 490);
+            this.panelDetail.Size = new System.Drawing.Size(380, 660);
             this.panelDetail.TabIndex = 1;
             // 
             // btnAnnuler
@@ -120,9 +128,9 @@
             this.btnAjouter.UseVisualStyleBackColor = false;
             this.btnAjouter.Visible = false;
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
-            // 
+            //
             // cmbCategorie
-            // 
+            //
             this.cmbCategorie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbCategorie.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCategorie.FormattingEnabled = true;
@@ -130,6 +138,49 @@
             this.cmbCategorie.Name = "cmbCategorie";
             this.cmbCategorie.Size = new System.Drawing.Size(320, 25);
             this.cmbCategorie.TabIndex = 8;
+            //
+            // cmbProvenance
+            //
+            this.cmbProvenance.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProvenance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbProvenance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbProvenance.FormattingEnabled = true;
+            this.cmbProvenance.Location = new System.Drawing.Point(25, 380);
+            this.cmbProvenance.Name = "cmbProvenance";
+            this.cmbProvenance.Size = new System.Drawing.Size(320, 25);
+            this.cmbProvenance.TabIndex = 11;
+            this.cmbProvenance.SelectedIndexChanged += new System.EventHandler(this.cmbProvenance_SelectedIndexChanged);
+            //
+            // lblProvenance
+            //
+            this.lblProvenance.AutoSize = true;
+            this.lblProvenance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProvenance.Location = new System.Drawing.Point(21, 355);
+            this.lblProvenance.Name = "lblProvenance";
+            this.lblProvenance.Size = new System.Drawing.Size(180, 20);
+            this.lblProvenance.TabIndex = 12;
+            this.lblProvenance.Text = "Provenance d\'achat";
+            //
+            // lblPrixVente
+            //
+            this.lblPrixVente.AutoSize = true;
+            this.lblPrixVente.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrixVente.Location = new System.Drawing.Point(21, 430);
+            this.lblPrixVente.Name = "lblPrixVente";
+            this.lblPrixVente.Size = new System.Drawing.Size(200, 20);
+            this.lblPrixVente.TabIndex = 13;
+            this.lblPrixVente.Text = "Prix de vente";
+            //
+            // lblPrixVenteValeur
+            //
+            this.lblPrixVenteValeur.AutoSize = true;
+            this.lblPrixVenteValeur.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrixVenteValeur.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.lblPrixVenteValeur.Location = new System.Drawing.Point(25, 460);
+            this.lblPrixVenteValeur.Name = "lblPrixVenteValeur";
+            this.lblPrixVenteValeur.Size = new System.Drawing.Size(50, 21);
+            this.lblPrixVenteValeur.TabIndex = 14;
+            this.lblPrixVenteValeur.Text = "-";
             // 
             // panelButtons
             // 
@@ -202,7 +253,7 @@
             this.lblPrix.Name = "lblPrix";
             this.lblPrix.Size = new System.Drawing.Size(100, 20);
             this.lblPrix.TabIndex = 4;
-            this.lblPrix.Text = "Prix de vente";
+            this.lblPrix.Text = "Prix de base";
             // 
             // lblCategorie
             // 
@@ -280,7 +331,7 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(760, 550);
+            this.panelLeft.Size = new System.Drawing.Size(760, 720);
             this.panelLeft.TabIndex = 2;
             // 
             // lblZeroProduit
@@ -305,7 +356,7 @@
             this.dgvProduits.Name = "dgvProduits";
             this.dgvProduits.ReadOnly = true;
             this.dgvProduits.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProduits.Size = new System.Drawing.Size(760, 490);
+            this.dgvProduits.Size = new System.Drawing.Size(760, 660);
             this.dgvProduits.TabIndex = 1;
             this.dgvProduits.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvProduits.SelectionChanged += new System.EventHandler(this.dgvProduits_SelectionChanged);
@@ -341,7 +392,7 @@
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelRight);
             this.Name = "UserControlProduits";
-            this.Size = new System.Drawing.Size(1140, 550);
+            this.Size = new System.Drawing.Size(1140, 720);
             this.Load += new System.EventHandler(this.UserControlProduits_Load);
             this.panelRight.ResumeLayout(false);
             this.panelDetail.ResumeLayout(false);
@@ -385,5 +436,9 @@
         private System.Windows.Forms.Button btnAnnuler;
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ComboBox cmbProvenance;
+        private System.Windows.Forms.Label lblProvenance;
+        private System.Windows.Forms.Label lblPrixVente;
+        private System.Windows.Forms.Label lblPrixVenteValeur;
     }
 }
